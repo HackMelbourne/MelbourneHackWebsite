@@ -1,0 +1,28 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  left: 0;
+  right: 0;
+  background-color: green;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 32px;
+  padding: 1rem;
+
+  // appears in front of other elements
+  z-index: 20;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link {
+  font-size: 32px;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+

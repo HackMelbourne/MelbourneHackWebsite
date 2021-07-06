@@ -1,0 +1,17 @@
+@import "../../styles/styles.scss";
+
+.footer {
+  width: 100%;
+  background-color: $primary-darker;
+
+  position: relative;
+}
+
+.links {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    font-size: $font-size-3;
+  }
+}

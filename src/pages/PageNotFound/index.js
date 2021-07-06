@@ -1,7 +1,9 @@
+import styles from "./PageNotFound.module.scss";
+
 const PageNotFound = () => {
   return (
-    <div>
-      404
+    <div className={styles.container}>
+      404: Page not found
     </div>
   );
 }

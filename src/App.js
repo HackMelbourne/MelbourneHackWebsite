@@ -22,6 +22,7 @@ function App() {
       </Background>
       <Footer />
     </Router>
+    
   );
 }
 

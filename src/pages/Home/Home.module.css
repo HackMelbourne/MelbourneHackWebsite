@@ -37,6 +37,7 @@
 
 .title h1 {
   font-family: "Consolas", "Menlo", "Monaco", "Courier New", "monospace";
+  font-weight: bold;
   font-size: 4.8em;
   color: #1B6AE3;
 }

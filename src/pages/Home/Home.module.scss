@@ -1,7 +1,9 @@
+@import "../../styles/styles.scss";
+
 .container {
   min-height: 100vh;
 
-  background-color: grey;
+  background-image: $background-gradient;
   margin-top: 8rem;
   display: flex;
   justify-content: center;

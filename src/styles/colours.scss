@@ -2,8 +2,9 @@ $primary-dark: #0c0742;
 $primary-darker: #090531;
 $primary-white: #f3ffff;
 
-$light-blue: #c5feff;
+$light-blue: #d4feff;
 $blue: #4177dd;
+$hackmelb-blue: #1B6AE3;
 
 $galaxy-purple: #4844ae;
 $dark-purple: #130676;
@@ -13,3 +14,5 @@ $header-background: #bfbfbf;
 $accent-pink: #f06bea;
 $accent-yellow: #ffc059;
 $accent-orange: #fb6600;
+
+$background-gradient: linear-gradient(90deg, $light-blue 0%, $primary-white 80%);

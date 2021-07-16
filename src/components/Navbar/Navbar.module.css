@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 .navbar {
   position: fixed;
   display: -webkit-box;
@@ -9,8 +10,8 @@
           align-items: center;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#c5feff), color-stop(95%, #f3ffff));
-  background-image: linear-gradient(90deg, #c5feff 0%, #f3ffff 95%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#d4feff), color-stop(80%, #f3ffff));
+  background-image: linear-gradient(90deg, #d4feff 0%, #f3ffff 80%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
@@ -23,13 +24,13 @@
 }
 
 .logo {
-  width: 120%;
-  margin-left: 30%;
-  line-height: 0.4em;
+  width: 150%;
+  margin-left: 20%;
 }
 
 .logo h2 {
   font-size: 1.563rem;
+  font-weight: 1000;
   font-family: "Consolas", "Menlo", "Monaco", "Courier New", "monospace";
   color: #1B6AE3;
 }
@@ -37,6 +38,7 @@
 .logo h3 {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
+  font-weight: bolder;
 }
 
 .links {

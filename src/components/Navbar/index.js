@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.scss";
-import { NavBarButton, SignUpButton } from "./components-styled";
+import { NavBarButton, SignUpButton, HackDropDown } from "./components-styled";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Navbar = () => {
       </Link>
       <div className={styles.links}>
           <NavBarButton>Updates</NavBarButton>
-          <NavBarButton>Hack</NavBarButton>
+          <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton>
           <NavBarButton>Schedule</NavBarButton>
           <NavBarButton>Sponsors</NavBarButton>
 

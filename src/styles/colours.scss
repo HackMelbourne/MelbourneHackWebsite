@@ -12,3 +12,9 @@ $stream-green: #09bc8a;
 $stream-yellow: #fcdb39;
 
 $accent-pink: #ffc7bc;
+
+$background-gradient: linear-gradient(
+  90deg,
+  $light-blue 0%,
+  $primary-white 80%
+);

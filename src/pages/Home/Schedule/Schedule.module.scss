@@ -1,0 +1,62 @@
+@import "../Home.module.scss";
+
+* {
+  text-align: left;
+}
+
+.schedule {
+  @include section;
+
+  h2 {
+    font-size: $font-size-5;
+    text-align: left;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.table {
+  display: block;
+  font-size: $font-size-1;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.show_border {
+  border-bottom: 1px solid $stream-blue;
+}
+
+td {
+  padding: 1rem 2rem 1rem 0rem;
+}
+
+.underline {
+  width: 20rem;
+  height: 2rem;
+
+  @include desktop {
+    width: 20rem;
+  }
+
+  background-image: url("../../../components/assets/underline_bar.svg");
+}
+
+.line_feature {
+  top: 1700px; /* your required value */
+  right: 0;
+  height: 100%;
+  position: absolute;
+  width: 20rem;
+  height: 100vh;
+  background-image: url("../../../components/assets/schedule-page-bar.svg");
+  background-repeat: no-repeat;
+}

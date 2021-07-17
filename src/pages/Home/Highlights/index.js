@@ -10,10 +10,10 @@ const Highlights = () => {
       </div>
       <div className={styles.content}>
         <h3>
-          During the duration of Melbourne Hack, there will be a tonne of
-          activities to participate in. From networking events to chill
-          hangouts, make the most out of this opportunity to get to upskill and
-          make new connections!
+          There's a lot in stall for this year's hackathon. During the duration
+          of Melbourne Hack, there will be a tonne of activities to participate
+          in. From networking events to chill social nights, make the most out
+          of this opportunity to learn new skills and make new connections!
         </h3>
         <div className={styles.row}>
           <Textbox text="Networking nights" />

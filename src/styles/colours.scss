@@ -3,8 +3,12 @@ $primary-darker: #090531;
 $primary-white: #f3ffff;
 
 // for gradient background
-$light-blue: #e2fffa;
+
 $very-light-blue: #f4fffd;
+$light-blue: #d4feff;
+$blue: #4177dd;
+$hackmelb-blue: #1B6AE3;
+
 
 $stream-blue: #1b6ae3;
 $stream-red: #ed6a5e;
@@ -18,3 +22,8 @@ $background-gradient: linear-gradient(
   $light-blue 0%,
   $primary-white 80%
 );
+
+$accent-pink: #f06bea;
+$accent-yellow: #ffc059;
+$accent-orange: #fb6600;
+

@@ -6,13 +6,35 @@
   align-items: center;
   left: 0;
   right: 0;
-  background-color: green;
+  background-image: $background-gradient;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  font-size: $font-size-2;
   padding: 1rem;
 
   // appears in front of other elements
   z-index: 20;
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.logo{
+  width: 150%;
+  margin-left: 20%;
+}
+
+.logo h2{
+  font-size: $font-size-3;
+  font-weight: 1000;
+  font-family: $font-monospace;
+  color: $hackmelb-blue;
+}
+
+.logo h3{
+  font-size: $font-size-1;
+  font-family: $font-main;
+  font-weight: bolder;
 }
 
 .links {
@@ -20,11 +42,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 .link {
   font-size: $font-size-1;
-  margin: 0 1rem;
-  padding: 0.5rem;
+  font-family: $font-main;
+  font-weight: bold;
 }
 

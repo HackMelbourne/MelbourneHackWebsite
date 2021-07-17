@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+.scroll {
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  z-index: 20;
+}
+
 .container {
   min-height: 100vh;
   background-image: -webkit-gradient(linear, left top, right top, from(#d4feff), color-stop(80%, #f3ffff));

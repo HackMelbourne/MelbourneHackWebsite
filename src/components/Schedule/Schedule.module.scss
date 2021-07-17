@@ -1,11 +1,13 @@
-@import "../Home.module.scss";
+@import "../../pages/Home/Home.module.scss";
 
 .schedule {
   @include section;
 
   h2 {
-    font-size: $font-size-5;
+    font-size: $font-size-3;
+    font-family: $font-title;
     text-align: left;
+    font-weight: bolder;
   }
 }
 
@@ -22,7 +24,7 @@
 
 .table {
   display: block;
-  font-size: $font-size-1;
+  font-size: $font-size-2;
   border-collapse: collapse;
   width: 50%;
 }
@@ -43,7 +45,7 @@ td {
     width: 20rem;
   }
 
-  background-image: url("../../../components/assets/underline_bar.svg");
+  background-image: url("../assets/underline_bar.svg");
 }
 
 .line_feature {
@@ -53,6 +55,6 @@ td {
   position: absolute;
   width: 20rem;
   height: 100vh;
-  background-image: url("../../../components/assets/calendar+line.svg");
+  background-image: url("../assets/calendar+line.svg");
   background-repeat: no-repeat;
 }

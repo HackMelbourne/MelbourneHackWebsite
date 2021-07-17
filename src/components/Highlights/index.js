@@ -1,5 +1,5 @@
 import styles from "./Highlights.module.scss";
-import Textbox from "../../../components/Textbox";
+import Textbox from "../Textbox";
 
 const Highlights = () => {
   return (

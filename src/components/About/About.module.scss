@@ -1,36 +1,35 @@
 @import "../../styles/styles.scss";
 
-.about{
-    width: 50%;
-    height: 200%;
-    margin-left: 9%;
-    margin-bottom: 5%;
-    font-family: $font-monospace;
+.about {
+  width: 50%;
+  height: 200%;
+  margin-left: 9%;
+  margin-bottom: 5%;
+  font-family: $font-monospace;
 }
 
-.aboutTitle{
-    display:inline-block;
-    margin-bottom: 8%;
+.aboutTitle {
+  display: inline-block;
+  margin-bottom: 8%;
 }
 
-.aboutTitle .underline{
-    position: absolute;
-    left: 0%;
-    top: 126%;
+.aboutTitle .underline {
+  position: absolute;
+  left: 0%;
+  top: 126%;
 }
 
-.aboutTitle h2{
-
-    font-weight: bolder;
-    float: left;
+.aboutTitle h2 {
+  font-weight: bolder;
+  float: left;
 }
 
-.aboutTitle .image{
-    position: absolute;
-    left: 19%;
-    top: 118%;
+.aboutTitle .image {
+  position: absolute;
+  left: 19%;
+  top: 118%;
 }
 
-.description p{
-    font-size: 1.15em;
+.description p {
+  font-size: 1.15em;
 }

@@ -10,7 +10,7 @@ const LogoBlue = "#1B6AE3"
 export const NavBarButton = styled(Button)({
     
     fontFamily: "Lato, sans-serif",
-    fontSize: "0.8em",
+    fontSize: "0.9em",
     fontWeight: "600",
     color: "black",
     backgroundColor: "Transparent",
@@ -61,12 +61,13 @@ const DropMenuStyle = {
     backgroundColor: "#e6ffff",
     fontFamily: "Lato, sans-serif",
     fontWeight: "bolder",
+    border: 'solid',
 }
 
 const DropItemStyle = {
     fontFamily: "Lato, sans-serif",
     fontWeight: "bold",
-    fontSize: "0.8rem",
+    fontSize: "0.9em",
     transition: "0.2s ease-in",
 }
 

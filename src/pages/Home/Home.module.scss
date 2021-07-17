@@ -5,6 +5,7 @@
 
   background-image: $background-gradient;
   margin-top: 9rem;
+  margin-bottom: 0rem;
   display: flex;
   justify-content: center;
 }
@@ -51,5 +52,7 @@
     font-family: $font-title;
     font-size: 1.5em;
     font-weight: 50;
+    background-color: black;
+    color: white;
   }
 }

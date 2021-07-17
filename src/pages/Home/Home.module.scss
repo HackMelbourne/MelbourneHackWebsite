@@ -1,8 +1,58 @@
+@import "../../styles/styles.scss";
+
 .container {
   min-height: 100vh;
 
-  background-color: grey;
-  margin-top: 8rem;
+  background-image: $background-gradient;
+  margin-top: 9rem;
+  margin-bottom: 0rem;
   display: flex;
   justify-content: center;
+}
+
+.logo{
+  position: absolute;
+  top: 18%;
+  left: 87%;
+}
+
+.arrow{
+  position: absolute;
+
+  top: 26%;
+  left: 4%;
+  height: 57%;
+  width: 49%;
+}
+
+.title {
+
+  position: absolute;
+  top: 45%;
+  left: 50%;
+
+  text-align:left;
+  line-height: 1.1em;
+
+  h1{
+    font-family: $font-monospace;
+    font-weight: bold;
+    font-size: 4.8em;
+    color: $hackmelb-blue;
+  }
+
+  h2{
+    font-family: $font-main;
+    font-weight: bolder; 
+    letter-spacing: 0.09em; 
+    font-size: 2.2em;
+  }
+
+  h3{
+    font-family: $font-title;
+    font-size: 1.5em;
+    font-weight: 50;
+    background-color: black;
+    color: white;
+  }
 }

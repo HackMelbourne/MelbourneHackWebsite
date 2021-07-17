@@ -1,5 +1,36 @@
 @import "../../styles/styles.scss";
 
+
+@mixin section {
+  background-color: transparent;
+  font-size: $font-size-2;
+
+  // reduce padding on mobile, min-height bit is not needed
+  // since scroll component is not used
+  padding: 2rem;
+  @include desktop {
+    padding: 6rem;
+    min-height: 100vh;
+  }
+
+  h2 {
+    color: $primary-dark;
+    font-size: $font-size-5;
+  }
+
+  h3,
+  h1 {
+    color: $primary-dark;
+  }
+}
+
+.scroll {
+  // @include remove-on-phone;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  z-index: 20;
+
 .container {
   min-height: 100vh;
 
@@ -8,6 +39,7 @@
   margin-bottom: 0rem;
   display: flex;
   justify-content: center;
+
 }
 
 .logo{

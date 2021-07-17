@@ -2,6 +2,8 @@ import styles from "./Home.module.scss";
 import hackmelb_logo from "../../images/hm_dark_logo 2.svg";
 import arrow_logo from "../../images/light-arrow.svg";
 import FadeIn from 'react-fade-in';
+import Highlights from "./Highlights";
+import Schedule from "./Schedule";
 import { About } from "../../components/About/about";
 
 const Home = () => {
@@ -19,6 +21,8 @@ const Home = () => {
       <img className = {styles.arrow} src = {arrow_logo}/>
     </div>
     <About/>
+    <Highlights />
+    <Schedule />
   </div>
   )
 };

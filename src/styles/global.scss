@@ -25,9 +25,11 @@ html {
 h1 {
   font-size: $font-size-7;
 }
+
 h2 {
   font-size: $font-size-5;
 }
+
 h3 {
   font-size: $font-size-3;
 }
@@ -50,8 +52,4 @@ a {
     color: $accent-yellow;
     text-decoration: none;
   }
-}
-
-code {
-  font-family: $font-monospace;
 }

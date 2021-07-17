@@ -24,7 +24,6 @@
 }
 
 .logo {
-  text-align: left;
   width: 150%;
   margin-left: 20%;
 }
@@ -34,14 +33,12 @@
   font-weight: 1000;
   font-family: "Consolas", "Menlo", "Monaco", "Courier New", "monospace";
   color: #1B6AE3;
-  text-align: left;
 }
 
 .logo h3 {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: bolder;
-  text-align: left;
 }
 
 .links {

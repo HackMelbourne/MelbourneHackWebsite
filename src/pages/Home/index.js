@@ -21,8 +21,8 @@ const Home = () => {
       <img className = {styles.arrow} src = {arrow_logo}/>
     </div>
     <About/>
-    <Highlights />
-    <Schedule />
+    <Highlights/>
+    <Schedule/>
   </div>
   )
 };

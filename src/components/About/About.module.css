@@ -29,4 +29,8 @@
   left: 19%;
   top: 118%;
 }
+
+.description p {
+  font-size: 1.15em;
+}
 /*# sourceMappingURL=About.module.css.map */

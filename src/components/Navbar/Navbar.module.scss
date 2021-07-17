@@ -20,6 +20,7 @@
 }
 
 .logo{
+  text-align: left;
   width: 150%;
   margin-left: 20%;
 }
@@ -29,12 +30,14 @@
   font-weight: 1000;
   font-family: $font-monospace;
   color: $hackmelb-blue;
+  text-align: left;
 }
 
 .logo h3{
   font-size: $font-size-1;
   font-family: $font-main;
   font-weight: bolder;
+  text-align: left;
 }
 
 .links {

@@ -1,6 +1,5 @@
 import styles from "./Navbar.module.scss";
 import { NavBarButton, SignUpButton, HackDropDown } from "./components-styled";
-import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {

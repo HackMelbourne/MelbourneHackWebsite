@@ -1,0 +1,54 @@
+@import "../Home.module.scss";
+
+.highlights {
+  @include section;
+  @include desktop {
+    justify-self: center;
+  }
+}
+
+* {
+  text-align: center;
+}
+
+.content {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  width: 70%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+h2 {
+  font-family: $font-title;
+  font-size: $font-size-2;
+  // text-decoration: underline;
+  // text-decoration-color: green;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.underline {
+  width: 20rem;
+  height: 2rem;
+
+  @include desktop {
+    width: 50rem;
+  }
+  background-image: url("../../../components/assets/underline_bar.svg");
+  align-self: center;
+}

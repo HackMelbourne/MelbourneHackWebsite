@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./About.module.scss"
-import aboutImg from "../../images/speech-bubble.svg"
-import underlineImg from "../../images/underline_bar.svg"
+import aboutImg from "../assets/speech-bubble.svg"
+import underlineImg from "../assets/underline_bar.svg"
 
 export const About = () => {
     return(

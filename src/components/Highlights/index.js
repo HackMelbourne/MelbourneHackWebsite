@@ -5,7 +5,7 @@ const Highlights = () => {
   return (
     <section id="highlights" className={styles.highlights}>
       <div className={styles.heading}>
-        <h2>Highlights of Melbourne Hack 2021</h2>
+        <h2>Highlights of <br/> Melbourne Hack 2021</h2>
         <div className={styles.underline}></div>
       </div>
       <div className={styles.content}>
@@ -22,7 +22,7 @@ const Highlights = () => {
         </div>
         <div className={styles.row}>
           <Textbox text="Social nights" />
-          <Textbox text="Sposnor speeches" />
+          <Textbox text="Sponsor speeches" />
         </div>
       </div>
     </section>

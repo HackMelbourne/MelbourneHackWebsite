@@ -24,9 +24,14 @@
 
 .table {
   display: block;
-  font-size: $font-size-2;
+  font-size: $font-size-1;
+
   border-collapse: collapse;
   width: 50%;
+
+  @include desktop {
+    font-size: $font-size-2;
+  }
 }
 
 .show_border {
@@ -49,12 +54,14 @@ td {
 }
 
 .line_feature {
-  top: 1700px; /* your required value */
-  right: 0;
-  height: 100%;
-  position: absolute;
-  width: 20rem;
-  height: 100vh;
-  background-image: url("../assets/calendar+line.svg");
-  background-repeat: no-repeat;
+  @include desktop {
+    top: 3200px; /* your required value */
+    right: 0;
+    height: 100%;
+    position: absolute;
+    width: 20rem;
+    height: 100vh;
+    background-image: url("../assets/calendar+line.svg");
+    background-repeat: no-repeat;
+  }
 }

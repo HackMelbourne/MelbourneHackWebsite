@@ -11,14 +11,18 @@ const Home = () => {
     <div>
       <div className={styles.container}>
         <img className={styles.logo} src={hackmelb_logo} />
-        <div className={styles.title}>
-          <FadeIn delay={290}>
-            <h2>August 20-22nd, 2021</h2>
-            <h1>Melbourne Hack</h1>
-            <h3>Melbourne's Premier Hackathon</h3>
-          </FadeIn>
+        <div className={styles.pic_text}>
+          <div>
+            <img className={styles.arrow} src={arrow_logo} />
+          </div>
+          <div className={styles.title}>
+            <FadeIn delay={290}>
+              <h2>August 20-22nd, 2021</h2>
+              <h1>Melbourne Hack</h1>
+              <h3>Melbourne's Premier Hackathon</h3>
+            </FadeIn>
+          </div>
         </div>
-        <img className={styles.arrow} src={arrow_logo} />
       </div>
       <About />
       <Highlights />

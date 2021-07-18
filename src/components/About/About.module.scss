@@ -4,19 +4,27 @@
   width: 50%;
   height: 200%;
   margin-left: 9%;
+  padding: 2rem;
   margin-bottom: 5%;
   font-family: $font-monospace;
+
 }
 
 .aboutTitle {
-  display: inline-block;
   margin-bottom: 8%;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutTitle .underline {
-  position: absolute;
-  left: 0%;
-  top: 126%;
+  width: 20rem;
+  height: 2rem;
+
+  @include desktop {
+    width: 20rem;
+  }
+
+  background-image: url("../assets/underline_bar.svg");
 }
 
 .aboutTitle h2 {

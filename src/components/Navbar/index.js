@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className={styles.links}>
           <NavBarButton>Updates</NavBarButton>
           <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton>
-          <NavBarButton>Schedule</NavBarButton>
+          <NavBarButton>Prizes</NavBarButton>
           <NavBarButton>Sponsors</NavBarButton>
           <SignUpButton variant = "outlined">SIGN UP</SignUpButton>
       </div>

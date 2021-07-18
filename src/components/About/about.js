@@ -1,13 +1,12 @@
 import React from "react";
 import style from "./About.module.scss";
-import aboutImg from "../assets/speech-bubble.svg";
 
 export const About = () => {
   return (
     <div className={style.about}>
       <div className={style.aboutTitle}>
         <h2>About</h2>
-        <div className={style.underline}></div>
+        <div className={style.underline}/>
       </div>
 
       <div className={style.description}>

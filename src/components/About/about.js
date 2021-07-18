@@ -1,10 +1,9 @@
 import React from "react";
 import style from "./About.module.scss";
-import aboutImg from "../assets/speech-bubble.svg";
 
 export const About = () => {
   return (
-    <div className={style.about}>
+    <section className={style.about}>
       <div className={style.aboutTitle}>
         <h2>About</h2>
         <div className={style.underline}></div>
@@ -29,6 +28,6 @@ export const About = () => {
         </p>
         <p>Find out more for what's install in the highlights below. </p>
       </div>
-    </div>
+    </section>
   );
 };

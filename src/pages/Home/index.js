@@ -5,6 +5,7 @@ import FadeIn from "react-fade-in";
 import Highlights from "../../components/Highlights/index";
 import Schedule from "../../components/Schedule/index";
 import { About } from "../../components/About/about";
+import Resources from "../../components/Resources/index";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <About />
       <Highlights />
       <Schedule />
+      <Resources />
     </div>
   );
 };

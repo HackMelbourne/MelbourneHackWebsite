@@ -2,9 +2,6 @@
 
 .highlights {
   @include section;
-  @include desktop {
-    justify-self: center;
-  }
 }
 
 .heading {
@@ -16,7 +13,7 @@
   h2 {
     font-weight: bolder;
     font-family: $font-title;
-    font-size: $font-size-3;
+    font-size: $font-size-5;
   }
 }
 

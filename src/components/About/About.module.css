@@ -24,11 +24,7 @@
   float: left;
 }
 
-.aboutTitle .image {
-  position: absolute;
-  left: 19%;
-  top: 118%;
-}
+
 
 .description p {
   font-size: 1.15em;

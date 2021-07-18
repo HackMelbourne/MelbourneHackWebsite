@@ -8,7 +8,6 @@ export const About = () => {
         <div className = {style.about}>
             <div className = {style.aboutTitle}>
                 <h2>About</h2>
-                <img src = {aboutImg} className = {style.image}/>
                 <img src = {underlineImg} className = {style.underline}/>
             </div>
             

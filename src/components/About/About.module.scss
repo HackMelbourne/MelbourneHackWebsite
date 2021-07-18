@@ -3,11 +3,9 @@
 
 .about {
   @include section;
+  width: 70%;
 
-  width: 50%;
   height: 200%;
-  margin-left: 9%;
-  padding: 2rem;
   margin-bottom: 5%;
 }
 

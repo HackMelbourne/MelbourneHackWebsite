@@ -7,7 +7,7 @@ import Background from "./components/Background";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Background>
         <Navbar />
         <Switch>

@@ -1,22 +1,24 @@
 @import "../../styles/styles.scss";
 
 @mixin section {
-
   // reduce padding on mobile, min-height bit is not needed
   // since scroll component is not used
   padding: 2rem;
+  
   @include desktop {
-    padding: 6rem;
+    margin-left: 9%;
     min-height: 100vh;
   }
 
   h2 {
+
     color: $primary-dark;
     font-size: $font-size-5;
   }
 
   h3,
   h1 {
+
     color: $primary-dark;
   }
 }
@@ -37,12 +39,28 @@
   margin-bottom: 0rem;
   display: flex;
   justify-content: center;
+
+  
+  .pic_text {
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+  }
 }
 
 .logo {
-  position: absolute;
-  top: 18%;
-  left: 87%;
+  display: none;
+
+  @include desktop {
+    display: unset;
+    position: absolute;
+    top: 18%;
+    left: 87%;
+  }
 }
 
 .arrow {

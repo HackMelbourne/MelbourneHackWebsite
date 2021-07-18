@@ -1,14 +1,13 @@
 import React from "react";
 import style from "./About.module.scss"
 import aboutImg from "../assets/speech-bubble.svg"
-import underlineImg from "../assets/underline_bar.svg"
 
 export const About = () => {
     return(
         <div className = {style.about}>
             <div className = {style.aboutTitle}>
                 <h2>About</h2>
-                <img src = {underlineImg} className = {style.underline}/>
+                <div className={style.underline}></div>
             </div>
             
             <div className = {style.description}>

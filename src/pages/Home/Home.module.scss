@@ -4,21 +4,19 @@
   // reduce padding on mobile, min-height bit is not needed
   // since scroll component is not used
   padding: 2rem;
-  
+
   @include desktop {
     margin-left: 9%;
-    min-height: 100vh;
+    height: 100vh;
   }
 
   h2 {
-
     color: $primary-dark;
     font-size: $font-size-5;
   }
 
   h3,
   h1 {
-
     color: $primary-dark;
   }
 }
@@ -40,7 +38,6 @@
   display: flex;
   justify-content: center;
 
-  
   .pic_text {
     // border: 1px solid red;
     display: flex;

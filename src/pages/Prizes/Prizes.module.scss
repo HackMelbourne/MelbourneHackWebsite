@@ -1,8 +1,26 @@
-@import "../../pages/Home/Home.module.scss";
+@import "../../styles/styles.scss";
 
-.highlights {
-  @include section;
+.prizes {
+  display: flex;
+  flex-direction: column;
   margin-top: 9rem;
+
+  @include desktop {
+    padding: 2rem;
+
+    margin-left: 9%;
+    min-height: 100vh;
+  }
+
+  h2 {
+    color: $primary-dark;
+    font-size: $font-size-5;
+  }
+
+  h3,
+  h1 {
+    color: $primary-dark;
+  }
 }
 
 .heading {
@@ -47,5 +65,5 @@
   @include desktop {
     width: 35rem;
   }
-  background-image: url("../assets/underline_bar.svg");
+  background-image: url("../../components/assets/underline_bar.svg");
 }

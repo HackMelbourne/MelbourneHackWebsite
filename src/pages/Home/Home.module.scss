@@ -7,18 +7,16 @@
 
   @include desktop {
     margin-left: 9%;
-    min-height: 100vh;
+    height: 100vh;
   }
 
   h2 {
-
     color: $primary-dark;
     font-size: $font-size-5;
   }
 
   h3,
   h1 {
-
     color: $primary-dark;
   }
 }

@@ -8,13 +8,34 @@ const Prizes = () => {
         <div className={styles.underline}></div>
       </div>
       <div className={styles.content}>
-        <h3>
-          There's a lot in stall for this year's hackathon. During the duration
-          of Melbourne Hack, there will be a tonne of activities to participate
-          in. From networking events to chill social nights, make the most out
-          of this opportunity to learn new skills and make new connections!
-        </h3>
-        <div className={styles.row}></div>
+        <div className={styles.row}>
+          <div className={styles.prize_item}>
+            <h1 className={styles.desktop}>$150</h1>
+            <div className={styles.prize_3_img}></div>
+          </div>
+          <div className={styles.prize_item}>
+            <h1 className={styles.desktop}>$250</h1>
+            <div className={styles.prize_1_img}></div>
+          </div>
+          <div className={styles.prize_item}>
+            <h1 className={styles.desktop}>$200</h1>
+            <div className={styles.prize_2_img}></div>
+          </div>
+          <div className={styles.mobile}>
+            <div>
+              <h3 className={styles.mobile_description}>First place</h3>
+              <h1>$250</h1>
+            </div>
+            <div>
+              <h3 className={styles.mobile_description}>Second place</h3>
+              <h1>$200</h1>
+            </div>
+            <div>
+              <h3 className={styles.mobile_description}>Third place</h3>
+              <h1>$150</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

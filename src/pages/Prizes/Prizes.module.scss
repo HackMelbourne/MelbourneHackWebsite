@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 9rem;
+  margin-left: 9%;
 
   @include desktop {
     padding: 2rem;
@@ -12,14 +13,10 @@
     min-height: 100vh;
   }
 
-  h2 {
-    color: $primary-dark;
-    font-size: $font-size-5;
-  }
-
-  h3,
   h1 {
-    color: $primary-dark;
+    font-size: $font-size-6;
+    color: $stream-blue;
+    margin-bottom: 3rem;
   }
 }
 
@@ -37,23 +34,28 @@
 }
 
 .content {
-  width: 70%;
+  width: 90%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 
   h3 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: $font-size-2;
+    font-family: $font-title;
+  }
+
+  @include desktop {
+    margin-top: 5rem;
   }
 }
 
 .row {
-  width: 100%;
-  align-self: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
   @include desktop {
+    align-self: flex-end;
     flex-direction: row;
   }
 }
@@ -66,4 +68,66 @@
     width: 35rem;
   }
   background-image: url("../../components/assets/underline_bar.svg");
+}
+
+.prize_3_img {
+  display: none;
+
+  @include desktop {
+    // border: 1px solid red;
+    display: flex;
+    width: 320px;
+    height: 300px;
+    background-image: url("../../components/assets/prizes_imgs/prizes-third.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.prize_1_img {
+  display: none;
+
+  @include desktop {
+    // border: 1px solid red;
+    display: flex;
+    width: 450px;
+    height: 520px;
+    background-image: url("../../components/assets/prizes_imgs/prizes-first.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.prize_2_img {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    width: 300px;
+    height: 340px;
+    background-image: url("../../components/assets/prizes_imgs/prizes-second.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.mobile_description {
+  @include desktop {
+    display: none;
+  }
+}
+
+.prize_item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.mobile {
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
 }

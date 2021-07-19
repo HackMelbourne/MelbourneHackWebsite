@@ -1,8 +1,13 @@
 @import "../../styles/styles.scss";
 
 .brand {
-  font-size: $font-size-3;
-  margin-left: 2rem;
+  display: none;
+
+  @include desktop {
+    display: unset;
+    font-size: $font-size-3;
+    margin-left: 2rem;
+  }
 }
 
 .footer {
@@ -10,16 +15,26 @@
   width: 100%;
   background-color: $primary-white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .links {
   padding: 2rem;
   width: 50%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+
+  @include desktop {
+    justify-content: flex-end;
+  }
   a {
     font-size: $font-size-5;
     margin-right: 2rem;

@@ -6,24 +6,25 @@ import Highlights from "../../components/Highlights/index";
 import Schedule from "../../components/Schedule/index";
 import { About } from "../../components/About/about";
 import Resources from "../../components/Resources/index";
+import {Col, Row} from "react-bootstrap";
 
 const Home = () => {
   return (
     <div>
       <div className={styles.container}>
         <img className={styles.logo} src={hackmelb_logo}  alt={"Logo"}/>
-        <div className={styles.pic_text}>
-          <div>
+        <Row>
+          <Col lg={6}>
             <img className={styles.arrow} src={arrow_logo}  alt={"Arrow Logo"}/>
-          </div>
-          <div className={styles.title}>
+          </Col>
+          <Col lg={6} className={styles.title}>
             <FadeIn delay={290}>
               <h2>August 20-22nd, 2021</h2>
               <h1>Melbourne Hack</h1>
               <h3>Melbourne's Premier Hackathon</h3>
             </FadeIn>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
       <About />
       <Highlights />

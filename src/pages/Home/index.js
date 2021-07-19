@@ -6,15 +6,16 @@ import Highlights from "../../components/Highlights/index";
 import Schedule from "../../components/Schedule/index";
 import { About } from "../../components/About/about";
 import {Streams} from "../../components/Streams/streams";
+import Resources from "../../components/Resources/index";
 
 const Home = () => {
   return (
     <div>
       <div className={styles.container}>
-        <img className={styles.logo} src={hackmelb_logo} />
+        <img className={styles.logo} src={hackmelb_logo}  alt={"Logo"}/>
         <div className={styles.pic_text}>
           <div>
-            <img className={styles.arrow} src={arrow_logo} />
+            <img className={styles.arrow} src={arrow_logo}  alt={"Arrow Logo"}/>
           </div>
           <div className={styles.title}>
             <FadeIn delay={290}>
@@ -29,6 +30,7 @@ const Home = () => {
       <Highlights />
       <Streams/>
       <Schedule />
+      <Resources />
     </div>
   );
 };

@@ -1,19 +1,19 @@
 @import "../../styles/styles.scss";
+@import "../../pages/Home/Home.module.scss";
 
 .about {
-  width: 50%;
-  height: 200%;
-  margin-left: 9%;
-  padding: 2rem;
-  margin-bottom: 5%;
-  font-family: $font-monospace;
+  @include section;
+  width: 70%;
 
+  height: 200%;
+  margin-bottom: 5%;
 }
 
 .aboutTitle {
-  margin-bottom: 8%;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
+  font-family: $font-title;
 }
 
 .aboutTitle .underline {
@@ -39,5 +39,5 @@
 }
 
 .description p {
-  font-size: 1.15em;
+  font-size: $font-size-2;
 }

@@ -1,20 +1,33 @@
 import React from "react";
-import style from "./About.module.scss"
-import aboutImg from "../assets/speech-bubble.svg"
+import style from "./About.module.scss";
 
 export const About = () => {
-    return(
-        <div className = {style.about}>
-            <div className = {style.aboutTitle}>
-                <h2>About</h2>
-                <div className={style.underline}></div>
-            </div>
-            
-            <div className = {style.description}>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  return (
+    <section className={style.about}>
+      <div className={style.aboutTitle}>
+        <h2>About</h2>
+        <div className={style.underline}/>
+      </div>
 
-                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</p>
-            </div>
-        </div>
-    )
-}
+      <div className={style.description}>
+        <p>Bring your creative ideas to life~</p>
+        <p>
+          Melbourne Hack is the flagship hackathon run by HackMelbourne, an
+          intercollegiate organisation aimed at making technology more accesible
+          to students.
+        </p>
+        <p>
+          This hackathon is targeted towards students across any industry who
+          are eager to get innovative.
+        </p>
+        <p>
+          This year, Melbourne Hack will run from the 20th-22nd of August, both
+          online and in-person, making it accessible to students anywhere in the
+          world! Getting hacking individually or in a team to create a product
+          over a weekend!
+        </p>
+        <p>Find out more for what's install in the highlights below. </p>
+      </div>
+    </section>
+  );
+};

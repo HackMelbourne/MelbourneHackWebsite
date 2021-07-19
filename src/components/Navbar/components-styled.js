@@ -1,7 +1,7 @@
 import React from "react";
-import { styled, withTheme } from "@material-ui/core/styles";
+import { styled } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
-import { DropdownButton, Dropdown } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 

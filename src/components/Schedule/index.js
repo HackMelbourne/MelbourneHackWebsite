@@ -1,12 +1,11 @@
 import styles from "./Schedule.module.scss";
-import Textbox from "../Textbox";
 
 const Schedule = () => {
   return (
     <section id="schedule" className={styles.schedule}>
       <div className={styles.heading}>
         <h2>Schedule</h2>
-        <div className={styles.underline}></div>
+        <div className={styles.underline}/>
       </div>
       <div className={styles.content}>
         <table className={styles.table}>
@@ -16,7 +15,7 @@ const Schedule = () => {
             <td>Opening Ceremony</td>
           </tr>
           <tr className={styles.show_border}>
-            <td></td>
+            <td/>
             <td>10pm</td>
             <td>Mentor Introduction & First Mentor Check-In</td>
           </tr>
@@ -26,12 +25,12 @@ const Schedule = () => {
             <td>GitHub Workshop</td>
           </tr>
           <tr>
-            <td></td>
+            <td/>
             <td>12pm</td>
             <td>Second Mentor Check-In</td>
           </tr>
           <tr className={styles.show_border}>
-            <td></td>
+            <td/>
             <td>12pm</td>
             <td>Second Mentor Check-In</td>
           </tr>
@@ -41,17 +40,17 @@ const Schedule = () => {
             <td>HTML/CSS Workshop</td>
           </tr>
           <tr>
-            <td></td>
+            <td/>
             <td>12pm</td>
             <td>Third Mentor Check-In</td>
           </tr>
           <tr>
-            <td></td>
+            <td/>
             <td>8pm</td>
             <td>Closing Ceremony</td>
           </tr>
         </table>
-        <div className={styles.line_feature}></div>
+        <div className={styles.line_feature}/>
       </div>
     </section>
   );

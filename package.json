@@ -1,6 +1,7 @@
 {
   "name": "melbourne-hack-website-2021",
   "version": "0.1.0",
+  "homepage": "https://hackmelbourne.github.io/MelbourneHackWebsite",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.1",

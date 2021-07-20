@@ -20,21 +20,15 @@
   }
 }
 
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 5rem;
-
-  h2 {
-    font-weight: bolder;
-    font-family: $font-title;
-    font-size: $font-size-5;
-  }
-}
-
 .content {
   width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.podium {
   display: flex;
   justify-content: space-evenly;
 
@@ -46,6 +40,19 @@
 
   @include desktop {
     margin-top: 5rem;
+  }
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+  h2 {
+    font-weight: bolder;
+    font-family: $font-title;
+    font-size: $font-size-5;
   }
 }
 
@@ -77,8 +84,8 @@
     // border: 1px solid red;
     display: flex;
     width: 320px;
-    height: 300px;
-    background-image: url("../../components/assets/prizes_imgs/prizes-third.svg");
+    height: 345px;
+    background-image: url("../../components/assets/prizes_imgs/3rd_place.svg");
     background-repeat: no-repeat;
   }
 }
@@ -101,9 +108,9 @@
 
   @include desktop {
     display: flex;
-    width: 300px;
-    height: 340px;
-    background-image: url("../../components/assets/prizes_imgs/prizes-second.svg");
+    width: 355px;
+    height: 425px;
+    background-image: url("../../components/assets/prizes_imgs/2nd_place.svg");
     background-repeat: no-repeat;
   }
 }
@@ -120,6 +127,7 @@
 }
 
 .mobile {
+  margin-top: 3rem;
   @include desktop {
     display: none;
   }

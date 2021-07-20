@@ -5,6 +5,7 @@ import FadeIn from "react-fade-in";
 import Highlights from "../../components/Highlights/index";
 import Schedule from "../../components/Schedule/index";
 import { About } from "../../components/About/about";
+import {Streams} from "../../components/Streams/streams";
 import Resources from "../../components/Resources/index";
 import { Col, Row } from "react-bootstrap";
 
@@ -30,6 +31,7 @@ const Home = () => {
       </div>
       <About />
       <Highlights />
+      <Streams/>
       <Schedule />
       <Resources />
     </div>

@@ -1,0 +1,52 @@
+@import "../../styles/styles.scss";
+
+.streams {
+  width: 80%;
+  height: 200%;
+  margin-left: 9%;
+  padding: 2rem;
+  margin-bottom: 5%;
+  font-family: $font-monospace;
+
+}
+
+.streamsTitle {
+  margin-bottom: 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+.streamsTitle .underline {
+  width: 20rem;
+  height: 2rem;
+
+  @include desktop {
+    width: 20rem;
+  }
+
+  background-image: url("../assets/underline_bar.svg");
+}
+
+.streamsTitle h2 {
+  font-weight: bolder;
+  float: left;
+}
+
+.streamsTitle .image {
+  position: absolute;
+  left: 19%;
+  top: 118%;
+}
+
+.description {
+  font-size: 1.15em;
+  text-align: center;
+}
+
+.rowFlex {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
+}

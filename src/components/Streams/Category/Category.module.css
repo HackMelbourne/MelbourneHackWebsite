@@ -6,20 +6,20 @@
   border-radius: 25px;
   background-color: #F4FFFD;
   vertical-align: middle;
-  -webkit-box-shadow: 11px -11px #B8EDE5;
-          box-shadow: 11px -11px #B8EDE5;
+  -webkit-box-shadow: 10px -10px #B8EDE5;
+          box-shadow: 10px -10px #B8EDE5;
           display: flex;
           flex-direction: row;
 }
 
 .categoryTitle {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 0.5rem;
 }
 
 .categoryImg {
   padding: 1.5rem;
-  width: 190%;
+  width: 100%;
 }
 /*# sourceMappingURL=Textbox.module.css.map */

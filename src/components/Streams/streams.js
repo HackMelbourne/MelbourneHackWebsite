@@ -28,10 +28,6 @@ export const Streams = () => {
                 <Category title="Sustainability" desc="Create a product which brings out the best in tech, save the world..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut nisl nibh. Vivamus a massa ac quam sodales auctor.." symbol={sustainabilitySymbol} color="#09BC8A"/>
                 <Category title="Finance" desc="Create a product which brings out the best in tech, save the world..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut nisl nibh. Vivamus a massa ac quam sodales auctor.." symbol={financeSymbol} color="#1B6AE3"/>
                 </div>
-                <div className = {style.rowFlex}>
-                <Category title="Memes" desc="Create a product which brings out the best in tech, save the world..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut nisl nibh. Vivamus a massa ac quam sodales auctor.." symbol={financeSymbol} color="#1B6AE3"/>
-                <Category title="Memes" desc="Create a product which brings out the best in tech, save the world..Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut nisl nibh. Vivamus a massa ac quam sodales auctor.." symbol={financeSymbol} hidden={true}/>
-                </div>
             </div>
         </div>
     )

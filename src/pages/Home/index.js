@@ -1,6 +1,7 @@
 import styles from "./Home.module.scss";
 import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
 import arrow_logo from "../../components/assets/light-arrow.svg";
+import longBar from "../../components/assets/long-bar.svg";
 import FadeIn from "react-fade-in";
 import Highlights from "../../components/Highlights/index";
 import Schedule from "../../components/Schedule/index";
@@ -28,6 +29,7 @@ const Home = () => {
             </FadeIn>
           </Col>
         </Row>
+          <img src={longBar} style={{position: "absolute", top: '85vh', width: '99vw'}}/>
       </div>
       <About />
       <Highlights />

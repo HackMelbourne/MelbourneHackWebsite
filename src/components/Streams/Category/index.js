@@ -9,7 +9,7 @@ export default function Category(props) {
         <div className={styles.categoryDesc}><p>{props.desc}</p></div>
       </div>
       <div className={styles.categoryImg}>
-      <img src={props.symbol} />
+      <img src={props.symbol}  alt={`${props.title} Logo`}/>
       </div>
     </div>
   );

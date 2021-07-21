@@ -13,6 +13,12 @@
         float:right;
         width: 1.5%;
         height: 1.5%;
+        transition: 0.2s;
+    }
+
+    img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
     }
 }
 

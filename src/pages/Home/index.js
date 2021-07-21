@@ -7,6 +7,7 @@ import Schedule from "../../components/Schedule/index";
 import { About } from "../../components/About/about";
 import {Streams} from "../../components/Streams/streams";
 import Resources from "../../components/Resources/index";
+import { FAQ } from "../../components/FAQ/index"
 import { Col, Row } from "react-bootstrap";
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
       <Highlights />
       <Streams/>
       <Schedule />
+      <FAQ/>
       <Resources />
     </div>
   );

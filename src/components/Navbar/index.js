@@ -1,6 +1,7 @@
 import styles from "./Navbar.module.scss";
 import { NavBarButton, SignUpButton, HackDropDown } from "./components-styled";
 import { Link } from "react-router-dom";
+import navbar_logo from "../assets/logo.png";
 
 
 
@@ -9,6 +10,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <Link to="/">
         <div className = {styles.logo}>
+          <img alt="HackMelb Logo Bulb!" src = {navbar_logo}/>
           <h2>Melbourne Hack</h2>
           <h3>by HackMelbourne</h3>
         </div>

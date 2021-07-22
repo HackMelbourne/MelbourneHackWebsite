@@ -107,6 +107,7 @@
     padding: 1rem;
   }
 }
+
 .blinking {
   animation: blink 0.5s infinite;
 }
@@ -114,5 +115,19 @@
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+.longBar {
+  position: absolute;
+  overflow: hidden;
+  top: 85vh;
+  left: 0;
+  width: 100%;
+  @include tablet{
+    display: none;
+  }
+  @include desktop{
+    display: block;
   }
 }

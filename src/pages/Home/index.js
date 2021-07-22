@@ -29,7 +29,7 @@ const Home = () => {
             </FadeIn>
           </Col>
         </Row>
-          <img src={longBar} style={{position: "absolute", top: '85vh', width: '99vw'}}/>
+          <img src={longBar} className={styles.longBar+" d-none d-lg-block"} />
       </div>
       <About />
       <Highlights />

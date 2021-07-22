@@ -1,0 +1,143 @@
+@import "../../pages/Home/Home.module.scss";
+@import "../../styles/styles.scss";
+
+.sponsorsContainer {
+    
+    min-height: 80vh;
+    padding: 3vh 2vw 1vh 2vw;
+    background-image: $very-light-blue;
+    text-align: center;
+    /* align-content: center; */
+}
+
+.sponsorsContainer h1 {
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+}
+
+.sponsHeading {
+    font-size: 2.3rem;
+    margin-left: 3.5%;
+    font-weight: bold;
+    text-align:left;
+    font-family: $font-title;
+}
+
+.sponsorTable {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    /* border: 5px solid black; */
+}
+
+.sponsLogo {
+    max-width: 150px;
+    border-radius: 50%;
+    width: 20vw;
+    margin-top: 3vw;
+    margin-bottom: 1.5vw;
+    transition: transform .5s;
+}
+
+.sponsName {
+    font-size: 1.5rem;
+}
+
+
+.placeHolder {
+    font-size: 1.5rem;
+    display:inline-block;
+    transition: transform .5s;
+}
+
+.diamondSponsor{
+    padding-top: 2vh;
+    width: 100%;
+    margin-bottom: 8vh;
+}
+
+h1{
+    font-family: $font-main;
+    font-weight: bolder;
+}
+
+.diamondSponsor h1{
+    color: var(--diamond-back);
+}
+.diamondSponsor .sponsorTable .sponsLogo:hover {
+    transform: scale(1.1);
+
+    border-radius: 50%;
+    box-shadow:         0px 0px 30px 0px var(--diamond);
+}
+.diamondSponsor .sponsorTable .placeHolder:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+    box-shadow:         0px 0px 30px 0px var(--diamond);
+}
+
+.platinumSponsor{
+    padding-top: 5vh;
+    width: 100%;
+    margin-bottom: 8vh;
+}
+.platinumSponsor h1{
+    color: var(--platinum-back);
+}
+.platinumSponsor .sponsorTable .sponsLogo:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 0px var(--platinum);
+}
+.platinumSponsor .sponsorTable .placeHolder:hover {
+    transform: scale(1.1);
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px 0px var(--platinum);
+}
+
+
+.goldSponsor{
+    padding-top: 5vh;
+    width: 100%;
+    margin-bottom: 8vh;
+}
+.goldSponsor h1{
+    color: var(--gold-back);
+}
+.goldSponsor .sponsorTable .sponsLogo:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 0px var(--gold-back);
+}
+
+
+.silverSponsor{
+    padding-top: 5vh;
+    width: 100%;
+    margin-bottom: 8vh;
+}
+.silverSponsor h1{
+    color: var(--silver-back);
+}
+.silverSponsor .sponsorTable .sponsLogo:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 0px var(--silver);
+}
+
+
+
+.separator {
+    margin: 12vh 15% 0 15%;
+    border-radius: 5px;
+    height: 0.2vh;
+    background-color: blue;
+    box-shadow: 0px 0px 2px 0px var(--silver);
+}

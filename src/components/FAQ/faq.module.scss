@@ -1,0 +1,9 @@
+@import "../../pages/Home/Home.module.scss";
+
+.faq {
+    @include section;
+
+    h2{
+        margin-bottom: 3%;
+    }
+}

@@ -5,6 +5,7 @@ import Prizes from "./pages/Prizes";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Background from "./components/Background";
+import { Sponsor } from "./pages/Sponsors";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route exact path="/Prizes">
             <Prizes />
+          </Route>
+          <Route exact path="/Sponsors">
+            <Sponsor />
           </Route>
           <Route>
             {/* matches any other route: page for 404 error */}

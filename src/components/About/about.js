@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./About.module.scss";
-import {Col, Container, Row} from "react-bootstrap";
+import {Col, Row} from "react-bootstrap";
 
 export const About = () => {
   return (

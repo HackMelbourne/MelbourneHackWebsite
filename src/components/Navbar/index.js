@@ -2,7 +2,6 @@ import styles from "./Navbar.module.scss";
 import { NavBarButton, SignUpButton, HackDropDown } from "./components-styled";
 import { Link } from "react-router-dom";
 import navbar_logo from "../assets/logo.png";
-import {Link as ScrollLink} from "react-scroll";
 
 const Navbar = () => {
   return (

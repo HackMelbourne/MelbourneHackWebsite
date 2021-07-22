@@ -64,7 +64,7 @@ const SponsorD = (props) => {
     return (
       <td>
         <a href={props.link}>
-          <img className={styles.sponsLogo} src={props.logo}></img>
+          <img alt = "Sponsor Logo" className={styles.sponsLogo} src={props.logo}></img>
         </a>
       </td>
     )

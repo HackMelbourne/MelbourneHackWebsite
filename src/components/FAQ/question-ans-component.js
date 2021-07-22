@@ -22,9 +22,9 @@ export default class Question extends React.Component{
                 <SlideToggle duration = {500} collapsed
                 render = {({toggle, setCollapsibleElement, progress}) => (
                     <div>
-                        <div onClick = {toggle} className = {styles.question}>
+                        <div className = {styles.question}>
                             <span style = {{fontSize: "150%"}}>{this.props.question}</span>
-                            <img src = {dropdown_arrow} alt = "Dropdown arrow"/>
+                            <img onClick = {toggle} src = {dropdown_arrow} alt = "Dropdown arrow"/>
                         </div>
                         <div ref={setCollapsibleElement}>
                             <div className = {styles.answer}>

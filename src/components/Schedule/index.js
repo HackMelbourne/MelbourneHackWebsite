@@ -2,7 +2,7 @@ import styles from "./Schedule.module.scss";
 
 const Schedule = () => {
   return (
-    <section id="schedule" className={styles.schedule}>
+    <section className={styles.schedule}>
       <div className={styles.heading}>
         <h2>Schedule</h2>
         <div className={styles.underline}/>

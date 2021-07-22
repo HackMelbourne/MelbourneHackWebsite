@@ -30,12 +30,12 @@ const Home = () => {
           </Col>
         </Row>
       </div>
-      <About />
-      <Highlights />
+      <About/>
+      <Highlights/>
       <Streams/>
-      <Schedule />
+      <Schedule/>
       <FAQ/>
-      <Resources />
+      <Resources/>
     </div>
   );
 };

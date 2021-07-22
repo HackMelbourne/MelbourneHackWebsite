@@ -2,8 +2,7 @@ import styles from "./Navbar.module.scss";
 import { NavBarButton, SignUpButton, HackDropDown } from "./components-styled";
 import { Link } from "react-router-dom";
 import navbar_logo from "../assets/logo.png";
-
-
+import {Link as ScrollLink} from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -16,10 +15,10 @@ const Navbar = () => {
         </div>
       </Link>
       <div className={styles.links}>
-          <NavBarButton>Updates</NavBarButton>
+          <NavBarButton href = "/Updates">Updates</NavBarButton>
           <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton>
-          <NavBarButton>Prizes</NavBarButton>
-          <NavBarButton>Sponsors</NavBarButton>
+          <NavBarButton href = "/Prizes">Prizes</NavBarButton>
+          <NavBarButton href = "/Sponsors">Sponsors</NavBarButton>
           <SignUpButton variant = "outlined">SIGN UP</SignUpButton>
       </div>
     </nav>

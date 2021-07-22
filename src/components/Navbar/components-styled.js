@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 import { Dropdown } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -84,7 +85,7 @@ export const HackDropDown = () => {
       <Dropdown.Toggle style={DropDownStyle}>Hack</Dropdown.Toggle>
       <Dropdown.Menu style={DropMenuStyle}>
         {DropMenuItems.map((item) => (
-          <Dropdown.Item style={DropItemStyle}>{item.name}</Dropdown.Item>
+          <Dropdown.Item style={DropItemStyle}><Link to = {"./#" + item.name} >{item.name}</Link></Dropdown.Item>
         ))}
       </Dropdown.Menu>
     </Dropdown>

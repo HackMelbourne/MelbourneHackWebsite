@@ -30,7 +30,7 @@ const Home = () => {
             </FadeIn>
           </Col>
         </Row>
-          <img src={longBar} className={styles.longBar+" d-none d-lg-block"} />
+          <img alt = "color bar" src={longBar} className={styles.longBar+" d-none d-lg-block"} />
       </div>
       <About/>
       <Highlights/>

@@ -9,7 +9,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: $primary-darker;
+  background-image: $background-gradient;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   // top left
   position: absolute;
@@ -24,17 +25,17 @@
 
   a {
     font-size: $font-size-1;
-    border: 2px solid yellow;
-    border-radius: 50px;
+    border: 2px solid $hackmelb-blue;
+    // border-radius: 50px;
     margin: 2rem 0;
     padding: 0.3rem 1rem;
-    color: $primary-white;
     text-align: center;
+  	transition: ease-in 0.2s;
     
     &:hover,
     &:focus {
-      background-color: yellow;
-      color: $primary-dark;
+      background-color: $hackmelb-blue;
+      color: $primary-white;
     } 
   }
 }

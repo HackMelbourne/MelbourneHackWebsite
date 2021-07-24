@@ -1,0 +1,45 @@
+@import "../../../styles/styles.scss";
+
+.menu {
+  height: 100vh;
+  padding: 3rem;
+
+  // center links vertically, and text centered as well
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: $primary-darker;
+
+  // top left
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+
+  transition: transform 0.1s ease-in-out;
+
+  // menu is slid in to the right if not open
+  transform: translateX(100%);
+
+  a {
+    font-size: $font-size-1;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    margin: 2rem 0;
+    padding: 0.3rem 1rem;
+    color: $primary-white;
+    text-align: center;
+    
+    &:hover,
+    &:focus {
+      background-color: yellow;
+      color: $primary-dark;
+    } 
+  }
+}
+
+// if open, slide out from the right: undo the original translateX
+.open {
+  transform: translateX(0);
+}

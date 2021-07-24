@@ -19,27 +19,35 @@
   }
 }
 
-.logo{
-  width: 150%;
-  margin-left: 10%;
-
-  img{
-    float:left;
-    margin-right: 5%;
+.logo {
+  display: flex;
+  img {
+    margin: 0 0.8rem 0 0;
   }
-}
-
-.logo h2{
-  font-size: $font-size-3;
-  font-weight: 1000;
-  font-family: $font-monospace;
-  color: $hackmelb-blue;
-}
-
-.logo h3{
-  font-size: $font-size-1;
-  font-family: $font-main;
-  font-weight: bolder;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      @include desktop {
+        font-size: $font-size-3;
+      }
+      font-size: $font-size-2;
+      font-weight: 1000;
+      font-family: $font-monospace;
+      color: $hackmelb-blue;
+      margin: 0;
+    }
+    h3 {
+      @include desktop {
+        font-size: $font-size-1;
+      }
+      font-size: $font-size-0;
+      font-family: $font-main;
+      font-weight: bolder;
+      margin: 0
+    }
+  }
 }
 
 .links {
@@ -47,12 +55,23 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
 }
 
-.link {
-  font-size: $font-size-1;
-  font-family: $font-main;
-  font-weight: bold;
+.desktopNav {
+  display: none;
+  @include desktop {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
+.mobileNav {
+  display: flex;
+
+  // remove mobile nav on dekstop
+  @include desktop {
+    display: none;
+  }
+}

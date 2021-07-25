@@ -9,7 +9,7 @@ export const About = () => {
     <div className={style.background}>
     <section className={style.about} >
       <div className={style.aboutTitle}>
-        <h2>About</h2>
+        About
         {/* <div className={style.underline}/> */}
       </div>
       <Row>

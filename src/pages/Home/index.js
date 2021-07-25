@@ -6,6 +6,7 @@ import { About } from "../../components/About/about";
 import Resources from "../../components/Resources/index";
 import { Col, Row } from "react-bootstrap";
 
+
 const Home = () => {
   return (
     <div>

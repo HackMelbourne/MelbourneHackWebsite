@@ -28,34 +28,43 @@ const Navbar = () => {
 
   // when the user clicks/taps outside the open Menu, it closes.
   const ref = useRef(null);
-  useOnClickOutside(ref, () => setOpen(false))
+  useOnClickOutside(ref, () => setOpen(false));
 
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={styles.logo}>
-          <img alt="HackMelb Logo Bulb!" src = {navbar_logo}/>
-          <div className={styles.logoText}>
-            <h2>Melbourne Hack</h2>
-            <h3>by HackMelbourne</h3>
-          </div>
+        <img alt="HackMelb Logo Bulb!" src={navbar_logo} />
+        <div className={styles.logoText}>
+          <h2>Melbourne Hack</h2>
+          <h3>by HackMelbourne</h3>
+        </div>
       </Link>
       <div className={styles.links}>
-          <div className={styles.desktopNav}>
-            <NavBarButton href = "/About">About</NavBarButton>
-            <NavBarButton href = "/About">Highlights</NavBarButton>
-            <NavBarButton href = "/About">Streams</NavBarButton>
-            <NavBarButton href = "/About">Schedule</NavBarButton>
-            <NavBarButton href = "/About">FAQs</NavBarButton>
-            <NavBarButton href = "/About">Resources</NavBarButton>
-            {/* <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
-            <NavBarButton href = "/Prizes">Prizes</NavBarButton>
-            <NavBarButton href = "/Sponsors">Sponsors</NavBarButton>
-            <SignUpButton variant = "outlined">REGISTER</SignUpButton>
-          </div>
-          <div className={styles.mobileNav} ref={ref}>
-            <Burger open={open} setOpen={setOpen} />
-            <Menu open={open} />
-          </div>
+        <div className={styles.desktopNav}>
+          <NavBarButton href="/About">About</NavBarButton>
+          <NavBarButton href="/About">Highlights</NavBarButton>
+          <NavBarButton href="/About">Streams</NavBarButton>
+          <NavBarButton href="/About">Schedule</NavBarButton>
+          <NavBarButton href="/About">FAQs</NavBarButton>
+          <NavBarButton href="/About">Resources</NavBarButton>
+          {/* <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
+          <NavBarButton href="/Prizes">Prizes</NavBarButton>
+          <NavBarButton href="/Sponsors">Sponsors</NavBarButton>
+          <SignUpButton variant="outlined">
+            {" "}
+            <a
+              href="https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              REGISTER
+            </a>
+          </SignUpButton>
+        </div>
+        <div className={styles.mobileNav} ref={ref}>
+          <Burger open={open} setOpen={setOpen} />
+          <Menu open={open} />
+        </div>
       </div>
     </nav>
   );

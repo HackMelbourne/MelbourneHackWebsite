@@ -15,9 +15,9 @@ const Resources = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
+            <p>Participant Handbook</p>
           </a>
-          <p>Participant Handbook</p>
+          
           </div>
           <div></div>
         </div>
@@ -28,9 +28,9 @@ const Resources = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
+            <p>Melbourne Hack 2021 Discord</p>
           </a>
-          <p>Melbourne Hack 2021 Discord</p>
+          
           </div>
         </div>
         <div className={styles.resources_item}>
@@ -40,9 +40,9 @@ const Resources = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
+            <p>Facebook event</p>
           </a>
-          <p>Facebook event</p>
+          
             </div>
           <div></div>
         </div>

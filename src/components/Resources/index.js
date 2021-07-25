@@ -9,14 +9,35 @@ const Resources = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.resources_item}>
-        <a href="https://coherent-tartan-183.notion.site/Participants-Handbook-dc64e20afd2d415bab3f31d2d4c3e3cd" className={styles.lamp}> </a>
+          <a
+            href="https://coherent-tartan-183.notion.site/Participants-Handbook-dc64e20afd2d415bab3f31d2d4c3e3cd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.lamp}
+          >
+            {" "}
+          </a>
           <div></div>
         </div>
         <div className={styles.resources_item}>
-        <a href="https://discord.com/invite/gHaXDBsX7J" className={styles.discord}> </a>
+          <a
+            href="https://discord.com/invite/gHaXDBsX7J"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.discord}
+          >
+            {" "}
+          </a>
         </div>
         <div className={styles.resources_item}>
-        <a href="https://www.facebook.com/hackmelbourne" className={styles.facebook}> </a>
+          <a
+            href="https://www.facebook.com/hackmelbourne"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.facebook}
+          >
+            {" "}
+          </a>
           <div></div>
         </div>
       </div>

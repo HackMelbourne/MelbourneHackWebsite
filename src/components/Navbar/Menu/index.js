@@ -1,5 +1,4 @@
 import styles from "./Menu.module.scss";
-import { Link } from "react-router-dom";
 
 // Menu has no dropdown functionality - can't hover on mobile
 const Menu = ({ open }) => {

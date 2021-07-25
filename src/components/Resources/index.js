@@ -31,7 +31,7 @@ const Resources = () => {
         </div>
         <div className={styles.resources_item}>
           <a
-            href="https://www.facebook.com/hackmelbourne"
+            href="https://fb.me/e/2rwPGMIlG"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.facebook}

@@ -7,7 +7,7 @@ import about_graphic from "../../components/assets/home/about_graphic.svg";
 export const About = () => {
   return (
     <div className={style.background}>
-    <section className={style.about} >
+    <section id="about" className={style.about} >
       <div className={style.aboutTitle}>
         About
         {/* <div className={style.underline}/> */}
@@ -18,7 +18,7 @@ export const About = () => {
             <p>Bring your creative ideas to life~</p>
             <p>
               Melbourne Hack is the flagship hackathon run by HackMelbourne, an
-              intercollegiate organisation aimed at making technology more accesible
+              intercollegiate organisation aimed at making technology more accessible
               to students.
             </p>
             <p>

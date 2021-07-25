@@ -79,3 +79,38 @@
     display: none;
   }
 }
+
+
+.navbarButton {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+  padding: 0.7% 2%;
+  margin: 0 0.5em;
+  transition: 0.1s ease-in;
+  letter-spacing: 0.08em;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $hackmelb-blue;
+  }
+}
+
+.signUpButton {
+  font-size: 0.9em;
+  font-weight: 1000;
+  color: black;
+  background-color: transparent;
+  padding: 0.8% 4%;
+  margin: 0 0.8em;
+  transition: 0.2s ease-in;
+  border-width: 0.2em;
+  border-color: $hackmelb-blue;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $hackmelb-blue;
+    color: white;
+  }
+}

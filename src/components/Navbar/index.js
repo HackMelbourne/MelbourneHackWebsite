@@ -41,16 +41,16 @@ const Navbar = () => {
       </Link>
       <div className={styles.links}>
         <div className={styles.desktopNav}>
-          <NavBarButton href="/">About</NavBarButton>
-          <NavBarButton href="/">Timeline</NavBarButton>
-          <NavBarButton href="/">Resources</NavBarButton>
-          <NavBarButton href="/">Prizes</NavBarButton>
-          <NavBarButton href="/">Highlights</NavBarButton>
-          <NavBarButton href="/">Schedule</NavBarButton>
-          <NavBarButton href="/">Streams</NavBarButton>
-          <NavBarButton href="/">FAQs</NavBarButton>
+          {/* <NavBarButton href="/#about">About</NavBarButton> */}
+          <NavBarButton href="/#timeline">Timeline</NavBarButton>
+          <NavBarButton href="/#resources">Resources</NavBarButton>
+          <NavBarButton href="/#prizes">Prizes</NavBarButton>
+          <NavBarButton href="/#highlights">Highlights</NavBarButton>
+          <NavBarButton href="/#schedule">Schedule</NavBarButton>
+          <NavBarButton href="/#streams">Streams</NavBarButton>
+          <NavBarButton href="/#faqs">FAQs</NavBarButton>
           {/* <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
-          <NavBarButton href="/">Sponsors</NavBarButton>
+          {/* <NavBarButton href="/#sponsors">Sponsors</NavBarButton> */}
           <SignUpButton variant="outlined">
             {" "}
             <a

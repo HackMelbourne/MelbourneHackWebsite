@@ -4,7 +4,7 @@ import Question from "./question-ans-component";
 
 export const FAQ = (props) => {
     return (
-        <section className = {styles.faq}>
+        <section id="faqs" className = {styles.faq}>
             <h2 style = {{fontSize: "250%"}}>FAQs</h2>
             <Question question = "When is the Hackathon happening?" 
             answer = "Yeetus Skeetus"/>

@@ -16,7 +16,7 @@
     font-family: $font-title;
     font-size: $font-size-6;
     padding-left: 7%;
-  }
+  } 
 }
 
 .content {
@@ -54,52 +54,6 @@
   background-image: url("../assets/underline_bar.svg");
 }
 
-.lamp {
-  width: 15rem;
-  height: 10rem;
-  background-repeat: no-repeat;
-  background-image: url("../../components/assets/home/lamp.svg");
-  background-position: 30% 50%;
-  box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
-  border-radius:50%;
-  background-color: rgb(255, 255, 255);
-  height: 250px;
-  width: 250px;
-  padding-right: 10%;
-  padding-bottom: 10%;
-  
-}
-
-.discord {
-  width: 10rem;
-  height: 10rem;
-  background-repeat: no-repeat;
-  background-image: url("../../components/assets/home/discord.svg");
-  background-position: 50% 45%;
-  box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
-  border-radius:50%;
-  background-color: rgb(255, 255, 255);
-  height: 250px;
-  width: 250px;
-  padding-right: 10%;
-  padding-bottom: 10%;
-}
-
-.facebook {
-  width: 10rem;
-  height: 10rem;
-  background-repeat: no-repeat;
-  background-image: url("../../components/assets/home/facebook.svg");
-  background-position: 50% 45%;
-  box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
-  border-radius:50%;
-  background-color: rgb(255, 255, 255);
-  height: 250px;
-  width: 250px;
-  padding-right: 10%;
-  padding-bottom: 10%;
-}
-
 .textbox {
   margin: 2rem;
   padding: 1rem;
@@ -134,4 +88,68 @@
 
 .text {
   margin-bottom: 2rem;
+}
+
+.facebook {
+  padding: 50px; width: 10rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-image: url("../../components/assets/home/facebook.svg");
+  background-position: 50% 45%;
+  box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
+  border-radius:50%;
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 250px;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.facebook:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.discord {
+  padding: 50px; width: 10rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-image: url("../../components/assets/home/discord.svg");
+  background-position: 50% 45%;
+  box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
+  border-radius:50%;
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 250px;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.discord:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.notion {
+  padding: 50px; width: 10rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-image: url("../../components/assets/home/notion-logo.svg");
+  background-position: 50% 45%;
+  box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
+  border-radius:50%;
+  background-size: 125px;
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 250px;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.notion:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

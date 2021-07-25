@@ -1,15 +1,9 @@
 import styles from "./Home.module.scss";
 import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
-import arrow_logo from "../../components/assets/light-arrow.svg";
 import lightbulb from "../../components/assets/home/lightbulb.svg";
-import longBar from "../../components/assets/long-bar.svg";
 import FadeIn from "react-fade-in";
-import Highlights from "../../components/Highlights/index";
-import Schedule from "../../components/Schedule/index";
 import { About } from "../../components/About/about";
-import {Streams} from "../../components/Streams/streams";
 import Resources from "../../components/Resources/index";
-import { FAQ } from "../../components/FAQ/index"
 import { Col, Row } from "react-bootstrap";
 
 const Home = () => {

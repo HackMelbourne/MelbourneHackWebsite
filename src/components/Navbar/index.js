@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.scss";
 import { useState, useRef, useEffect } from "react";
-import { NavBarButton, SignUpButton, HackDropDown } from "./components-styled";
+import { NavBarButton, SignUpButton } from "./components-styled";
 import { Link } from "react-router-dom";
 import Burger from "./Burger";
 import Menu from "./Menu";

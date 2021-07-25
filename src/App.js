@@ -3,8 +3,6 @@ import PageNotFound from "./pages/PageNotFound";
 import Home from "./pages/Home";
 import Prizes from "./pages/Prizes";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Background from "./components/Background";
 import { Sponsor } from "./pages/Sponsors";
 
 function App() {

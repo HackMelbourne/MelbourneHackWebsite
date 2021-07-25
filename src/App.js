@@ -10,7 +10,7 @@ import { Sponsor } from "./pages/Sponsors";
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Background>
+      {/* <Background> */}
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -27,8 +27,8 @@ function App() {
             <PageNotFound />
           </Route>
         </Switch>
-      </Background>
-      <Footer />
+      {/* </Background> */}
+      {/* <Footer /> */}
     </Router>
   );
 }

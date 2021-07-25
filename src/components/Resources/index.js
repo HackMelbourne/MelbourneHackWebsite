@@ -1,5 +1,8 @@
 import styles from "./Resources.module.scss";
 import { FaSlack, FaFacebook, FaExternalLinkAlt } from "react-icons/fa";
+import lamp from "../../components/assets/home/lamp.svg";
+import discord from "../../components/assets/home/discord.svg";
+import facebook from "../../components/assets/home/facebook.svg";
 
 const Textbox = ({ text, icon, button }) => {
   return (
@@ -15,64 +18,19 @@ const Resources = () => {
   return (
     <section id="resources" className={styles.resources}>
       <div className={styles.heading}>
-        <h2>Resources</h2>
-        <div className={styles.underline}></div>
+        <h2>Communication Channels & Resources</h2>
+        {/* <div className={styles.underline}></div> */}
       </div>
       <div className={styles.content}>
         <div className={styles.resources_item}>
-          <div className={styles.folder_img}></div>
-          <Textbox
-            text="Hackathon Guide (Notion)"
-            title="Notion"
-            icon={<FaExternalLinkAlt />}
-            button={
-              <a
-                className={styles.button}
-                href="https://www.facebook.com/events/426944495051069"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                DOWNLOAD
-              </a>
-            }
-          />
+        <a href="https://www.google.com.au/" className={styles.lamp}></a>
           <div></div>
         </div>
         <div className={styles.resources_item}>
-          <div className={styles.speech_bubble_img}></div>
-          <Textbox
-            text="Follow our Facebook event page for updates and highlights of the event!"
-            title="Facebook"
-            icon={<FaFacebook />}
-            button={
-              <a
-                className={styles.button}
-                href="https://www.facebook.com/events/426944495051069"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                FOLLOW
-              </a>
-            }
-          />
+        <a href="https://www.google.com.au/" className={styles.discord}></a>
         </div>
         <div className={styles.resources_item}>
-          <div className={styles.speech_bubble_img}></div>
-          <Textbox
-            text="We will have an active Slack during the hackathon, which will be used for updates!"
-            title="Slack"
-            icon={<FaSlack />}
-            button={
-              <a
-                className={styles.button}
-                href="https://www.facebook.com/events/426944495051069"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                JOIN
-              </a>
-            }
-          />
+        <a href="https://www.google.com.au/" className={styles.facebook}></a>
           <div></div>
         </div>
       </div>

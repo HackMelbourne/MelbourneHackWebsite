@@ -1,8 +1,9 @@
 @import "../../pages/Home/Home.module.scss";
 
 .resources {
-  @include section;
-}
+  padding-left: 20%;
+  padding-bottom: 10%;
+} 
 
 .heading {
   display: flex;
@@ -14,6 +15,7 @@
     font-weight: bolder;
     font-family: $font-title;
     font-size: $font-size-5;
+    padding-left: 12%;
   }
 }
 
@@ -25,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 10%;
   }
 
   width: 70%;
@@ -51,18 +54,49 @@
   background-image: url("../assets/underline_bar.svg");
 }
 
-.folder_img {
-  width: 6.6rem;
-  height: 7rem;
+.lamp {
+  width: 15rem;
+  height: 10rem;
   background-repeat: no-repeat;
-  background-image: url("../assets/folder-2.svg");
+  background-image: url("../../components/assets/home/lamp.svg");
+  background-position: 30% 50%;
+  box-shadow: 0 0 0 2px #0000005b;
+  border-radius:50%;
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 250px;
+  padding-right: 10%;
+  padding-bottom: 10%;
 }
 
-.speech_bubble_img {
+.discord {
   width: 10rem;
-  height: 7rem;
+  height: 10rem;
   background-repeat: no-repeat;
-  background-image: url("../assets/two_speech_bubbles.svg");
+  background-image: url("../../components/assets/home/discord.svg");
+  background-position: 50% 45%;
+  box-shadow: 0 0 0 2px #0000005b;
+  border-radius:50%;
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 250px;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+.facebook {
+  width: 10rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-image: url("../../components/assets/home/facebook.svg");
+  background-position: 50% 45%;
+  box-shadow: 0 0 0 2px #0000005b;
+  border-radius:50%;
+  background-color: rgb(255, 255, 255);
+  height: 250px;
+  width: 250px;
+  padding-right: 10%;
+  padding-bottom: 10%;
 }
 
 .textbox {

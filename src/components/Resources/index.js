@@ -17,6 +17,7 @@ const Resources = () => {
           >
             {" "}
           </a>
+          <p>Participant Handbook</p>
           </div>
           <div></div>
         </div>
@@ -29,6 +30,7 @@ const Resources = () => {
           >
             {" "}
           </a>
+          <p>Melbourne Hack 2021 Discord</p>
           </div>
         </div>
         <div className={styles.resources_item}>
@@ -40,6 +42,7 @@ const Resources = () => {
           >
             {" "}
           </a>
+          <p>Facebook event</p>
             </div>
           <div></div>
         </div>

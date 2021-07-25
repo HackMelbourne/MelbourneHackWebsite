@@ -95,7 +95,7 @@
   height: 10rem;
   background-repeat: no-repeat;
   background-image: url("../../components/assets/home/facebook.svg");
-  background-position: 50% 45%;
+  background-position: 50% 30%;
   box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
   border-radius:50%;
   background-color: rgb(255, 255, 255);
@@ -105,6 +105,13 @@
   padding-bottom: 10%;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
+
+  p{
+    font-size: 110%;
+    padding-left: 7%;
+    padding-top: 70%;
+    font-weight: bold;
+  }
 }
 
 .facebook:hover {
@@ -116,7 +123,7 @@
   height: 10rem;
   background-repeat: no-repeat;
   background-image: url("../../components/assets/home/discord.svg");
-  background-position: 50% 45%;
+  background-position: 50% 30%;
   box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
   border-radius:50%;
   background-color: rgb(255, 255, 255);
@@ -126,6 +133,15 @@
   padding-bottom: 10%;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
+
+  p{
+    font-size: 100%;
+    padding-left: 0%;
+    padding-right: 14%;
+    padding-top: 70%;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
 .discord:hover {
@@ -137,7 +153,7 @@
   height: 10rem;
   background-repeat: no-repeat;
   background-image: url("../../components/assets/home/notion-logo.svg");
-  background-position: 50% 45%;
+  background-position: 50% 30%;
   box-shadow: 2.98851px 2.98851px 25.4023px -8.96553px rgba(0, 0, 0, 0.25);
   border-radius:50%;
   background-size: 125px;
@@ -148,8 +164,20 @@
   padding-bottom: 10%;
   transition: transform .2s; /* Animation */
   margin: 0 auto;
+
+  p{
+    font-size: 100%;
+    padding-left: 0%;
+    padding-right: 12%;
+    padding-top: 70%;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
 .notion:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+
+

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Menu = ({ open }) => {
   return (
     <nav className={open ? `${styles.menu} ${styles.open}` : styles.menu}>
-      <a
+      {/* <a
         href="https://www.facebook.com/"
         target="_blank"
         rel="noopener noreferrer"
@@ -21,7 +21,14 @@ const Menu = ({ open }) => {
         rel="noopener noreferrer"
       >
         SIGN UP
-      </a>
+      </a> */}
+      <a
+              href="https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              REGISTER
+            </a>
     </nav>
   );
 };

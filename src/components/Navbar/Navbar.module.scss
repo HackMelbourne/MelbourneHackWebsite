@@ -6,8 +6,12 @@
   align-items: center;
   left: 0;
   right: 0;
-  background-image: $background-gradient;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: url("../../components/assets/home/background_top.svg");
+  background-position: 20% 0%;
+  background-size: cover;
+
+  // background-image: $background-gradient;
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
 
   // appears in front of other elements

@@ -41,11 +41,16 @@ const Navbar = () => {
       </Link>
       <div className={styles.links}>
           <div className={styles.desktopNav}>
-            <NavBarButton href = "/Updates">Updates</NavBarButton>
-            <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton>
+            <NavBarButton href = "/About">About</NavBarButton>
+            <NavBarButton href = "/About">Highlights</NavBarButton>
+            <NavBarButton href = "/About">Streams</NavBarButton>
+            <NavBarButton href = "/About">Schedule</NavBarButton>
+            <NavBarButton href = "/About">FAQs</NavBarButton>
+            <NavBarButton href = "/About">Resources</NavBarButton>
+            {/* <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
             <NavBarButton href = "/Prizes">Prizes</NavBarButton>
             <NavBarButton href = "/Sponsors">Sponsors</NavBarButton>
-            <SignUpButton variant = "outlined">SIGN UP</SignUpButton>
+            <SignUpButton variant = "outlined">REGISTER</SignUpButton>
           </div>
           <div className={styles.mobileNav} ref={ref}>
             <Burger open={open} setOpen={setOpen} />

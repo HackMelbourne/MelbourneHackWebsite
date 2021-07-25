@@ -1,6 +1,5 @@
 @import "../../styles/styles.scss";
 @import "../../pages/Home/Home.module.scss";
-
 .about {
   @include section;
   margin-bottom: 5%;
@@ -33,6 +32,23 @@
   position: absolute;
   left: 19%;
   top: 118%;
+}
+
+.background {
+  background-image: url("../../components/assets/home/gray_background.svg");
+  background-size: cover;
+}
+
+.aboutImage {
+  display: none;
+
+  @include desktop {
+    display: unset;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    width: 20%;
+  }
 }
 
 .description p {

@@ -1,13 +1,16 @@
 import React from "react";
 import style from "./About.module.scss";
 import {Col, Row} from "react-bootstrap";
+import about_graphic from "../../components/assets/home/about_graphic.svg";
+
 
 export const About = () => {
   return (
-    <section className={style.about}>
+    <div className={style.background}>
+    <section className={style.about} >
       <div className={style.aboutTitle}>
         <h2>About</h2>
-        <div className={style.underline}/>
+        {/* <div className={style.underline}/> */}
       </div>
       <Row>
         <Col lg={6} md={12} sm={12} xs={12}>
@@ -32,6 +35,8 @@ export const About = () => {
           </div>
         </Col>
       </Row>
+      <img className={style.aboutImage} src={about_graphic} alt={"Logo"} />
     </section>
+    </div>
   );
 };

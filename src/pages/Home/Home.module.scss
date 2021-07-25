@@ -51,19 +51,23 @@
 
 .logo {
   display: none;
-
   @include desktop {
     display: unset;
     position: absolute;
     top: 18%;
     left: 87%;
+    background-image: url("../../components/assets/hm_dark_logo 2.svg");
   }
 }
 
 .lightbulb {
+  display: none;
+  @include desktop {
+  display: unset;
   width: 75%;
   max-height: 500px;
   margin-bottom: 50px;
+  }
 }
 
 .title {

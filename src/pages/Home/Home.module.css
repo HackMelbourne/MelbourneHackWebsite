@@ -9,9 +9,10 @@
 
 .container {
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d4feff), color-stop(80%, #f3ffff));
-  background-image: linear-gradient(90deg, #d4feff 0%, #f3ffff 80%);
   margin-top: 9rem;
+  background-image: url("../../components/assets/home/background_top.svg");
+  background-repeat: inherit;
+  background-size: cover;
   margin-bottom: 0rem;
   display: -webkit-box;
   display: -ms-flexbox;

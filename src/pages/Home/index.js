@@ -1,6 +1,7 @@
 import styles from "./Home.module.scss";
 import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
 import arrow_logo from "../../components/assets/light-arrow.svg";
+import lightbulb from "../../components/assets/home/lightbulb.svg";
 import longBar from "../../components/assets/long-bar.svg";
 import FadeIn from "react-fade-in";
 import Highlights from "../../components/Highlights/index";
@@ -18,7 +19,7 @@ const Home = () => {
         <img className={styles.logo} src={hackmelb_logo} alt={"Logo"} />
         <Row style={{ width: "80vw" }}>
           <Col lg={6}>
-            <img className={styles.arrow} src={arrow_logo} alt={"Arrow Logo"} />
+            <img className={styles.lightbulb} src={lightbulb} alt={"Light Bulb"} />
           </Col>
           <Col lg={6} className={styles.title}>
             <FadeIn delay={290}>
@@ -30,13 +31,12 @@ const Home = () => {
             </FadeIn>
           </Col>
         </Row>
-          <img alt = "color bar" src={longBar} className={styles.longBar+" d-none d-lg-block"} />
       </div>
       <About/>
-      <Highlights/>
-      <Streams/>
-      <Schedule/>
-      <FAQ/>
+      {/* <Highlights/> */}
+      {/* <Streams/> */}
+      {/* <Schedule/> */}
+      {/* <FAQ/> */}
       <Resources/>
     </div>
   );

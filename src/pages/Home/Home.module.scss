@@ -1,5 +1,4 @@
 @import "../../styles/styles.scss";
-
 @mixin section {
   // reduce padding on mobile, min-height bit is not needed
   // since scroll component is not used
@@ -31,12 +30,13 @@
 
 .container {
   min-height: 100vh;
-
-  background-image: $background-gradient;
   margin-bottom: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../../components/assets/home/background_top.svg");
+  background-size: cover;
+  background-position: 100% 30%;
 
   .pic_text {
     // border: 1px solid red;
@@ -60,10 +60,9 @@
   }
 }
 
-.arrow {
-  width: 100%;
-  padding: 25px;
-  max-height: 400px;
+.lightbulb {
+  width: 75%;
+  max-height: 500px;
   margin-bottom: 50px;
 }
 

@@ -42,13 +42,14 @@ const Navbar = () => {
       <div className={styles.links}>
         <div className={styles.desktopNav}>
           <NavBarButton href="/">About</NavBarButton>
-          <NavBarButton href="/">Highlights</NavBarButton>
-          <NavBarButton href="/">Streams</NavBarButton>
-          <NavBarButton href="/">Schedule</NavBarButton>
-          <NavBarButton href="/">FAQs</NavBarButton>
+          <NavBarButton href="/">Timeline</NavBarButton>
           <NavBarButton href="/">Resources</NavBarButton>
-          {/* <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
           <NavBarButton href="/">Prizes</NavBarButton>
+          <NavBarButton href="/">Highlights</NavBarButton>
+          <NavBarButton href="/">Schedule</NavBarButton>
+          <NavBarButton href="/">Streams</NavBarButton>
+          <NavBarButton href="/">FAQs</NavBarButton>
+          {/* <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
           <NavBarButton href="/">Sponsors</NavBarButton>
           <SignUpButton variant="outlined">
             {" "}

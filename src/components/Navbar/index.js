@@ -51,15 +51,9 @@ const Navbar = () => {
           <NavBarButton href="/">FAQs</NavBarButton>
           <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton>
           <NavBarButton href="/">Sponsors</NavBarButton> */}
-          <SignUpButton variant="outlined">
+          <SignUpButton to="/Registration">
             {" "}
-            <a
-              href="https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              REGISTER
-            </a>
+            <span>REGISTER</span>
           </SignUpButton>
         </div>
         <div className={styles.mobileNav} ref={ref}>

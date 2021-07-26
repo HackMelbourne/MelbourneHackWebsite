@@ -20,6 +20,10 @@ function App() {
           <Route exact path="/Sponsors">
             <Sponsor />
           </Route>
+          <Route path='/Registration' component={() => { 
+          window.location.replace("https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"); 
+          return null;
+          }}/>
           <Route>
             {/* matches any other route: page for 404 error */}
             <PageNotFound />

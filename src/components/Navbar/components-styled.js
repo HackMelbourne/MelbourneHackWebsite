@@ -25,7 +25,7 @@ export const NavBarButton = styled(Button)({
   },
 });
 
-export const SignUpButton = styled(Button)({
+export const SignUpButton = styled(Link)({
   fontFamily: "Lato, sans-serif",
   fontWeight: "1000",
   color: "black",
@@ -33,6 +33,7 @@ export const SignUpButton = styled(Button)({
   padding: "0.8% 4%",
   margin: "0 0.8em",
   transition: "ease-in 0.2s",
+  border: "solid",
   borderWidth: "0.2em",
   borderColor: LogoBlue,
   borderRadius: "0",

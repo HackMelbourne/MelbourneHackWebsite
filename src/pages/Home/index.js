@@ -13,12 +13,8 @@ const Home = () => {
       <div className={styles.container}>
         <img className={styles.logo} src={hackmelb_logo} alt={"Logo"} />
         <div className={styles.logo}>
-          <a
-            href="https://hackmelb.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
+          <a href = "https://hackmelb.org/" target="_blank" rel="noopener noreferrer">
+            <img alt = "hackmelb logo" src = {hackmelb_logo}/>
           </a>
         </div>
         <Row style={{ width: "80vw" }}>

@@ -8,6 +8,7 @@
 
 .aboutTitle {
   padding-top: 5%;
+  margin-bottom: 4%;
   display: flex;
   flex-direction: column;
   font-family: "Source Code Pro";
@@ -55,11 +56,15 @@
   }
 }
 
-.description p {
-  font-family: Lato, sans-serif;
-  font-weight: 700;
-  font-size: $font-size-2;
-  @include desktop{
-    font-size: $font-size-3;
+.description {
+  margin-bottom: 200px;
+  p {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: $font-size-2;
+   
+    @include desktop{
+      font-size: $font-size-3;
+    }
   }
 }

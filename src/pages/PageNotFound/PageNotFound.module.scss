@@ -3,7 +3,31 @@
 .container {
   min-height: 100vh;
   background-image: $background-gradient;
-  margin-top: 8rem;
-  display: flex;
+  padding-top: 10rem;
+  display: block;
   justify-content: center;
+  background-image: url("../../components/assets/home/background_top.svg");
+  background-size: cover;
+  background-position: 100% 30%;
 }
+
+.text{
+  h2{
+    margin-left: 700px;
+    font-size: $font-size-5;
+
+    a{
+      text-decoration: none;
+    }
+  }
+  
+  .aboutTitle {
+    margin-left: 800px;
+    margin-bottom: 1%;
+    flex-direction: column;
+    font-family: "Source Code Pro";
+    font-size: 1090%;
+    font-weight: bold;
+  }
+}
+

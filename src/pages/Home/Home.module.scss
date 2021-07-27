@@ -51,7 +51,6 @@
 
 .logo {
   display: none;
-
   @include desktop {
     display: unset;
     position: absolute;
@@ -61,9 +60,13 @@
 }
 
 .lightbulb {
+  display: none;
+  @include desktop {
+  display: unset;
   width: 75%;
   max-height: 500px;
   margin-bottom: 50px;
+  }
 }
 
 .title {
@@ -129,4 +132,12 @@
   @include desktop{
     display: block;
   }
+}
+
+.scroll {
+  @include remove-on-phone;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  z-index: 20;
 }

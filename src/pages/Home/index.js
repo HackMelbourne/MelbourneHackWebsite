@@ -5,7 +5,7 @@ import FadeIn from "react-fade-in";
 import { About } from "../../components/About/about";
 import Resources from "../../components/Resources/index";
 import { Col, Row } from "react-bootstrap";
-
+import { InfoButton } from "../../components/Navbar/components-styled";
 
 const Home = () => {
   return (
@@ -28,6 +28,7 @@ const Home = () => {
                 Melbourne Hack<span className={styles.blinking}>_</span>
               </h1>
               <h3>Melbourne's Premier Hackathon Hosted by HackMelbourne</h3>
+              <a href = 'https://coherent-tartan-183.notion.site/Participants-Handbook-dc64e20afd2d415bab3f31d2d4c3e3cd' target="_blank" rel="noopener noreferrer"><InfoButton>Hackathon Information Here!</InfoButton></a>
             </FadeIn>
           </Col>
         </Row>

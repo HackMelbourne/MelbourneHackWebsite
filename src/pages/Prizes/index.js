@@ -40,6 +40,11 @@ const Prizes = () => {
                 <h3 className={styles.mobile_description}>Third place</h3>
                 <h1>$500</h1>
               </div>
+              <div>
+                <h3 className={styles.mobile_description}>Other Prizes</h3>
+                <h4>Sponsors Favourite</h4>
+                <h4>Swag and Goodies</h4>
+              </div>
             </div>
             </div>
     </section>

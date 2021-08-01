@@ -25,7 +25,15 @@
   background-image: url("../../components/assets/prizes_imgs/prize_bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 2%;
+  padding-bottom: 7rem;
+  padding-top: 1rem;
+  
+  @include desktop{
+    background-image: url("../../components/assets/prizes_imgs/prize_bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3%;
+  }
   // background-position: 0% 100%;
 
 }
@@ -69,7 +77,7 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 15%;
+    padding-right: 10%;
   }
 }
 
@@ -135,6 +143,7 @@
 }
 
 .mobile_description {
+  padding-bottom: 10%;
   @include desktop {
     display: none;
   }

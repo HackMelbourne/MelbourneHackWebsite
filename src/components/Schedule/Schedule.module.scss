@@ -1,67 +1,81 @@
 @import "../../pages/Home/Home.module.scss";
 
+.background {
+  background-image: url("../../components/assets/home/red_background.svg");
+  background-size: cover;
+  padding-top: 10rem;
+}
+
 .schedule {
   @include section;
-
-  h2 {
-    font-size: $font-size-3;
-    font-family: $font-title;
-    text-align: left;
-    font-weight: bolder;
-  }
 }
 
 .content {
   display: flex;
-  justify-content: space-evenly;
 }
 
-.heading {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
+.zoomLink {
+  color: $stream-red;
 
-.table {
-  display: block;
-  font-size: $font-size-1;
-
-  border-collapse: collapse;
-  width: 50%;
-
-  @include desktop {
-    font-size: $font-size-2;
+  &:hover, &:focus {
+    color: $stream-red;
+    filter: saturate(2000%);
   }
 }
 
-.show_border {
-  border-bottom: 1px solid $stream-blue;
-}
-
-td {
-  padding: 1rem 2rem 1rem 0rem;
-}
-
-.underline {
-  width: 20rem;
-  height: 2rem;
-
+.timetable {
+  font-size: $font-size-2;
   @include desktop {
-    width: 20rem;
+    padding: 2rem 2rem;
+  }
+  background-color: $light-red;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
   }
 
-  background-image: url("../assets/underline_bar.svg");
+  th,
+  td {
+    padding: 1rem 2rem 1rem 0rem;
+  }
+
+  // the first selects the first column, the last two selectors collectively
+  // target the second column in the table
+  th:first-child, th:first-child + td, td:first-child {
+    color: $stream-red;
+    font-weight: normal;
+  }
+
+  th {
+    // make FRIDAY, SATURDAY, etc. stick to the top left
+    vertical-align: top;
+    text-align: left;
+  }
+  tr {
+    border-bottom: 1px solid $hackmelb-blue;
+  }
 }
 
-.line_feature {
+
+.buttons {
+  padding: 0.5rem;
+}
+
+// buttons are uniform length here
+.button {
+  @include button;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.8rem;
   @include desktop {
-    top: 3200px; /* your required value */
-    right: 0;
-    height: 100%;
-    position: absolute;
-    width: 20rem;
-    height: 100vh;
-    background-image: url("../assets/calendar+line.svg");
-    background-repeat: no-repeat;
+    padding: 0.5rem 0.8rem;
   }
+  margin: 0.5rem;
+  width: 6rem;
+}
+
+.selected {
+  filter: brightness(90%);
+  background-color: $hackmelb-blue;
+  color: $primary-white;
 }

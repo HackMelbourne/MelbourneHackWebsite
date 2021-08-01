@@ -5,6 +5,7 @@ import FadeIn from "react-fade-in";
 import { About } from "../../components/About/about";
 import Resources from "../../components/Resources/index";
 import Scroll from "../../components/Scroll";
+import Schedule from "../../components/Schedule";
 import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
 
@@ -40,7 +41,7 @@ const Home = ({ pageHeight }) => {
       <About/>
       {/* <Highlights/> */}
       {/* <Streams/> */}
-      {/* <Schedule/> */}
+      <Schedule/>
       {/* <FAQ/> */}
       <Resources/>
     </div>

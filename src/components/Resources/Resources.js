@@ -10,6 +10,9 @@ const Resources = () => {
       <div className={styles.heading}>
         <h2>Communication & Resources_</h2>
       </div>
+        <div className={styles.description}>
+            Don't be shy! Come join the Melbourne Hack 2021 community✨
+        </div>
 
         <div className={styles.container}>
             <a className={styles.button} href={"https://discord.com/invite/gHaXDBsX7J"} rel="noopener noreferrer" target="_blank">

@@ -4,12 +4,16 @@ import lightbulb from "../../components/assets/home/lightbulb.svg";
 import FadeIn from "react-fade-in";
 import { About } from "../../components/About/about";
 import Resources from "../../components/Resources/index";
+import Scroll from "../../components/Scroll";
 import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
 
-const Home = () => {
+const Home = ({ pageHeight }) => {
   return (
     <div>
+      <div className={styles.scroll}>
+        <Scroll pageHeight={pageHeight} />
+      </div>
       <div className={styles.container}>
         <img className={styles.logo} src={hackmelb_logo} alt={"Logo"} />
         <div className={styles.logo}>

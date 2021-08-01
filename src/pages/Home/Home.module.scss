@@ -137,3 +137,11 @@
     display: block;
   }
 }
+
+.scroll {
+  @include remove-on-phone;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  z-index: 20;
+}

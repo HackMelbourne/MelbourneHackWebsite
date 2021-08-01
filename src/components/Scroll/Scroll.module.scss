@@ -1,0 +1,23 @@
+@import "../../styles/styles.scss";
+
+.links {
+  border-right: 4px solid black;
+  text-align: right;
+  font-size: $font-size-1;
+  a {
+    // make each anchor "start on a new line"
+    display: block;
+    margin: 2rem;
+    text-decoration: none;
+
+    > img {
+      margin: 0;
+    }
+
+    color: black;
+    &:hover,
+    &:focus {
+      color: $hackmelb-blue;
+    }
+  }
+}

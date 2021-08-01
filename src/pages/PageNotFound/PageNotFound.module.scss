@@ -13,21 +13,35 @@
 
 .text{
   h2{
-    margin-left: 700px;
-    font-size: $font-size-5;
-
+    font-family: "Source Code Pro";
+    margin-left: 10%;
+    font-size: $font-size-3;
+    flex-direction: column;
+    @include desktop{
+      margin-left: 650px;
+      font-size: $font-size-5;
+      font-family: "Source Code Pro";
+    }
+   
     a{
       text-decoration: none;
     }
   }
-  
   .aboutTitle {
-    margin-left: 800px;
-    margin-bottom: 1%;
+    margin-left: 30%;
+    font-size: 700%;
+    font-weight: bold;
     flex-direction: column;
     font-family: "Source Code Pro";
-    font-size: 1090%;
-    font-weight: bold;
+
+    @include desktop{
+      margin-left: 800px;
+      margin-bottom: 1%;
+      flex-direction: column;
+      font-family: "Source Code Pro";
+      font-size: 1090%;
+      font-weight: bold;
+    }
   }
 }
 

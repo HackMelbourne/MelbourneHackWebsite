@@ -15,30 +15,72 @@ const ZoomLink = ({ href }) => (
   </a>
 );
 
+const workshopLink = "https://unimelb.zoom.us/j/88194739932?pwd=bDZmbVd4QVI1dVJxRS8yV2phVTRRUT09";
+
 const WorkshopsSchedule = (
   <>
     <tr>
-      <td>Mar 29</td>
+      <td>Aug 16</td>
+      <td>2:00PM - 3:00PM</td>
+      <td>Workshop #1: Design</td>
+      <td>
+        <ZoomLink href={workshopLink} />
+      </td>
+    </tr>
+    <tr>
+      <td>Aug 17</td>
+      <td>2:00PM - 4:00PM</td>
+      <td>Workshop #2: React</td>
+      <td>
+        <ZoomLink href={workshopLink} />
+      </td>
+    </tr>
+    <tr>
+      <td>Aug 18</td>
+      <td>2:00PM - 3:00PM</td>
+      <td>Workshop #3: CSS Framework</td>
+      <td>
+        <ZoomLink href={workshopLink} />
+      </td>
+    </tr>
+    <tr>
+      <td>Aug 18</td>
+      <td>4:00PM - 6:00PM</td>
+      <td>Workshop #4: Mobile Applications</td>
+      <td>
+        <ZoomLink href={workshopLink} />
+      </td>
+    </tr>
+    <tr>
+      <td>Aug 19</td>
+      <td>2:00PM - 3:00PM</td>
+      <td>Workshop #5: APIs</td>
+      <td>
+        <ZoomLink href={workshopLink} />
+      </td>
+    </tr>
+    <tr>
+      <td>Aug 20</td>
+      <td>2:00PM - 3:30PM</td>
+      <td>Workshop #6: Git and Hosting</td>
+      <td>
+        <ZoomLink href={workshopLink} />
+      </td>
+    </tr>
+    <tr>
+      <td>Aug 20</td>
+      <td>4:00PM - 5:30PM</td>
+      <td>Workshop #7: How to Pitch</td>
+      <td>
+        <ZoomLink href={workshopLink} />
+      </td>
+    </tr>
+    <tr>
+      <td>Aug 21</td>
       <td>4:00PM - 5:00PM</td>
-      <td>Workshop #1: Github</td>
+      <td>Workshop #8: Computer Vision</td>
       <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/85193855181?pwd=WVBqQ1Y2WE9HWXZZMExhUzhxaDdQdz09" />
-      </td>
-    </tr>
-    <tr>
-      <td>Mar 30</td>
-      <td>4:00PM - 5:30PM</td>
-      <td>Workshop #2: HTML/CSS</td>
-      <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/89473993015?pwd=Rk5JQzlvVUsvbmhpelNMMDM5U2JQUT09" />
-      </td>
-    </tr>
-    <tr>
-      <td>Mar 31</td>
-      <td>4:00PM - 5:30PM</td>
-      <td>Workshop #3: API for Beginners</td>
-      <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/82252533524?pwd=ckthMnhtZlFqTGQ2LzNlQ25wdUs0UT09" />
+        <ZoomLink href={workshopLink} />
       </td>
     </tr>
   </>
@@ -47,10 +89,17 @@ const WorkshopsSchedule = (
 const FridayBeforeSchedule = (
   <>
     <tr>
-      <td>8:00PM - 8:45PM</td>
-      <td>Opening Ceremony</td>
+      <td>4:00PM - 6:30PM</td>
+      <td>Women's Networking Night with WIT</td>
       <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" />
+        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
+      </td>
+    </tr>
+    <tr>
+      <td>7:00PM - 9:00PM</td>
+      <td>Streams Panel Event</td>
+      <td>
+        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
       </td>
     </tr>
   </>
@@ -59,10 +108,31 @@ const FridayBeforeSchedule = (
 const FridaySchedule = (
   <>
     <tr>
-      <td>8:00PM - 8:45PM</td>
+      <td>6:00PM - 7:00PM</td>
       <td>Opening Ceremony</td>
       <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" />
+        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
+      </td>
+    </tr>
+    <tr>
+      <td>7:30PM - 9:30PM</td>
+      <td>Team Formation Socials</td>
+      <td>
+        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
+      </td>
+    </tr>
+    <tr>
+      <td>8:00PM - 9:00PM</td>
+      <td>Mentor Window #1</td>
+      <td>
+        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
+      </td>
+    </tr>
+    <tr>
+      <td>9:00PM</td>
+      <td>Movie Night</td>
+      <td>
+        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
       </td>
     </tr>
   </>
@@ -71,22 +141,39 @@ const FridaySchedule = (
 const SaturdaySchedule = (
   <>
     <tr>
-      <td>10:00AM - 12:00PM</td>
-      <td>Booked individual team check-ins #1</td>
+      <td>9:00AM</td>
+      <td>Coffee Gathering</td>
       <td>
       </td>
     </tr>
     <tr>
-      <td>2:00PM - 4:00PM</td>
-      <td>Mentor assistance window #1</td>
+      <td>10:00AM - 2:00PM</td>
+      <td>Mentor Window #2</td>
       <td>
       </td>
     </tr>
     <tr>
-      <td>8:00PM - 10:00PM</td>
-      <td>Social event #1: Scavenger Hunt</td>
+      <td>11:00AM - 12:00PM</td>
+      <td>The Start-up Space w/ Startmate</td>
       <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/85640211419?pwd=UHZpclZlbVE2bVhIYlJNWkZSc0F1Zz09" />
+      </td>
+    </tr>
+    <tr>
+      <td>3:00PM - 7:00PM</td>
+      <td>Mentor Window #3</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>6:00PM - 8:00PM</td>
+      <td>Sponsor Networking Night</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>8:30PM - 11:59PM</td>
+      <td>Valorant Party Night</td>
+      <td>
       </td>
     </tr>
   </>
@@ -95,54 +182,27 @@ const SaturdaySchedule = (
 const SundaySchedule = (
   <>
     <tr>
-      <td>10:00AM - 12:00PM</td>
-      <td>Mentor assistance window #2</td>
-      <td>
-      </td>
-    </tr>
-    {/* <tr>
-      <td>1:00PM - 2:00PM</td>
-      <td>Networking event</td>
-      <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/84932847307?pwd=bi9kRWF2T2NYMjcrUVFnK2d4R1BEUT09" />
-      </td>
-    </tr> */}
-    <tr>
-      <td>2:00PM - 4:00PM</td>
-      <td>Mentor assistance window #3</td>
+      <td>9:30AM - 1:00PM</td>
+      <td>Mentor Window #4</td>
       <td>
       </td>
     </tr>
     <tr>
-      <td>4:00PM - 6:00PM</td>
-      <td>Booked individual team check-ins #2</td>
+      <td>1:00PM</td>
+      <td>Submission Deadline</td>
       <td>
       </td>
     </tr>
     <tr>
-      <td>8:00PM - 9:30PM</td>
-      <td>Social event #2: Skribblio</td>
+      <td>1:00PM - 3:00PM</td>
+      <td>Scavenger Hunt</td>
       <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/87323179936?pwd=YU00bzBnUkRhbXBMK05WQVBlYmtldz09" />
-      </td>
-    </tr>
-  </>
-);
-
-const MondaySchedule = (
-  <>
-    <tr>
-      <td>1:00PM - 2:00PM</td>
-      <td>Social event #3: Zoom breakout rooms</td>
-      <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/82462283108?pwd=Rkk3cnJEN3FLWFB4bFZaQmxYMGoxQT09" />
       </td>
     </tr>
     <tr>
-      <td>8:00PM - 9:00PM</td>
+      <td>5:30PM - 7:30PM</td>
       <td>Closing Ceremony</td>
       <td>
-        <ZoomLink href="https://unimelb.zoom.us/j/82276023280?pwd=RjBsS0swbEE1TGxXT1d2K3g4ak9pZz09" />
       </td>
     </tr>
   </>
@@ -155,14 +215,13 @@ const Schedule = () => {
     FridayBefore: FridayBeforeSchedule,
     Friday: FridaySchedule,
     Saturday: SaturdaySchedule,
-    Sunday: SundaySchedule,
-    Monday: MondaySchedule,
+    Sunday: SundaySchedule
   };
 
   return (
     <div className={styles.background}>
       <section id="schedule" className={styles.schedule}>
-        <h2>Schedule</h2>
+        <div className={styles.scheduleTitle}>Schedule</div>
         <div className={styles.content}>
           <div className={styles.timetable}>
             <div className={styles.buttons}>
@@ -213,8 +272,6 @@ const Schedule = () => {
               </tbody>
             </table>
           </div>
-          {/* <div className={styles.satellite}>
-          </div> */}
         </div>
       </section>
     </div>
@@ -222,62 +279,3 @@ const Schedule = () => {
 };
 
 export default Schedule;
-
-
-// const Schedule = () => {
-//   return (
-//     <section id="schedule" className={styles.schedule}>
-//       <div className={styles.heading}>
-//         <h2>Schedule</h2>
-//         <div className={styles.underline}/>
-//       </div>
-//       <div className={styles.content}>
-//         <table className={styles.table}>
-//           <tr>
-//             <td>Monday</td>
-//             <td>8pm</td>
-//             <td>Opening Ceremony</td>
-//           </tr>
-//           <tr className={styles.show_border}>
-//             <td/>
-//             <td>10pm</td>
-//             <td>Mentor Introduction & First Mentor Check-In</td>
-//           </tr>
-//           <tr>
-//             <td>Tuesday</td>
-//             <td>10am</td>
-//             <td>GitHub Workshop</td>
-//           </tr>
-//           <tr>
-//             <td/>
-//             <td>12pm</td>
-//             <td>Second Mentor Check-In</td>
-//           </tr>
-//           <tr className={styles.show_border}>
-//             <td/>
-//             <td>12pm</td>
-//             <td>Second Mentor Check-In</td>
-//           </tr>
-//           <tr>
-//             <td>Wednesday</td>
-//             <td>10am</td>
-//             <td>HTML/CSS Workshop</td>
-//           </tr>
-//           <tr>
-//             <td/>
-//             <td>12pm</td>
-//             <td>Third Mentor Check-In</td>
-//           </tr>
-//           <tr>
-//             <td/>
-//             <td>8pm</td>
-//             <td>Closing Ceremony</td>
-//           </tr>
-//         </table>
-//         <div className={styles.line_feature}/>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Schedule;

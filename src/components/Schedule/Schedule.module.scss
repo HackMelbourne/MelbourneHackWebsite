@@ -10,6 +10,12 @@
   @include section;
 }
 
+.scheduleTitle {
+  font-family: "Source Code Pro";
+  font-size: $font-size-6;
+  font-weight: bold;
+}
+
 .content {
   display: flex;
 }
@@ -71,7 +77,8 @@
     padding: 0.5rem 0.8rem;
   }
   margin: 0.5rem;
-  width: 6rem;
+  width: 7rem;
+  text-align: center;
 }
 
 .selected {

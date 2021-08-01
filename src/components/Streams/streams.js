@@ -9,6 +9,7 @@ import memeSymbol from "../assets/stream-symbols/meme_symbol.svg";
 const DEFAULT_DESCRIPTION = <p>
     Hover on the button to learn more about the streams
 </p>;
+
 export const Streams = () => {
     const [stream, setStream] = useState(null);
 
@@ -60,23 +61,23 @@ export const Streams = () => {
             </div>
                 <div className={style.streamsBlock}>
                     <div className={style.medTechButton} onMouseEnter={()=>setStream('medTech')} onMouseLeave={onMouseOff}>
-                        <img src={medTechSymbol}/>
+                        <img src={medTechSymbol} alt={'MedTech Symbol'}/>
                         <div/>
                     </div>
                     <div className={style.financeButton} onMouseEnter={()=>setStream('finance')} onMouseLeave={onMouseOff}>
-                        <img src={financeSymbol}/>
+                        <img src={financeSymbol} alt={'Finance Symbol'}/>
                         <div/>
                     </div>
                     <div className={style.sustainabilityButton} onMouseEnter={()=>setStream('sustainability')} onMouseLeave={onMouseOff}>
-                        <img src={sustainabilitySymbol}/>
+                        <img src={sustainabilitySymbol} alt={'Sustainability Symbol'}/>
                         <div/>
                     </div>
                     <div className={style.educationButton} onMouseEnter={()=>setStream('education')} onMouseLeave={onMouseOff}>
-                        <img src={educationSymbol}/>
+                        <img src={educationSymbol} alt={'Education Symbol'}/>
                         <div/>
                     </div>
                     <div className={style.memeButton} onMouseEnter={()=>setStream('meme')} onMouseLeave={onMouseOff}>
-                        <img src={memeSymbol}/>
+                        <img src={memeSymbol} alt={'Meme Symbol'}/>
                         <div/>
                     </div>
                 </div>

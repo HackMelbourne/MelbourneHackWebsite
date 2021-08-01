@@ -145,3 +145,22 @@
   bottom: 20px;
   z-index: 20;
 }
+
+// to be used to style a <button />
+@mixin button {
+  font-size: $font-size-1;
+  border: 2px solid $hackmelb-blue;
+  margin: 0 1rem;
+  @include desktop {
+    padding: 0.5rem 3rem;
+  }
+  background-color: transparent;
+  color: $primary-dark;
+  text-align: center;
+  
+  &:hover,
+  &:focus {
+    background-color: $hackmelb-blue;
+    color: $primary-white;
+  }
+}

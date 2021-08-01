@@ -3,6 +3,7 @@ import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
 import lightbulb from "../../components/assets/home/lightbulb.svg";
 import FadeIn from "react-fade-in";
 import { About } from "../../components/About/about";
+import Highlights from "../../components/Highlights";
 import Resources from "../../components/Resources/index";
 import Scroll from "../../components/Scroll";
 import Schedule from "../../components/Schedule";
@@ -41,7 +42,7 @@ const Home = ({ pageHeight }) => {
       </div>
       <About/>
       <Prizes/>
-      {/* <Highlights/> */}
+      <Highlights/>
       {/* <Streams/> */}
       <Schedule/>
       {/* <FAQ/> */}

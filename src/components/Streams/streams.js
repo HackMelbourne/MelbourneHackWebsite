@@ -6,15 +6,13 @@ import educationSymbol from "../assets/stream-symbols/education_symbol.svg";
 import sustainabilitySymbol from "../assets/stream-symbols/sustainability_symbol.svg";
 import memeSymbol from "../assets/stream-symbols/meme_symbol.svg";
 
-
+const DEFAULT_DESCRIPTION = <p>
+    Hover on the button to learn more about the streams
+</p>;
 export const Streams = () => {
     const [stream, setStream] = useState(null);
 
-    const defaultDescription = <p>
-        Hover on the button to learn more about the streams
-    </p>;
-    const [description, setDescription] = useState(defaultDescription)
-
+    const [description, setDescription] = useState(DEFAULT_DESCRIPTION)
 
     const onMouseOff = () => {
         setStream(null);
@@ -48,7 +46,7 @@ export const Streams = () => {
                 setDescription(description);
                 break;
             default:
-                description = defaultDescription;
+                description = DEFAULT_DESCRIPTION;
                 setDescription(description);
                 break;
         }

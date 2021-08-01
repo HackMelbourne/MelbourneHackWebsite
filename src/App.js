@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Prizes from "./pages/Prizes";
 import Navbar from "./components/Navbar";
 import { Sponsor } from "./pages/Sponsors";
-import {Streams} from "./components/Streams/streams";
 
 function App() {
   // getting the total page height is effectful, this is needed for Scroll

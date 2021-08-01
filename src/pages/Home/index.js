@@ -3,7 +3,7 @@ import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
 import lightbulb from "../../components/assets/home/lightbulb.svg";
 import FadeIn from "react-fade-in";
 import { About } from "../../components/About/about";
-import Resources from "../../components/Resources/index";
+import Resources from "../../components/Resources/Resources";
 import Scroll from "../../components/Scroll";
 import Schedule from "../../components/Schedule";
 import { Col, Row } from "react-bootstrap";

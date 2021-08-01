@@ -32,12 +32,17 @@
 
   font-family: Lato, sans-serif;
   font-weight: 700;
-  font-size: $font-size-4;
+  font-size: $font-size-3;
   justify-content: center;
   align-items: flex-start;
-  width: 50%;
-  min-height: 25vh;
+  width: 60%;
+  min-height: 37vh;
   text-align: center;
+
+  h1 {
+    font-size: $font-size-5;
+  }
+
 }
 
 
@@ -68,7 +73,7 @@
   }
 
   img:hover ~div{
-    -webkit-transform: scale(1.2);
+    -webkit-transform: scale(1.3);
     -webkit-transition: -webkit-transform 0.3s;
   }
 

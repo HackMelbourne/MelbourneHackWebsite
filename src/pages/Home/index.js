@@ -7,6 +7,8 @@ import Resources from "../../components/Resources/index";
 import Scroll from "../../components/Scroll";
 import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
+import Prizes from "../Prizes";
+import Highlights from "../../components/Highlights";
 
 const Home = ({ pageHeight }) => {
   return (
@@ -38,6 +40,7 @@ const Home = ({ pageHeight }) => {
         </Row>
       </div>
       <About/>
+      <Prizes/>
       {/* <Highlights/> */}
       {/* <Streams/> */}
       {/* <Schedule/> */}

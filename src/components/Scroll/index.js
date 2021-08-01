@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
+import lightbulb from "../../components/assets/home/lightbulb.svg";
 import {Link} from "react-router-dom";
 
 const Scroll = ({ pageHeight }) => {
@@ -53,6 +54,7 @@ const Scroll = ({ pageHeight }) => {
         }}
       />
       <div className={styles.links} ref={ref}>
+        <Link to="/#"><img className={styles.lightbulb} src={lightbulb} height="40px" alt="rocket" /></Link>
         <Link to="/#about" >ABOUT</Link>
         <Link to="/#schedule">SCHEDULE</Link>
         <Link to="/#rules">RULES &amp; FAQ</Link>

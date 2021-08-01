@@ -1,20 +1,121 @@
 @import "../../styles/styles.scss";
 
 .streams {
-  width: 80%;
+  width: 100%;
   height: 200%;
-  margin-left: 5%;
   padding: 2rem;
   margin-bottom: 5%;
-  margin-top: 10%;
   font-family: $font-monospace;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .streamsTitle {
-  margin-bottom: 8%;
+  padding-top: 5%;
+  margin-bottom: 4%;
   display: flex;
   flex-direction: column;
+  font-family: "Source Code Pro";
+  font-size: $font-size-7;
+  font-weight: bold;
+  align-items: center;
+}
+
+.abstractDescription {
+
+}
+
+.streamDescription {
+  display: flex;
+
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: $font-size-4;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  min-height: 25vh;
+  text-align: center;
+}
+
+
+.streamsBlock {
+  width: 100%;
+  padding: 0% 10%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+
+}
+
+.streamButton {
+  > img {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: 4;
+  }
+
+  > div {
+    border-radius: 100%;
+    width: 10rem;
+    height: 10rem;
+    -webkit-transform: scale(1);
+    -webkit-transition: -webkit-transform 0.3s;
+  }
+
+  img:hover ~div{
+    -webkit-transform: scale(1.2);
+    -webkit-transition: -webkit-transform 0.3s;
+  }
+
+}
+
+.medTechButton {
+  @extend .streamButton;
+
+  > div {
+  background-color: rgba(237, 106, 94, 0.2);
+}
+  &:hover .medTechDescription {
+    background-color: red;
+  }
+}
+
+.financeButton {
+  @extend .streamButton;
+
+  > div {
+    background-color: rgba(27, 106, 227, 0.2);
+  }
+
+}
+
+.sustainabilityButton {
+  @extend .streamButton;
+
+  > div {
+    background-color: rgba(9, 188, 138, 0.2);
+  }
+}
+
+.educationButton {
+  @extend .streamButton;
+
+  > div {
+    background-color: rgba(252, 219, 57, 0.2);
+  }
+}
+
+.memeButton {
+  @extend .streamButton;
+
+  > div {
+    background-color: rgba(247, 180, 167, 0.2);
+  }
 }
 
 .streamsTitle .underline {
@@ -37,12 +138,6 @@
   position: absolute;
   left: 19%;
   top: 118%;
-}
-
-.description {
-  font-size: 1.15em;
-  text-align: center;
- 
 }
 
 .rowFlex {

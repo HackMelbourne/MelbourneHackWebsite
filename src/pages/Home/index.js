@@ -8,7 +8,9 @@ import Scroll from "../../components/Scroll";
 import Schedule from "../../components/Schedule";
 import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
+import {Streams} from "../../components/Streams/streams";
 import Prizes from "../Prizes";
+
 
 const Home = ({ pageHeight }) => {
   return (
@@ -40,6 +42,7 @@ const Home = ({ pageHeight }) => {
         </Row>
       </div>
       <About/>
+      <Streams/>
       <Prizes/>
       {/* <Highlights/> */}
       {/* <Streams/> */}

@@ -3,8 +3,8 @@
 .container {
   min-height: 100vh;
   background-image: $background-gradient;
-  padding-top: 10rem;
-  display: block;
+  display: flex;
+  align-items: center;
   justify-content: center;
   background-image: url("../../components/assets/home/background_top.svg");
   background-size: cover;
@@ -14,11 +14,9 @@
 .text{
   h2{
     font-family: "Source Code Pro";
-    margin-left: 10%;
     font-size: $font-size-3;
     flex-direction: column;
     @include desktop{
-      margin-left: 650px;
       font-size: $font-size-5;
       font-family: "Source Code Pro";
     }
@@ -28,15 +26,13 @@
     }
   }
   .aboutTitle {
-    margin-left: 30%;
+    text-align: center;
     font-size: 700%;
     font-weight: bold;
     flex-direction: column;
     font-family: "Source Code Pro";
 
     @include desktop{
-      margin-left: 800px;
-      margin-bottom: 1%;
       flex-direction: column;
       font-family: "Source Code Pro";
       font-size: 1090%;

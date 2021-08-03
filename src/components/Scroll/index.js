@@ -47,9 +47,9 @@ const Scroll = ({ pageHeight }) => {
           position: "relative",
           width: "10px",
           backgroundColor: "#ffc059",
-          left: "194px",
+          left: "178px",
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
-          height: "4.1rem",
+          height: "5rem",
           zIndex: 0,
         }}
       />
@@ -58,9 +58,9 @@ const Scroll = ({ pageHeight }) => {
         <Link to="/#about" >ABOUT</Link>
         <Link to="/#streams" >STREAMS</Link>
         <Link to="/#prizes">PRIZES</Link>
-        <Link to="/#schedule">HIGHLIGHTS</Link>
+        <Link to="/#highlights">HIGHLIGHTS</Link>
         <Link to="/#schedule">SCHEDULE</Link>
-        <Link to="/#rules">RULES &amp; FAQ</Link>
+        <Link to="/#faqs">RULES &amp; FAQ</Link>
         <Link to="/#communication">COMMUNICATION</Link>
         {/* <Link to="/#resources">RESOURCES</Link> */}
       </div>

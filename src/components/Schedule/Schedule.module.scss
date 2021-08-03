@@ -8,12 +8,16 @@
 
 .schedule {
   @include section;
+  @include desktop {
+    margin-left: 0%;
+  }
 }
 
 .scheduleTitle {
   font-family: "Source Code Pro";
   font-size: $font-size-6;
   font-weight: bold;
+  margin-left: 9%;
 }
 
 .content {

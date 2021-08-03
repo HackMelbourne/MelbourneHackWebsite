@@ -4,13 +4,14 @@
   display: flex;
   flex-direction: column;
   margin-top: 9rem;
-  margin-left: 9%;
 
   @include desktop {
     padding: 2rem;
-
-    margin-left: 9%;
     min-height: 100vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   h1 {
@@ -20,12 +21,30 @@
   }
 }
 
-.content {
-  width: 90%;
+.background{
+  background-image: url("../../components/assets/prizes_imgs/prize_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 7rem;
+  padding-top: 1rem;
+  
+  @include desktop{
+    background-image: url("../../components/assets/prizes_imgs/prize_bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3%;
+  }
+  // background-position: 0% 100%;
 
+}
+.content {
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
 }
 
 .podium {
@@ -47,12 +66,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  font-family: "Source Code Pro";
+  font-size: $font-size-7;
+  font-weight: bold;
 
   h2 {
-    font-weight: bolder;
-    font-family: $font-title;
-    font-size: $font-size-5;
+    font-family: "Source Code Pro";
+    font-size: $font-size-7;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10%;
   }
 }
 
@@ -107,15 +132,18 @@
   display: none;
 
   @include desktop {
-    display: flex;
-    width: 355px;
-    height: 425px;
-    background-image: url("../../components/assets/prizes_imgs/2nd_place.svg");
+    background-image: url("../../components/assets/prizes_imgs/prize.svg");
     background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 750px;
   }
 }
 
 .mobile_description {
+  padding-bottom: 10%;
   @include desktop {
     display: none;
   }
@@ -128,6 +156,7 @@
 
 .mobile {
   margin-top: 3rem;
+  padding-left: 30%;
   @include desktop {
     display: none;
   }
@@ -137,5 +166,73 @@
   display: none;
   @include desktop {
     display: flex;
+  }
+}
+
+.other_prizes{
+  display: none;
+  @include desktop{
+    display: block;
+  }
+
+}
+
+
+.subtitle{
+  font-family: "Source Code Pro";
+  font-size: $font-size-5;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15%;
+  padding-bottom: 1%;
+}
+
+.spons{
+  background-image: url("../../components/assets/prizes_imgs/13.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+.sponsText{
+  h3{
+    font-family: "Source Code Pro";
+    font-size: $font-size-3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15%;
+  }
+
+}
+
+.swag{
+  background-image: url("../../components/assets/prizes_imgs/12.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.swagText{
+  h3 {
+    font-family: "Source Code Pro";
+    font-size: $font-size-3;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15%;
+  }
+}
+
+.photo{
+    display: none;
+  
+    @include desktop {
+      background-image: url("../../components/assets/prizes_imgs/13.svg");
+      background-repeat: no-repeat;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
   }
 }

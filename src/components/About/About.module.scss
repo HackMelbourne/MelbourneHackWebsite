@@ -46,13 +46,26 @@
 
 .aboutImage {
   display: none;
+  animation: MoveUpDown 5s linear infinite;
+  position: absolute;
+  left: 0;
+  right: 0;
 
   @include desktop {
+
     display: unset;
     position: absolute;
-    top: 120%;
+    top: 130%;
     left: 70%;
     width: 20%;
+  }
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-70px);
   }
 }
 

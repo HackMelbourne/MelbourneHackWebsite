@@ -2,48 +2,53 @@ import styles from "./Prizes.module.scss";
 
 const Prizes = () => {
   return (
+    <div className={styles.background}>
     <section id="prizes" className={styles.prizes}>
+      <div className={styles.content}>
       <div className={styles.heading}>
         <h2>Prizes </h2>
-        <div className={styles.underline}></div>
       </div>
-      <div className={styles.content}>
-        <h3>
-          There will be winners for first, second and third place for each of
-          the streams (plus additional prizes too!).{" "}
-        </h3>
-        <div className={styles.podium}>
-          <div className={styles.row}>
-            <div className={styles.prize_item}>
-              <h1 className={styles.desktop}>$200</h1>
-              <div className={styles.prize_2_img}></div>
-            </div>
-            <div className={styles.prize_item}>
-              <h1 className={styles.desktop}>$250</h1>
-              <div className={styles.prize_1_img}></div>
-            </div>
-            <div className={styles.prize_item}>
-              <h1 className={styles.desktop}>$150</h1>
-              <div className={styles.prize_3_img}></div>
-            </div>
+        <div className={styles.prize_2_img}></div>
+        <div className={styles.photo}></div>
+        <div className={styles.other_prizes}>
+          <div className={styles.subtitle}>
+            Other Prizes
+          </div>
+          <div className={styles.spons}>
+          </div>
+          <div className={styles.sponsText}>
+            <h4>Sponsor favourite</h4>
+            
+          </div>
+          <div className={styles.swag}>
+
+          </div>
+          <div className={styles.swagText}>
+              <h4>Swag and goodies</h4>
+          </div>
+        </div>
             <div className={styles.mobile}>
               <div>
                 <h3 className={styles.mobile_description}>First place</h3>
-                <h1>$250</h1>
+                <h1>$1500</h1>
               </div>
               <div>
                 <h3 className={styles.mobile_description}>Second place</h3>
-                <h1>$200</h1>
+                <h1>$1000</h1>
               </div>
               <div>
                 <h3 className={styles.mobile_description}>Third place</h3>
-                <h1>$150</h1>
+                <h1>$500</h1>
+              </div>
+              <div>
+                <h3 className={styles.mobile_description}>Other Prizes</h3>
+                <h4>Sponsors Favourite</h4>
+                <h4>Swag and Goodies</h4>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+            </div>
     </section>
+    </div>
   );
 };
 

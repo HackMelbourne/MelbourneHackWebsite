@@ -3,11 +3,15 @@ import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
 import lightbulb from "../../components/assets/home/lightbulb.svg";
 import FadeIn from "react-fade-in";
 import { About } from "../../components/About/about";
-import Resources from "../../components/Resources/index";
+import Highlights from "../../components/Highlights";
+import Resources from "../../components/Resources/Resources";
 import Scroll from "../../components/Scroll";
 import Schedule from "../../components/Schedule";
 import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
+import {Streams} from "../../components/Streams/streams";
+import Prizes from "../Prizes";
+
 
 const Home = ({ pageHeight }) => {
   return (
@@ -39,7 +43,9 @@ const Home = ({ pageHeight }) => {
         </Row>
       </div>
       <About/>
-      {/* <Highlights/> */}
+      <Streams/>
+      <Prizes/>
+      <Highlights/>
       {/* <Streams/> */}
       <Schedule/>
       {/* <FAQ/> */}

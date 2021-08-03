@@ -29,7 +29,8 @@ function App() {
               <Prizes />
             </Route>
             <Route exact path="/Sponsors">
-              <Sponsor />
+              {/* <Sponsor /> */}
+              <PageNotFound />
             </Route>
             <Route path='/Registration' component={() => { 
             window.location.replace("https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"); 

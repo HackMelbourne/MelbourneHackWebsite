@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Burger from "./Burger";
 import Menu from "./Menu";
 import navbar_logo from "../assets/logo.png";
+import { NavBarButton } from "./components-styled";
 
 // React Ref magic to detect raw events to trigger a function
 const useOnClickOutside = (ref, handler) => {
@@ -49,8 +50,8 @@ const Navbar = () => {
           <NavBarButton href="/">Schedule</NavBarButton>
           <NavBarButton href="/">Streams</NavBarButton>
           <NavBarButton href="/">FAQs</NavBarButton>
-          <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton>
-          <NavBarButton href="/">Sponsors</NavBarButton> */}
+          <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
+          <NavBarButton href="/Sponsors">Sponsors</NavBarButton>
           <SignUpButton to="/Registration">
             {" "}
             <span>REGISTER</span>

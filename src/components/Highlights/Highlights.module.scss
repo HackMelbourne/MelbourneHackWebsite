@@ -2,30 +2,81 @@
 
 .highlights {
   @include section;
-  margin-top: 9rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 5rem;
 
   h2 {
+    margin-left: 20%;
+    width: 40%;
+    text-align: center;
     font-weight: bolder;
     font-family: $font-title;
-    font-size: $font-size-5;
+    font-size: $font-size-7;
+  }
+}
+
+.blinking {
+  animation: blink 0.5s infinite;
+}
+
+.logo {
+  display: none;
+  @include desktop {
+    display: unset;
+    position: absolute;
+    top: 18%;
+    left: 87%;
   }
 }
 
 .content {
-  width: 70%;
+  //border: solid black;
+  width: 20%;
+  margin-left: 11%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 
   h3 {
-    font-weight: normal;
+    margin-top: 10% !important;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: bolder;
     font-size: $font-size-2;
+  }
+
+  img {
+    border-radius: 60%;
+    width: 60%;
+  }
+}
+
+.content2 {
+  //border: solid black;
+  width: 20%;
+  margin-left: 33%;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    margin-top: 10% !important;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: bolder;
+    font-size: $font-size-2;
+  }
+
+  img {
+    border-radius: 60%;
+    width: 60%;
   }
 }
 

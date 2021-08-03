@@ -31,7 +31,7 @@ export const About = () => {
               world! Getting hacking individually or in a team to create a product
               over a weekend!
             </p>
-            <p>Find out more for what's install in the highlights below. </p>
+            <p>Find out more for what's in store in the highlights below. </p>
           </div>
         </Col>
       </Row>

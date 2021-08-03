@@ -13,6 +13,10 @@
   }
 }
 
+.blinking {
+  animation: blink 0.5s infinite;
+}
+
 .scheduleTitle {
   font-family: "Source Code Pro";
   font-size: $font-size-6;

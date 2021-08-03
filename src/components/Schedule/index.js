@@ -221,7 +221,10 @@ const Schedule = () => {
   return (
     <div className={styles.background}>
       <section id="schedule" className={styles.schedule}>
-        <div className={styles.scheduleTitle}>Schedule_</div>
+        <div className={styles.scheduleTitle}>
+          Schedule
+          <span className={styles.blinking}>_</span>
+        </div>
         <div className={styles.content}>
           <div className={styles.timetable}>
             <div className={styles.buttons}>

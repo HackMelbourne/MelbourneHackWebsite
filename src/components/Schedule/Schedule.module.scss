@@ -8,16 +8,27 @@
 
 .schedule {
   @include section;
+  @include desktop {
+    margin-left: 0%;
+  }
+}
+
+.blinking {
+  animation: blink 0.5s infinite;
 }
 
 .scheduleTitle {
   font-family: "Source Code Pro";
   font-size: $font-size-6;
   font-weight: bold;
+  margin-left: 9%;
 }
 
 .content {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .zoomLink {

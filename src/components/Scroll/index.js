@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
 import lightbulb from "../../components/assets/home/lightbulb.svg";
-import {HashLink as Link} from 'react-router-hash-link'
+import {HashLink as Link} from "react-router-hash-link";
 
 const Scroll = ({ pageHeight }) => {
   // keep track of scrollBar using direct DOM refs

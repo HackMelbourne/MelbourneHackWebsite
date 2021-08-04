@@ -6,7 +6,7 @@ const Prizes = () => {
     <section id="prizes" className={styles.prizes}>
       <div className={styles.content}>
       <div className={styles.heading}>
-        <h2>Prizes </h2>
+        <h2>Prizes<span className={styles.blinking}>_</span></h2>
       </div>
         <div className={styles.prize_2_img}></div>
         <div className={styles.photo}></div>

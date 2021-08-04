@@ -9,8 +9,7 @@ export const About = () => {
     <div className={style.background}>
     <section id="about" className={style.about} >
       <div className={style.aboutTitle}>
-        About
-        {/* <div className={style.underline}/> */}
+        <h2>About<span className={style.blinking}>_</span> </h2>
       </div>
       <Row>
         <Col lg={6} md={12} sm={12} xs={12}>

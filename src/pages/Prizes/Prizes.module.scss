@@ -3,7 +3,6 @@
 .prizes {
   display: flex;
   flex-direction: column;
-  margin-top: 9rem;
 
   @include desktop {
     padding: 2rem;
@@ -26,7 +25,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 7rem;
-  padding-top: 1rem;
   
   @include desktop{
     background-image: url("../../components/assets/prizes_imgs/prize_bg.svg");
@@ -77,9 +75,14 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 10%;
+    padding-right: 15%;
+  }
+  .blinking {
+    animation: blink 0.5s infinite;
   }
 }
+
+
 
 .row {
   display: flex;
@@ -236,3 +239,4 @@
       width: 100%;
   }
 }
+

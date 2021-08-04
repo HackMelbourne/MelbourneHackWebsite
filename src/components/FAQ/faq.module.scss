@@ -2,8 +2,30 @@
 
 .faq {
     @include section;
-
+    margin-bottom: 45%;
     h2{
         margin-bottom: 3%;
+    }
+}
+
+
+.content{
+    width: 100%;
+    margin-top: 5%;
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 100%;
+}
+
+.foot{
+    background-image: url("../../components/assets/footer.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include desktop{
+      background-image: url("../../components/assets/footer.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 }

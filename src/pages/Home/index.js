@@ -11,6 +11,7 @@ import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
 import {Streams} from "../../components/Streams/streams";
 import Prizes from "../Prizes";
+import Rules from "../../components/Rules";
 
 
 const Home = ({ pageHeight }) => {
@@ -46,9 +47,8 @@ const Home = ({ pageHeight }) => {
       <Streams/>
       <Prizes/>
       <Highlights/>
-      {/* <Streams/> */}
       <Schedule/>
-      {/* <FAQ/> */}
+      <Rules/>
       <Resources/>
     </div>
   );

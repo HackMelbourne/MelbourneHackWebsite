@@ -8,7 +8,10 @@ const Resources = () => {
       <div className={styles.background}>
     <section id="communication" className={styles.resources}>
       <div className={styles.heading}>
-        <h2>Communication & Resources_</h2>
+        <h2>
+          Communication & Resources
+          <span className={styles.blinking}>_</span>
+        </h2>
       </div>
         <div className={styles.description}>
             Don't be shy! Come join the Melbourne Hack 2021 community✨

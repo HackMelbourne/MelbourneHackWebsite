@@ -4,6 +4,7 @@
 
 .about {
   @include section;
+  margin-left: 9%;
 }
 
 .aboutTitle {
@@ -11,9 +12,12 @@
   flex-direction: column;
   h2{
     padding-top: 5%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     font-family: "Source Code Pro";
-    font-size: $font-size-7;
+    font-size: $font-size-5;
+    @include tall-screen{
+      font-size: $font-size-7;
+    }
     font-weight: bold;
   }
 }

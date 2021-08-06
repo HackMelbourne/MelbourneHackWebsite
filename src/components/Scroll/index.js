@@ -49,7 +49,7 @@ const Scroll = ({ pageHeight }) => {
           backgroundColor: "#ffc059",
           left: "178px",
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
-          height: "5rem",
+          height: "4.5rem",
           zIndex: 0,
         }}
       />

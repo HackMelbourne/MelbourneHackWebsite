@@ -4,13 +4,9 @@
   display: flex;
   flex-direction: column;
 
+
   @include desktop {
     padding: 2rem;
-    min-height: 100vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
   }
 
   h1 {
@@ -27,18 +23,10 @@
   padding-bottom: 7rem;
   
   @include desktop{
-    background-image: url("../../components/assets/prizes_imgs/prize_bg.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
     padding-bottom: 3%;
   }
-  // background-position: 0% 100%;
-
 }
 .content {
-  width: 100%;
-  margin-top: 10%;
-  margin-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -64,18 +52,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
   font-family: "Source Code Pro";
-  font-size: $font-size-7;
   font-weight: bold;
 
   h2 {
     font-family: "Source Code Pro";
-    font-size: $font-size-7;
+    font-size: $font-size-5;
+    @include tall-screen{
+      font-size: $font-size-7;
+    }
     font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15%;
+    text-align: center;
   }
   .blinking {
     animation: blink 0.5s infinite;
@@ -131,17 +120,19 @@
   }
 }
 
+.prize_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .prize_2_img {
   display: none;
 
   @include desktop {
-    background-image: url("../../components/assets/prizes_imgs/prize.svg");
-    background-repeat: no-repeat;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 750px;
+    width: 30%;
+    height: 30%;
   }
 }
 
@@ -172,14 +163,21 @@
   }
 }
 
-.other_prizes{
+.other_prizes {
   display: none;
   @include desktop{
     display: block;
   }
 
-}
+  font-size: $font-size-5;
+  @include tall-screen{
+    font-size: $font-size-7;
+  }
 
+  .other_prizes_content {
+    margin: 0 20%;
+  }
+}
 
 .subtitle{
   font-family: "Source Code Pro";

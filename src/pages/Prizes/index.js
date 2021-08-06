@@ -1,4 +1,5 @@
 import styles from "./Prizes.module.scss";
+import prizeImg from "../../components/assets/prizes_imgs/prize.svg";
 
 const Prizes = () => {
   return (
@@ -8,23 +9,24 @@ const Prizes = () => {
       <div className={styles.heading}>
         <h2>Prizes<span className={styles.blinking}>_</span></h2>
       </div>
-        <div className={styles.prize_2_img}></div>
-        <div className={styles.photo}></div>
+        <div className={styles.prize_container}>
+          <img src={prizeImg} className={styles.prize_2_img} alt="trophies" />
+        </div>
         <div className={styles.other_prizes}>
-          <div className={styles.subtitle}>
-            Other Prizes
-          </div>
-          <div className={styles.spons}>
-          </div>
-          <div className={styles.sponsText}>
-            <h4>Sponsor favourite</h4>
-            
-          </div>
-          <div className={styles.swag}>
-
-          </div>
-          <div className={styles.swagText}>
-              <h4>Swag and goodies</h4>
+          <div className={styles.other_prizes_content}>
+            <div className={styles.subtitle}>
+              Other Prizes
+            </div>
+            <div className={styles.spons}>
+            </div>
+            <div className={styles.sponsText}>
+              <h4>Sponsor favourite</h4>
+            </div>
+            <div className={styles.swag}>
+            </div>
+            <div className={styles.swagText}>
+                <h4>Swag and goodies</h4>
+            </div>
           </div>
         </div>
             <div className={styles.mobile}>

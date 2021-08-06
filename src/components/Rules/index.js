@@ -5,7 +5,10 @@ import {FaExternalLinkAlt} from "react-icons/fa";
 const Rules = () => {
   return (
     <section id="rules" className={styles.rules}>
-      <h2>Rules &amp; FAQ <span className={styles.blinking}>_</span></h2>
+      <div className={styles.faqsTitle}>
+        Rules &amp; FAQ
+        <span className={styles.blinking}>_</span>
+      </div>
       <div className={styles.content}>
         <h5>
           The rules are available in the{" "}
@@ -77,6 +80,8 @@ const Rules = () => {
               </p>
             </td>
           </tr>
+        </table>
+        <div className={styles.otherQuestions}>
           <h5>Still have more questions? Find more FAQs in the{" "}
           <a
             className={styles.externalLink}
@@ -86,8 +91,8 @@ const Rules = () => {
           >
             Participants Handbook{" "}
             <FaExternalLinkAlt />
-          </a> or contact us</h5>
-        </table>
+          </a> or contact us!</h5>
+        </div>
       </div>
     </section>
   );

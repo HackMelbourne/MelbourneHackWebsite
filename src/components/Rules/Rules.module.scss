@@ -3,19 +3,27 @@
 
 .rules {
   @include section;
+  min-height: 150vh;
+  @include tall-screen {
+    min-height: 135vh;
+  }
 }
 
 .content {
   // on desktop need right margin to account for scroll component
   @include desktop {
-    margin: 2rem 10rem 2rem 2rem;
+    margin: 2% 15%;
   }
 }
 
-h2{
-  font-size:  $font-size-7;
-}
-.externalLink {
+.faqsTitle {
+  font-family: "Source Code Pro";
+  font-size: $font-size-5;
+  @include tall-screen {
+    font-size: $font-size-7;
+  }
+  text-align: center;
+  font-weight: bold;
 }
 
 .table {
@@ -57,4 +65,8 @@ a {
 
 .blinking {
   animation: blink 0.5s infinite;
+}
+
+.otherQuestions {
+  margin-top: 2rem;
 }

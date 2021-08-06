@@ -133,7 +133,9 @@
   }
 }
 
-
+.blinking {
+  animation: blink 0.5s infinite
+}
 
 .textbox {
   margin: 2rem;

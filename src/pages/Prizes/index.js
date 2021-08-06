@@ -1,5 +1,7 @@
 import styles from "./Prizes.module.scss";
 import prizeImg from "../../components/assets/prizes_imgs/prize.svg";
+import swag from "../../components/assets/prizes_imgs/12.svg";
+import spons from "../../components/assets/prizes_imgs/13.svg";
 
 const Prizes = () => {
   return (
@@ -17,15 +19,15 @@ const Prizes = () => {
             <div className={styles.subtitle}>
               Other Prizes
             </div>
-            <div className={styles.spons}>
-            </div>
+            {/* <div className={styles.spons}>
+            </div> */}
             <div className={styles.sponsText}>
-              <h4>Sponsor favourite</h4>
-            </div>
-            <div className={styles.swag}>
+              <img src={spons} alt="trophy" className={styles.sponsImg}></img>
+              Sponsor favourite
             </div>
             <div className={styles.swagText}>
-                <h4>Swag and goodies</h4>
+              <img src={swag} alt="trophy" className={styles.swagImg}></img>
+                Swag and goodies
             </div>
           </div>
         </div>

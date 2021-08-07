@@ -86,7 +86,8 @@
 
 
 .navbarButton {
-  font-size: 0.9em;
+  font-family: "Lato";
+  font-size: $font-size-1;
   font-weight: 600;
   color: black;
   background-color: transparent;
@@ -102,7 +103,7 @@
 }
 
 .signUpButton {
-  font-size: 0.9em;
+  font-size: $font-size-1;
   font-weight: 1000;
   color: black;
   background-color: transparent;

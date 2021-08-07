@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import Burger from "./Burger";
 import Menu from "./Menu";
 import navbar_logo from "../assets/logo.png";
-import { NavBarButton } from "./components-styled";
-import { Button } from "@material-ui/core";
 
 // React Ref magic to detect raw events to trigger a function
 const useOnClickOutside = (ref, handler) => {

@@ -1,84 +1,53 @@
 import React from "react";
 import styles from "./Sponsor.module.scss";
-import optiver_logo from "../../components/assets/sponsors/optiver/optiver.png"
-import arcitecta_logo from "../../components/assets/sponsors/arcitecta/arcitecta.png"
+import bainAndCo from "../../components/assets/sponsors/bain_and_co/bain_and_co.png";
+import csiro from "../../components/assets/sponsors/csiro/csiro.png";
+import optiver from "../../components/assets/sponsors/optiver/optiver_1.png";
+import arcitecta from "../../components/assets/sponsors/arcitecta/arcitecta_logo.png";
+import integradev from "../../components/assets/sponsors/integradev/integradev.svg";
+import tibra from "../../components/assets/sponsors/tibra/tibra_logo_1.png";
+import diamondIcon from "../../components/assets/sponsors/diamond.svg";
+import goldIcon from "../../components/assets/sponsors/gold.svg";
+import silverIcon from "../../components/assets/sponsors/silver.svg";
+
+const SponsorLogo = ({src, alt}) => (
+  <div className={styles.sponsorLogo}>
+    <img src={src} alt={alt}></img>
+  </div>
+);
 
 export const Sponsor = (props) => {
-    return(
-        <div className={styles.sponsorsContainer}>
-            <h1 className={styles.sponsHeading}>
-                Meet Our Sponsors
-            </h1>
-            <div className={styles.diamondSponsor}>
-            <h1>
-                Diamond Tier
-            </h1>
-            <table className={styles.sponsorTable}> 
-                <tr>
-                <PlaceHolder tier="Diamond"/>
-                </tr>
-            </table>
-
-            </div>
-            <div class={styles.separator}/>
-            <div className={styles.platinumSponsor}>
-            <h1>
-                Platinum Tier
-            </h1>
-            <table className={styles.sponsorTable}> 
-                <tr>
-                <PlaceHolder tier="Platinum"/>
-                </tr>
-            </table>
-
-            </div>
-            <div class={styles.separator}/>
-            <div className={styles.goldSponsor}>
-            <h1>
-                Gold Tier
-            </h1>
-            <table className={styles.sponsorTable}> 
-                <tr>
-                    <SponsorD link="" logo={optiver_logo} sponsorName={"Optiver"} alt="optiver"/>
-                </tr>
-            </table>
-            
-            </div>
-            <div class={styles.separator}/>
-            <div className={styles.silverSponsor}>
-            <h1>
-                Silver Tier
-            </h1>
-            <table className={styles.sponsorTable}>
-                <tr>
-                <SponsorD link="" logo={arcitecta_logo} sponsorName={"Architecta"} alt="Architecta"/>
-                </tr>
-            </table>
-
-            </div>
+  return (
+    <div className={styles.sponsorsContainer}>
+      <div className={styles.row}>
+        <div className={styles.icon}>
+          <img src={diamondIcon} alt="Diamond Sponsors" width="300px"></img>
+        </div>
+        <div className={styles.sponsors}>
+          <SponsorLogo src={tibra} alt="Tibra"/>
+          <SponsorLogo src={arcitecta} alt="Arcitecta"/>
+          <SponsorLogo src={integradev} alt="Integradev"/>
+        </div>
+      </div>
+      <div className={styles.row}>
+        <div className={styles.icon}>
+          <img src={goldIcon} alt="Gold Sponsors" width="300px"></img>
+        </div>
+        <div className={styles.sponsors}>
+          <SponsorLogo src={optiver} alt="Optiver"/>
+        </div>
+      </div>
+      <div className={styles.row}>
+        <div className={styles.icon}>
+          <img src={silverIcon} alt="Silver Sponsors" width="300px"></img>
+        </div>
+        <div className={styles.sponsors}>
+          <SponsorLogo src={bainAndCo} alt="Bain and Co"/>
+          <div className={`${styles.sponsorLogo} ${styles.csiro}`}>
+            <img src={csiro} alt="CSIRO"></img>
+          </div>
+        </div>
+      </div>
     </div>
-    )
-}
-
-const SponsorD = (props) => {
-    return (
-      <td>
-        <a href={props.link}>
-          <img alt = "Sponsor Logo" className={styles.sponsLogo} src={props.logo}></img>
-        </a>
-      </td>
-    )
-  }
-
-const PlaceHolder = (props) => {
-    return (
-      <td>
-        <a href="/sponsor_us">
-          <h2 className={styles.placeHolder}>
-            Be the first {props.tier} tier sponsor!
-          </h2>
-        </a>
-        
-      </td>
-    )
-  }
+  );
+};

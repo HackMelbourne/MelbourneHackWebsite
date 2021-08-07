@@ -6,6 +6,7 @@ import Burger from "./Burger";
 import Menu from "./Menu";
 import navbar_logo from "../assets/logo.png";
 import { NavBarButton } from "./components-styled";
+import { Button } from "@material-ui/core";
 
 // React Ref magic to detect raw events to trigger a function
 const useOnClickOutside = (ref, handler) => {
@@ -51,7 +52,8 @@ const Navbar = () => {
           <NavBarButton href="/">Streams</NavBarButton>
           <NavBarButton href="/">FAQs</NavBarButton>
           <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
-          <NavBarButton href="/Sponsors">Sponsors</NavBarButton>
+          <Link to="/Sponsors" className={styles.navbarButton}>Sponsors</Link>
+          {/* <NavBarButton href="/Sponsors">Sponsors</NavBarButton> */}
           <SignUpButton to="/Registration">
             {" "}
             <span>REGISTER</span>

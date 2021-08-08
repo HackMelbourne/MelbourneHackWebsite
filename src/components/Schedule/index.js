@@ -21,32 +21,24 @@ const WorkshopsSchedule = (
   <>
     <tr>
       <td>Aug 16</td>
-      <td>2:00PM - 3:00PM</td>
-      <td>Workshop #1: Design</td>
+      <td>2:00PM - 4:00PM</td>
+      <td>Workshop #1: React</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
       <td>Aug 17</td>
-      <td>2:00PM - 4:00PM</td>
-      <td>Workshop #2: React</td>
-      <td>
-        <ZoomLink href={workshopLink} />
-      </td>
-    </tr>
-    <tr>
-      <td>Aug 18</td>
       <td>2:00PM - 3:00PM</td>
-      <td>Workshop #3: CSS Framework</td>
+      <td>Workshop #2: CSS Framework</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
       <td>Aug 18</td>
-      <td>4:00PM - 6:00PM</td>
-      <td>Workshop #4: Mobile Applications</td>
+      <td>2:00PM - 4:00PM</td>
+      <td>Workshop #3: Mobile Applications</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
@@ -54,7 +46,7 @@ const WorkshopsSchedule = (
     <tr>
       <td>Aug 19</td>
       <td>2:00PM - 3:00PM</td>
-      <td>Workshop #5: APIs</td>
+      <td>Workshop #4: APIs</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
@@ -62,23 +54,23 @@ const WorkshopsSchedule = (
     <tr>
       <td>Aug 20</td>
       <td>2:00PM - 3:30PM</td>
-      <td>Workshop #6: Git and Hosting</td>
+      <td>Workshop #5: Git and Hosting</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
       <td>Aug 20</td>
-      <td>4:00PM - 5:30PM</td>
-      <td>Workshop #7: How to Pitch</td>
+      <td>4:00PM - 5:00PM</td>
+      <td>Workshop #6: Computer Vision</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
       <td>Aug 21</td>
-      <td>4:00PM - 5:00PM</td>
-      <td>Workshop #8: Computer Vision</td>
+      <td>4:00PM - 5:30PM</td>
+      <td>Workshop #7: How to Pitch</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
@@ -95,6 +87,11 @@ const FridayBeforeSchedule = (
         {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
       </td>
     </tr>
+  </>
+);
+
+const ThursdaySchedule = (
+  <>
     <tr>
       <td>7:00PM - 9:00PM</td>
       <td>Streams Panel Event</td>
@@ -176,6 +173,12 @@ const SaturdaySchedule = (
       <td>
       </td>
     </tr>
+    <tr>
+      <td>8:30PM - 11:00PM</td>
+      <td>Board Games Night</td>
+      <td>
+      </td>
+    </tr>
   </>
 );
 
@@ -213,6 +216,7 @@ const Schedule = () => {
   const schedules = {
     Workshops: WorkshopsSchedule,
     FridayBefore: FridayBeforeSchedule,
+    Thursday: ThursdaySchedule,
     Friday: FridaySchedule,
     Saturday: SaturdaySchedule,
     Sunday: SundaySchedule
@@ -243,6 +247,14 @@ const Schedule = () => {
                 }`}
               >
                 FRI 13th
+              </button>
+              <button
+                onClick={() => setSelected("Thursday")}
+                className={`${styles.button} ${
+                  selected === "Thursday" ? styles.selected : ""
+                }`}
+              >
+                THURS 19th
               </button>
               <button
                 onClick={() => setSelected("Friday")}

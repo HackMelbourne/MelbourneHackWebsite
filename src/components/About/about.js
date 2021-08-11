@@ -25,7 +25,7 @@ export const About = () => {
               are eager to get innovative.
             </p>
             <p>
-              This year, Melbourne Hack will run online from the 20th-22nd of August,making it accessible to students anywhere in the
+              This year, Melbourne Hack will run online from the 20th-22nd of August, making it accessible to students anywhere in the
               world! Get hacking individually or in a team to create a product
               over a weekend!
             </p>

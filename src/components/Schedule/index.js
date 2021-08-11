@@ -36,9 +36,9 @@ const WorkshopsSchedule = (
       </td>
     </tr>
     <tr>
-      <td>Aug 18</td>
-      <td>2:00PM - 4:00PM</td>
-      <td>Workshop #3: Mobile Applications</td>
+      <td>Aug 17</td>
+      <td>4:00PM - 6:00PM</td>
+      <td>Workshop #3: Computer Vision</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
@@ -52,17 +52,17 @@ const WorkshopsSchedule = (
       </td>
     </tr>
     <tr>
-      <td>Aug 20</td>
-      <td>2:00PM - 3:30PM</td>
-      <td>Workshop #5: Git and Hosting</td>
+      <td>Aug 19</td>
+      <td>4:00PM - 6:00PM</td>
+      <td>Workshop #5: Mobile Development</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
       <td>Aug 20</td>
-      <td>4:00PM - 5:00PM</td>
-      <td>Workshop #6: Computer Vision</td>
+      <td>2:00PM - 3:30PM</td>
+      <td>Workshop #6: Git and Hosting</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>

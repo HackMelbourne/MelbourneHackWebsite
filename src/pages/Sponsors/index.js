@@ -10,9 +10,11 @@ import diamondIcon from "../../components/assets/sponsors/diamond.svg";
 import goldIcon from "../../components/assets/sponsors/gold.svg";
 import silverIcon from "../../components/assets/sponsors/silver.svg";
 
-const SponsorLogo = ({src, alt}) => (
+const SponsorLogo = ({src, alt, href}) => (
   <div className={styles.sponsorLogo}>
-    <img src={src} alt={alt}></img>
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <img src={src} alt={alt}></img>
+    </a>
   </div>
 );
 
@@ -24,9 +26,9 @@ export const Sponsor = (props) => {
           <img src={diamondIcon} alt="Diamond Sponsors" width="300px"></img>
         </div>
         <div className={styles.sponsors}>
-          <SponsorLogo src={tibra} alt="Tibra"/>
-          <SponsorLogo src={arcitecta} alt="Arcitecta"/>
-          <SponsorLogo src={integradev} alt="Integradev"/>
+          <SponsorLogo src={tibra} alt="Tibra" href="https://www.tibra.com/"/>
+          <SponsorLogo src={arcitecta} alt="Arcitecta" href="https://www.arcitecta.com/"/>
+          <SponsorLogo src={integradev} alt="Integradev" href="https://www.integradev.com.au/"/>
         </div>
       </div>
       <div className={styles.row}>
@@ -34,7 +36,7 @@ export const Sponsor = (props) => {
           <img src={goldIcon} alt="Gold Sponsors" width="300px"></img>
         </div>
         <div className={styles.sponsors}>
-          <SponsorLogo src={optiver} alt="Optiver"/>
+          <SponsorLogo src={optiver} alt="Optiver" href="https://www.optiver.com/"/>
         </div>
       </div>
       <div className={styles.row}>
@@ -42,9 +44,11 @@ export const Sponsor = (props) => {
           <img src={silverIcon} alt="Silver Sponsors" width="300px"></img>
         </div>
         <div className={styles.sponsors}>
-          <SponsorLogo src={bainAndCo} alt="Bain and Co"/>
+          <SponsorLogo src={bainAndCo} alt="Bain and Co" href="https://www.bain.com/"/>
           <div className={`${styles.sponsorLogo} ${styles.csiro}`}>
-            <img src={csiro} alt="CSIRO"></img>
+            <a href="https://www.csiro.au/" target="_blank" rel="noopener noreferrer">
+              <img src={csiro} alt="CSIRO"></img>
+            </a>
           </div>
         </div>
       </div>

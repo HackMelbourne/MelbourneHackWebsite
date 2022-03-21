@@ -12,6 +12,7 @@ import { InfoButton } from "../../components/Navbar/components-styled";
 import {Streams} from "../../components/Streams/streams";
 import Prizes from "../Prizes";
 import Rules from "../../components/Rules";
+import {Hidden} from "@material-ui/core";
 
 
 const Home = ({ pageHeight }) => {
@@ -43,7 +44,8 @@ const Home = ({ pageHeight }) => {
           </Col>
         </Row>
       </div>
-        <div className={styles.spacer}/>
+        <Hidden xsDown>
+        <div className={styles.spacer}/></Hidden>
       <About/>
       <Streams/>
       <Prizes/>

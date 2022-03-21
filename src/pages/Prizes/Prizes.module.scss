@@ -54,11 +54,11 @@
   justify-content: center;
   margin-top: 6rem;
   margin-bottom: 2rem;
-  font-family: "Source Code Pro";
+  font-family: $font-title;
   font-weight: bold;
 
   h2 {
-    font-family: "Source Code Pro";
+    font-family: $font-title;
     font-size: $font-size-5;
     @include tall-screen{
       font-size: $font-size-7;
@@ -180,7 +180,7 @@
 }
 
 .subtitle{
-  font-family: "Source Code Pro";
+  font-family: $font-monospace;
   font-size: $font-size-5;
   font-weight: bold;
   margin-left: auto;
@@ -191,7 +191,7 @@
 
 
 .sponsText{
-  font-family: "Source Code Pro";
+  font-family: $font-monospace;
   font-size: $font-size-3;
   margin: 1rem 0;
 
@@ -202,7 +202,7 @@
 }
 
 .swagText{
-  font-family: "Source Code Pro";
+  font-family: $font-monospace;
   font-size: $font-size-3;
   margin: 1rem 0;
 

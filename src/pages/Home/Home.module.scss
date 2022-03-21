@@ -29,14 +29,14 @@
 }
 
 .container {
-  min-height: 100vh;
-  margin-bottom: 0rem;
+  z-index: 0;
+  position: relative;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../components/assets/home/background_top.svg");
+  background: linear-gradient(180deg, #FFF6E9 -1.49%, #FFC165 34.92%, #8EC570 89.3%);
   background-size: cover;
-  background-position: 100% 30%;
 
   .pic_text {
     // border: 1px solid red;
@@ -162,4 +162,16 @@
     background-color: $hackmelb-blue;
     color: $primary-white;
   }
+}
+
+.spacer{
+  position: relative;
+    aspect-ratio: 960/200;
+    width: 100%;
+  z-index: 10;
+  margin-top: -90px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-image: url('../../components/assets/stacked-waves.svg');
 }

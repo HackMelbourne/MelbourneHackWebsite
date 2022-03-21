@@ -43,6 +43,7 @@ const Home = ({ pageHeight }) => {
           </Col>
         </Row>
       </div>
+        <div className={styles.spacer}/>
       <About/>
       <Streams/>
       <Prizes/>

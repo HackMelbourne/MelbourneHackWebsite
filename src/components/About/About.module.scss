@@ -4,10 +4,13 @@
 
 .about {
   @include section;
-  margin-left: 9%;
+  padding-left: 9%;
+  background-color: #68A35E;
+  color: white;
 }
 
 .aboutTitle {
+
   display: flex;
   flex-direction: column;
   h2{
@@ -34,6 +37,8 @@
 }
 
 .aboutTitle h2 {
+  color: white;
+
   font-weight: bolder;
   float: left;
 }

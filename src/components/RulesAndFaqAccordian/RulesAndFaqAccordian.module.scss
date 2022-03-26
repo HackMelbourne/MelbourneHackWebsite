@@ -2,7 +2,7 @@
 @import "../../pages/Home/Home.module.scss";
 
 .gradientBackground {
-  background: linear-gradient(180deg, #455CED 0%, #C59DA2 100%); // TODO colour constant
+  background: #4F8545; // TODO colour constant
 }
 
 .rules {
@@ -176,7 +176,7 @@ a {
 }
 
 .contributeGreen {
-  background-color: #50D85A;
+  background-color: #9EC670;
   margin-left: -5vw;
   width: 110vw;
   transform: rotate(7deg);

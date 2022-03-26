@@ -238,7 +238,7 @@ const Schedule = () => {
                   selected === "Workshops" ? styles.selected : ""
                 }`}
               >
-                WORKSHOPS
+                Workshops
               </button>
               <button
                 onClick={() => setSelected("FridayBefore")}
@@ -246,7 +246,7 @@ const Schedule = () => {
                   selected === "FridayBefore" ? styles.selected : ""
                 }`}
               >
-                FRI 13th
+                Sat, Aug 20
               </button>
               <button
                 onClick={() => setSelected("Thursday")}
@@ -254,7 +254,7 @@ const Schedule = () => {
                   selected === "Thursday" ? styles.selected : ""
                 }`}
               >
-                THURS 19th
+                Sun, Aug 21
               </button>
               <button
                 onClick={() => setSelected("Friday")}
@@ -262,7 +262,7 @@ const Schedule = () => {
                   selected === "Friday" ? styles.selected : ""
                 }`}
               >
-                FRI 20th
+                Mon, Aug 22
               </button>
               <button
                 onClick={() => setSelected("Saturday")}

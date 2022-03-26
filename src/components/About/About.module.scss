@@ -5,8 +5,8 @@
 .about {
   @include section;
   padding-left: 9%;
-  background-color: #68A35E;
-  color: white;
+  background-color: $green-medium;
+  color: $primary-white;
 }
 
 .aboutTitle {

@@ -11,7 +11,7 @@ import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
 import {Streams} from "../../components/Streams/streams";
 import Prizes from "../Prizes";
-import Rules from "../../components/Rules";
+import RulesAndFaqAccordian from "../../components/RulesAndFaqAccordian";
 import {Hidden} from "@material-ui/core";
 
 
@@ -51,7 +51,8 @@ const Home = ({ pageHeight }) => {
       <Prizes/>
       <Highlights/>
       <Schedule/>
-      <Rules/>
+      <RulesAndFaqAccordian />
+      {/* <Rules /> */}
       <Resources/>
     </div>
   );

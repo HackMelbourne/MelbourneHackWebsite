@@ -1,0 +1,184 @@
+@import "../../styles/styles.scss";
+@import "../../pages/Home/Home.module.scss";
+
+.gradientBackground {
+  background: #4F8545; // TODO colour constant
+}
+
+.rules {
+  // @include section;
+  // min-height: 150vh;
+  @include tall-screen {
+    // min-height: 135vh;
+  }
+}
+
+.content {
+  // on desktop need right margin to account for scroll component
+  @include desktop {
+    margin: 2% 15%;
+  }
+}
+
+.faqsTitle {
+  font-family: "Source Code Pro";
+  font-size: $font-size-5;
+  @include tall-screen {
+    font-size: $font-size-7;
+  }
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF; // TODO colour constant
+}
+
+.faqsSubTitle {
+  font-family: "Source Code Pro";
+  font-size: $font-size-3;
+  @include tall-screen {
+    font-size: $font-size-3;
+  }
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF; // TODO colour constant
+}
+
+h5 {
+  color: #FFFFFF; // TODO colour constant
+  // TODO font
+}
+
+.faqItem {
+  border-bottom: 1px solid #FFFFFF; // TODO colour constant
+  padding: 1.5rem 1rem;
+}
+
+.faqHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  transition: transform 0.2s ease;
+  svg {
+    color: #FFFFFF;
+  }
+}
+
+.icon.active {
+  transform: rotate(180deg);
+}
+
+.question {
+  color: #FFFFFF; // TODO colour constant
+  // TODO font
+}
+
+.answer {
+  margin-top: 1rem;
+  color: #FFFFFF; // TODO colour constant
+  // TODO font
+}
+
+a {
+  color: #9deea2; // TODO colour constant
+  text-decoration: underline;
+
+  &:hover {
+    color: #50D85A; // TODO colour constant
+  }
+}
+
+.blinking {
+  animation: blink 0.5s infinite;
+}
+
+/* ------------------------------- CONTRIBUTE ------------------------------- */
+
+.contributeSection {
+  // margin: 5rem 0;
+  font-size: 1.5rem;  // TODO font
+  padding: 5rem 0;  // TODO doesnt look good on big monitors - probably a way to calculate the perfect height lol
+  overflow: hidden;
+}
+
+.scrollTextSlow {
+  white-space: nowrap;
+  color: #09350E; // TODO colour constant
+  
+  -moz-animation: scroll-left 200s linear infinite;
+  -webkit-animation: scroll-left 200s linear infinite;
+  animation: scroll-left 200s linear infinite;
+}
+.scrollTextFast {
+  white-space: nowrap;
+  color: #09350E; // TODO colour constant
+  
+  -moz-animation: scroll-right 100s linear infinite;
+  -webkit-animation: scroll-right 100s linear infinite;
+  animation: scroll-right 100s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes scroll-left {
+  to { -moz-transform: translateX(-300%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes scroll-left {
+  to { -webkit-transform: translateX(-300%); }
+}
+
+@keyframes scroll-left {
+  to {
+    -moz-transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+}
+
+/* for Firefox */
+@-moz-keyframes scroll-right {
+  from { -moz-transform: translateX(-300%)}
+  to { -moz-transform: translateX(0%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes scroll-right {
+  from { -webkit-transform: translateX(-300%); }
+  to { -webkit-transform: translateX(0%); }
+}
+
+@keyframes scroll-right {
+  from {
+    -moz-transform: translateX(-300%);
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+  to {
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+.contributeWhite {
+  background-color: #F1EEE7;
+  margin-left: -5vw;
+  width: 110vw;
+  transform: rotate(-5deg);
+  padding: 1.5rem 0;
+  
+}
+
+.contributeGreen {
+  background-color: #9EC670;
+  margin-left: -5vw;
+  width: 110vw;
+  transform: rotate(7deg);
+  padding: 1.5rem 0;
+}

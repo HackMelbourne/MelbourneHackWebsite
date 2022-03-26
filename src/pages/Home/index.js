@@ -1,6 +1,6 @@
 import styles from "./Home.module.scss";
 import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
-import lightbulb from "../../components/assets/home/lightbulb.svg";
+import lightbulb from "../../components/assets/home/2022-lightbulb.svg";
 import FadeIn from "react-fade-in";
 import { About } from "../../components/About/about";
 import Highlights from "../../components/Highlights";
@@ -13,7 +13,7 @@ import {Streams} from "../../components/Streams/streams";
 import Prizes from "../Prizes";
 import RulesAndFaqAccordian from "../../components/RulesAndFaqAccordian";
 import {Hidden} from "@material-ui/core";
-
+import {FaExternalLinkAlt} from "react-icons/fa";
 
 const Home = ({ pageHeight }) => {
   return (
@@ -34,18 +34,20 @@ const Home = ({ pageHeight }) => {
           </Col>
           <Col lg={6} className={styles.title}>
             <FadeIn delay={290}>
-              <h2>August 20-22nd, 2021</h2>
+              <h2 className={styles.date}>August 20-22nd, 2021</h2>
               <h1>
                 Melbourne Hack<span className={styles.blinking}>_</span>
               </h1>
               <h3>Melbourne's Premier Hackathon Hosted by HackMelbourne</h3>
-              <a href = 'https://coherent-tartan-183.notion.site/Participants-Handbook-dc64e20afd2d415bab3f31d2d4c3e3cd' target="_blank" rel="noopener noreferrer"><InfoButton>Hackathon Information Here!</InfoButton></a>
+              <a href = 'https://coherent-tartan-183.notion.site/Participants-Handbook-dc64e20afd2d415bab3f31d2d4c3e3cd' target="_blank" rel="noopener noreferrer">
+                <InfoButton>Register Now!</InfoButton>
+              </a>
             </FadeIn>
           </Col>
         </Row>
       </div>
         <Hidden xsDown>
-        <div className={styles.spacer}/></Hidden>
+      <div className={styles.spacer}/></Hidden>
       <About/>
       <Streams/>
       <Prizes/>

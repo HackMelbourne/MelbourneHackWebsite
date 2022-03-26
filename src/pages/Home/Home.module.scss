@@ -10,13 +10,13 @@
   }
 
   h2 {
-    color: $primary-dark;
+    color: white;
     font-size: $font-size-5;
   }
 
   h3,
   h1 {
-    color: $primary-dark;
+    color: white;
   }
 }
 
@@ -69,6 +69,10 @@
   }
 }
 
+.date {
+  color: white;
+}
+
 .title {
   line-height: 1.1em;
   padding: 80px 30px 5px !important;
@@ -82,7 +86,7 @@
     @include tablet {
       font-size: 4.8em;
     }
-    color: $hackmelb-blue;
+    color: white;
   }
 
   h2 {

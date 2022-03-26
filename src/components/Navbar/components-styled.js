@@ -46,7 +46,6 @@ export const SignUpButton = styled(Link)({
 
 export const InfoButton = styled(Button)({
   marginTop: "2%",
-  border: "solid 0.2rem black",
   fontSize: "100%",
   fontFamily: "Consolas, Menlo",
   fontWeight: "bold",

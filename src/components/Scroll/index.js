@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Scroll.module.scss";
-import lightbulb from "../../components/assets/home/lightbulb.svg";
+import lightbulb from "../../components/assets/home/2022-lightbulb.svg";
 import {HashLink as Link} from "react-router-hash-link";
 
 const Scroll = ({ pageHeight }) => {
@@ -46,7 +46,7 @@ const Scroll = ({ pageHeight }) => {
           // trial and error adjustments
           position: "relative",
           width: "10px",
-          backgroundColor: "#ffc059",
+          backgroundColor: "#97D0ED",
           left: "178px",
           top: `${96 + (scrollPosition / pageHeight) * scrollBarHeight}px`,
           height: "4.5rem",

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+.menu {
+  height: 100vh;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#d4feff), to(#f4fffd));
+  background-image: linear-gradient(90deg, #d4feff, #f4fffd);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.menu a {
+  font-size: 1rem;
+  border: 2px solid #1B6AE3;
+  margin: 2rem 0;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+.menu a:hover, .menu a:focus {
+  background-color: #1B6AE3;
+  color: #f3ffff;
+}
+
+.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=Menu.module.css.map */

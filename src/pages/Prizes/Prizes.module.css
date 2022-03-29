@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+.prizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F1EEE7;
+  color: #19421E;
+}
+
+@media (min-width: 1200px) {
+  .prizes {
+    padding: 2rem;
+  }
+}
+
+.prizes h1 {
+  font-size: 3.052rem;
+  color: #1b6ae3;
+  margin-bottom: 3rem;
+}
+
+.background {
+  background-image: url("../../components/assets/prizes_imgs/prize_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 7rem;
+}
+
+@media (min-width: 1200px) {
+  .background {
+    padding-bottom: 3%;
+  }
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content div:nth-child(3) div:nth-child(1) .circle {
+  background-color: #F579D4;
+}
+
+.content div:nth-child(3) div:nth-child(2) .circle {
+  background-color: #50D85A;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-family: "Source Code Pro";
+  font-weight: bold;
+}
+
+.heading h2 {
+  font-family: "Source Code Pro";
+  font-size: 2.441rem;
+  color: #19421E;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-height: 800px) {
+  .heading h2 {
+    font-size: 3.815rem;
+  }
+}
+
+.heading .blinking {
+  -webkit-animation: blink 0.5s infinite;
+          animation: blink 0.5s infinite;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .row {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.underline {
+  width: 20rem;
+  height: 2rem;
+  background-image: url("../../components/assets/underline_bar.svg");
+}
+
+@media (min-width: 1200px) {
+  .underline {
+    width: 35rem;
+  }
+}
+
+.prize_3_img {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .prize_3_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    height: 345px;
+    background-image: url("../../components/assets/prizes_imgs/3rd_place.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.prize_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prize_container div:nth-child(1) .circle {
+  background-color: #FFC300;
+}
+
+.prize_container div:nth-child(2) .circle {
+  background-color: #4ED1D9;
+}
+
+.prize_container div:nth-child(3) .circle {
+  background-color: #FF7300;
+}
+
+.prize_circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prize_circle .circle {
+  height: 156px;
+  width: 156px;
+  border-radius: 50%;
+}
+
+.prize_circle .circle_text {
+  height: 60px;
+  margin-top: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prize_container_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 26rem;
+  gap: 15rem;
+}
+
+.mobile_description {
+  padding-bottom: 10%;
+}
+
+@media (min-width: 1200px) {
+  .mobile_description {
+    display: none;
+  }
+}
+
+.mobile {
+  margin-top: 3rem;
+  padding-left: 30%;
+}
+
+@media (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=Prizes.module.css.map */

@@ -3,10 +3,17 @@
 .textbox {
   margin: 2rem;
   padding: 1rem;
-  background-color: #f06bea;
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  background-color: #ffc7bc;
   text-align: center;
   vertical-align: middle;
   -webkit-box-shadow: 7px -7px #1b6ae3;
           box-shadow: 7px -7px #1b6ae3;
+}
+
+.titles {
+  font-size: 1.563rem;
 }
 /*# sourceMappingURL=Textbox.module.css.map */

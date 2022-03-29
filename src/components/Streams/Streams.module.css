@@ -1,23 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 .streams {
-  width: 80%;
+  width: 100%;
   height: 200%;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  margin-top: 10%;
+  padding: 2rem;
   font-family: "Consolas", "Menlo", "Monaco", "Courier New", "monospace";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .streamsTitle {
-  display: inline-block;
-  margin-bottom: 8%;
+  padding-top: 5%;
+  margin-bottom: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Source Code Pro";
+  font-size: 2.441rem;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-height: 800px) {
+  .streamsTitle {
+    font-size: 3.815rem;
+  }
+}
+
+.streamDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 60%;
+  min-height: 37vh;
+  text-align: center;
+}
+
+@media (min-height: 800px) {
+  .streamDescription {
+    font-size: 1.563rem;
+  }
+}
+
+.streamDescription h1 {
+  font-size: 2.441rem;
+}
+
+.streamsBlock {
+  width: 100%;
+  padding: 0% 10%;
+  margin-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.streamButton > img, .medTechButton > img, .financeButton > img, .sustainabilityButton > img, .educationButton > img, .memeButton > img {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  z-index: 4;
+}
+
+.streamButton > div, .medTechButton > div, .financeButton > div, .sustainabilityButton > div, .educationButton > div, .memeButton > div {
+  border-radius: 100%;
+  width: 10rem;
+  height: 10rem;
+  -webkit-transform: scale(1);
+  -webkit-transition: -webkit-transform 0.3s;
+}
+
+.streamButton img:hover ~ div, .medTechButton img:hover ~ div, .financeButton img:hover ~ div, .sustainabilityButton img:hover ~ div, .educationButton img:hover ~ div, .memeButton img:hover ~ div {
+  -webkit-transform: scale(1.3);
+  -webkit-transition: -webkit-transform 0.3s;
+}
+
+.medTechButton > div {
+  background-color: rgba(237, 106, 94, 0.2);
+}
+
+.medTechButton:hover .medTechDescription {
+  background-color: red;
+}
+
+.financeButton > div {
+  background-color: rgba(27, 106, 227, 0.2);
+}
+
+.sustainabilityButton > div {
+  background-color: rgba(9, 188, 138, 0.2);
+}
+
+.educationButton > div {
+  background-color: rgba(252, 219, 57, 0.2);
+}
+
+.memeButton > div {
+  background-color: rgba(247, 180, 167, 0.2);
 }
 
 .streamsTitle .underline {
-  position: absolute;
-  left: 0%;
-  top: 126%;
+  width: 20rem;
+  height: 2rem;
+  background-image: url("../assets/underline_bar.svg");
+}
+
+@media (min-width: 1200px) {
+  .streamsTitle .underline {
+    width: 20rem;
+  }
 }
 
 .streamsTitle h2 {
@@ -25,14 +149,28 @@
   float: left;
 }
 
-.description {
-  font-size: 1.15em;
-  text-align: center;
+.streamsTitle .image {
+  position: absolute;
+  left: 19%;
+  top: 118%;
 }
 
 .rowFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
+@media (min-width: 1200px) {
+  .rowFlex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /*# sourceMappingURL=Streams.module.css.map */

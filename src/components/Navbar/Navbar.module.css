@@ -10,10 +10,9 @@
           align-items: center;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d4feff), to(#f4fffd));
-  background-image: linear-gradient(90deg, #d4feff, #f4fffd);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: url("../../components/assets/home/background_top.svg");
+  background-position: 20% 0%;
+  background-size: cover;
   padding: 1rem;
   z-index: 20;
 }
@@ -23,27 +22,59 @@
   text-decoration: none;
 }
 
+.navbar button {
+  margin-right: 2%;
+}
+
 .logo {
-  width: 150%;
-  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
 }
 
 .logo img {
-  float: left;
-  margin-right: 5%;
+  margin: 0 0.8rem 0 0;
 }
 
-.logo h2 {
-  font-size: 1.563rem;
+.logo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo div h2 {
+  font-size: 1.25rem;
   font-weight: 1000;
   font-family: "Consolas", "Menlo", "Monaco", "Courier New", "monospace";
   color: #1B6AE3;
+  margin: 0;
 }
 
-.logo h3 {
-  font-size: 1rem;
+@media (min-width: 1200px) {
+  .logo div h2 {
+    font-size: 1.563rem;
+  }
+}
+
+.logo div h3 {
+  font-size: 0.8rem;
   font-family: "Lato", sans-serif;
   font-weight: bolder;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .logo div h3 {
+    font-size: 1rem;
+  }
 }
 
 .links {
@@ -61,9 +92,74 @@
           justify-content: flex-end;
 }
 
-.link {
+.desktopNav {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .desktopNav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.mobileNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1200px) {
+  .mobileNav {
+    display: none;
+  }
+}
+
+.navbarButton {
+  font-family: "Lato";
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+  padding: 0.7% 2%;
+  margin: 0 0.5em;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  letter-spacing: 0.08em;
+}
+
+.navbarButton:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #1B6AE3;
+}
+
+.signUpButton {
+  font-size: 1rem;
+  font-weight: 1000;
+  color: black;
+  background-color: transparent;
+  padding: 0.8% 4%;
+  margin: 0 0.8em;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  border-width: 0.2em;
+  border-color: #1B6AE3;
+  border-radius: 0;
+}
+
+.signUpButton:hover {
+  background-color: #1B6AE3;
+  color: white;
 }
 /*# sourceMappingURL=Navbar.module.css.map */

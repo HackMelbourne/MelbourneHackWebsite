@@ -10,7 +10,9 @@ import Schedule from "../../components/Schedule";
 import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
 import {Streams} from "../../components/Streams/streams";
+import Sponsors from "../Sponsors";
 import Prizes from "../Prizes";
+import Theme from "../Theme";
 import Rules from "../../components/Rules";
 
 
@@ -45,7 +47,9 @@ const Home = ({ pageHeight }) => {
       </div>
       <About/>
       <Streams/>
+      <Theme />
       <Prizes/>
+      <Sponsors />
       <Highlights/>
       <Schedule/>
       <Rules/>

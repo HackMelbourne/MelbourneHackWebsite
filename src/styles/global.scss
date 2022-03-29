@@ -38,7 +38,8 @@ body {
   margin: 0;
   font-family: $font-sans;
   font-size: $font-size-1;
-  color: $primary-white;
+  color: $color;
+  background-color: $new-color-theme;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

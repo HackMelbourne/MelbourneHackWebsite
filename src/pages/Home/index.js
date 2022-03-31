@@ -14,7 +14,7 @@ import Sponsors from "../Sponsors";
 import Prizes from "../Prizes";
 import Theme from "../Theme";
 import RulesAndFaqAccordian from "../../components/RulesAndFaqAccordian";
-import {Hidden} from "@material-ui/core";
+import {Box, Hidden} from "@material-ui/core";
 
 const Home = ({ pageHeight }) => {
   return (
@@ -47,8 +47,8 @@ const Home = ({ pageHeight }) => {
           </Col>
         </Row>
       </div>
-        <Hidden xsDown>
-      <div className={styles.spacer}/></Hidden>
+        <Box maxWidth='100vw' overflow={'hidden'}>
+      <div className={styles.spacer}/></Box>
       <About/>
       <Streams/>
       <Theme />

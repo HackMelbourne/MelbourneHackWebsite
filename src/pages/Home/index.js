@@ -10,7 +10,9 @@ import Schedule from "../../components/Schedule";
 import { Col, Row } from "react-bootstrap";
 import { InfoButton } from "../../components/Navbar/components-styled";
 import {Streams} from "../../components/Streams/streams";
+import Sponsors from "../Sponsors";
 import Prizes from "../Prizes";
+import Theme from "../Theme";
 import RulesAndFaqAccordian from "../../components/RulesAndFaqAccordian";
 import {Hidden} from "@material-ui/core";
 import {FaExternalLinkAlt} from "react-icons/fa";
@@ -50,7 +52,9 @@ const Home = ({ pageHeight }) => {
       <div className={styles.spacer}/></Hidden>
       <About/>
       <Streams/>
+      <Theme />
       <Prizes/>
+      <Sponsors />
       <Highlights/>
       <Schedule/>
       <RulesAndFaqAccordian />

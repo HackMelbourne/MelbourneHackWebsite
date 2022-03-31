@@ -3,8 +3,8 @@
 .prizes {
   display: flex;
   flex-direction: column;
-
-
+  background-color: $new-color-theme;
+  color: $primary-white;
   @include desktop {
     padding: 2rem;
   }
@@ -21,7 +21,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 7rem;
-  
+
+
   @include desktop{
     padding-bottom: 3%;
   }
@@ -31,22 +32,10 @@
   flex-direction: column;
   justify-content: space-around;
 
+
 }
 
-.podium {
-  display: flex;
-  justify-content: space-evenly;
 
-  h3 {
-    font-weight: bold;
-    font-size: $font-size-2;
-    font-family: $font-title;
-  }
-
-  @include desktop {
-    margin-top: 5rem;
-  }
-}
 
 .heading {
   display: flex;
@@ -60,11 +49,14 @@
   h2 {
     font-family: $font-title;
     font-size: $font-size-5;
+    color: $primary-white;
     @include tall-screen{
       font-size: $font-size-7;
     }
     font-weight: bold;
     text-align: center;
+    position: relative;
+    left: 20px;
   }
   .blinking {
     animation: blink 0.5s infinite;
@@ -107,34 +99,45 @@
   }
 }
 
-.prize_1_img {
-  display: none;
 
-  @include desktop {
-    // border: 1px solid red;
-    display: flex;
-    width: 450px;
-    height: 520px;
-    background-image: url("../../components/assets/prizes_imgs/prizes-first.svg");
-    background-repeat: no-repeat;
-  }
-}
 
 .prize_container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
+
 }
-
-.prize_2_img {
-  display: none;
-
-  @include desktop {
-    display: block;
-    width: 30%;
-    height: 30%;
+.prize_circle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .circle{
+    height: 156px;
+    width: 156px;
+    border-radius: 50%;
+    background-color:white;
+  }
+  .circle_text{
+    height: 60px;
+    margin-top: 10px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
+.prize_container_2{
+  margin-top: 2rem;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
 
 .mobile_description {
   padding-bottom: 10%;
@@ -143,10 +146,6 @@
   }
 }
 
-.prize_item {
-  display: flex;
-  flex-direction: column-reverse;
-}
 
 .mobile {
   margin-top: 3rem;
@@ -163,66 +162,10 @@
   }
 }
 
-.other_prizes {
-  display: none;
-  @include desktop{
-    display: block;
-  }
-
-  font-size: $font-size-5;
-  @include tall-screen{
-    font-size: $font-size-7;
-  }
-
-  .other_prizes_content {
-    margin: 0 20%;
-  }
-}
-
-.subtitle{
-  font-family: $font-monospace;
-  font-size: $font-size-5;
-  font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 15%;
-  padding-bottom: 1%;
-}
 
 
-.sponsText{
-  font-family: $font-monospace;
-  font-size: $font-size-3;
-  margin: 1rem 0;
-
-  .sponsImg {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-.swagText{
-  font-family: $font-monospace;
-  font-size: $font-size-3;
-  margin: 1rem 0;
-
-  .swagImg {
-    width: 80px;
-    height: 80px;
-  }
-}
 
 
-.photo{
-    display: none;
-  
-    @include desktop {
-      background-image: url("../../components/assets/prizes_imgs/13.svg");
-      background-repeat: no-repeat;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-  }
-}
+
+
 

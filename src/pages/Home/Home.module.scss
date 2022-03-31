@@ -1,4 +1,5 @@
 @import "../../styles/styles.scss";
+
 @mixin section {
   // reduce padding on mobile, min-height bit is not needed
   // since scroll component is not used
@@ -62,10 +63,10 @@
 .lightbulb {
   display: none;
   @include desktop {
-  display: unset;
-  width: 75%;
-  max-height: 500px;
-  margin-bottom: 50px;
+    display: unset;
+    width: 75%;
+    max-height: 500px;
+    margin-bottom: 50px;
   }
 }
 
@@ -113,7 +114,7 @@
     padding: 1rem;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 }
@@ -134,10 +135,10 @@
   top: 85vh;
   left: 0;
   width: 100%;
-  @include tablet{
+  @include tablet {
     display: none;
   }
-  @include desktop{
+  @include desktop {
     display: block;
   }
 }
@@ -161,7 +162,7 @@
   background-color: transparent;
   color: $primary-dark;
   text-align: center;
-  
+
   &:hover,
   &:focus {
     background-color: $hackmelb-blue;
@@ -169,14 +170,14 @@
   }
 }
 
-.spacer{
+.spacer {
   position: relative;
-    aspect-ratio: 960/200;
-    width: 100%;
+  aspect-ratio: 960/200;
+  width: 100%;
   z-index: 10;
   margin-top: -90px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-image: url('../../components/assets/stacked-waves.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url('../../components/assets/stacked-waves.svg');
 }

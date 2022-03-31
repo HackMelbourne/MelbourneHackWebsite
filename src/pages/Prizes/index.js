@@ -1,7 +1,4 @@
 import styles from "./Prizes.module.scss";
-import prizeImg from "../../components/assets/prizes_imgs/prize.svg";
-import swag from "../../components/assets/prizes_imgs/12.svg";
-import spons from "../../components/assets/prizes_imgs/13.svg";
 
 const Prizes = () => {
   return (

@@ -1,42 +1,177 @@
 @import "../../styles/styles.scss";
 
-.brand {
-  display: none;
-
-  @include desktop {
-    display: unset;
-    font-size: $font-size-3;
-    margin-left: 2rem;
-  }
-}
-
 .footer {
+  color: white;
   border-top: 1px solid black;
   width: 100%;
-  background-color: $primary-white;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 
   @include desktop {
+    position: relative;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
   }
 }
 
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  @include desktop {
+    padding-right: 2rem;
+    flex-direction: row;
+    align-items:flex-start;
+    :nth-child(1) {order: 2;}
+  }
+  
+  .footerLogo {
+    @include desktop {
+      display: unset;
+    }
+  }
+
+  .brand {
+  font-family: $font-main;
+  font-size: $font-size-4;
+    @include desktop {
+      display: inline;
+      font-size: $font-size-3;
+      margin-left: 2rem;
+    }
+
+    .host {
+      font-size: 0.8rem;
+      display: block;
+    }
+  }  
+
+  .blinking {
+  animation: blink 0.5s infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+.HackMelbourne_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+      display: unset;
+      padding-top: 1rem;
+    }
+}
+
+.rightColumn {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  :first-child {order:2;}
+  @include desktop {
+    :first-child {order: initial;}
+    
+    align-items:flex-start;
+    border-left: 0.5px #50D85A solid;
+  }
+
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+      justify-content: flex-start;
+    }
+  }
+
+  .contact {
+  display: none;
+  font-family: $font-main;
+
+    @include desktop {
+      display: block ;
+      font-size: $font-size-4;
+      font-weight: 800;
+    }
+  } 
+
+  .email {
+    display: block;
+    font-family: $font-title;
+    font-size: $font-size-2;
+    font-weight: 600;
+
+    a {
+      padding-left: 0.3rem;
+      color: white;
+      font-weight: 200;
+      display: block;
+      @include desktop {
+        display: unset;
+      }
+    }
+
+    @include desktop {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  // buttons are uniform length here
+  .footerButton {
+    font-family: $font-main;
+    font-size: $font-size-1;
+    display: none;
+    text-align: center;
+    border-radius: 3rem;
+    border-width: 0;
+    color: black;
+    background-color: #50D85A;
+    text-decoration: none;
+    
+    
+    @include desktop {
+      display: unset;
+      padding: 0.5rem 0.8rem;
+    }
+
+    i {
+      display: inline-flex;
+      color: black;
+      font-size: $font-size-1;
+    }
+    
+  }
+
+}
+
 .links {
-  padding: 2rem;
+  padding-left: 0.8rem;
   width: 50%;
   display: flex;
   justify-content: center;
 
   @include desktop {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   a {
+    color: white;
     font-size: $font-size-5;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }
+

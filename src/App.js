@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Prizes from "./pages/Prizes";
 import Navbar from "./components/Navbar";
 import { Sponsor } from "./pages/Sponsors";
+import Footer from "./components/Footer";
 
 function App() {
   // getting the total page height is effectful, this is needed for Scroll
@@ -20,28 +21,28 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div ref={ref}>
         {/* <Background> */}
-          <Navbar />
-          <Switch>
-            <Route exact path="/">
-              <Home pageHeight={pageHeight}/>
-            </Route>
-            <Route exact path="/Prizes">
-              <Prizes />
-            </Route>
-            <Route exact path="/Sponsors">
-              <Sponsor />
-            </Route>
-            <Route path='/Registration' component={() => { 
-            window.location.replace("https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"); 
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home pageHeight={pageHeight} />
+          </Route>
+          <Route exact path="/Prizes">
+            <Prizes />
+          </Route>
+          <Route exact path="/Sponsors">
+            <Sponsor />
+          </Route>
+          <Route path='/Registration' component={() => {
+            window.location.replace("https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723");
             return null;
-            }}/>
-            <Route>
-              {/* matches any other route: page for 404 error */}
-              <PageNotFound />
-            </Route>
-          </Switch>
+          }} />
+          <Route>
+            {/* matches any other route: page for 404 error */}
+            <PageNotFound />
+          </Route>
+        </Switch>
         {/* </Background> */}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Router>
   );

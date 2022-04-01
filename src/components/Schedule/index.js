@@ -78,6 +78,153 @@ const WorkshopsSchedule = (
   </>
 );
 
+const schedule = [
+  {
+    day: "Wednesday",
+    date: "Apri 20",
+    events: [
+      {
+        title: "Workshop 1: JS & APIs",
+        startTime: "2:30PM",
+        endTime: "3:30PM",
+        isWorkshop: true
+      },
+      {
+        title: "Workshop 2: HTML & CSS",
+        startTime: "4:00PM",
+        endTime: "5:00PM",
+        isWorkshop: true
+      }
+    ]
+  },
+  {
+    day: "Thursday",
+    date: "Apri 21",
+    events: [
+      {
+        title: "Workshop 3: Github",
+        startTime: "2:30PM",
+        endTime: "3:30PM",
+        isWorkshop: true
+      },
+      {
+        title: "Workshop 4: ML/AI",
+        startTime: "5:00PM",
+        endTime: "6:00PM",
+        isWorkshop: true
+      }
+    ]
+  },
+  {
+    day: "Friday",
+    date: "Apri 22",
+    events: [
+      {
+        title: "Workshop 5: Optiver Auto-Trader Bot",
+        startTime: "2:30PM",
+        endTime: "3:30PM",
+        isWorkshop: true
+      },
+      {
+        title: "Social Activity - Team Formation",
+        startTime: "5:00PM",
+        endTime: "6:00PM",
+        isWorkshop: false
+      },
+      {
+        title: "Opening Ceremony & Registration Closes",
+        startTime: "6:00PM",
+        endTime: "7:00PM",
+        isWorkshop: false
+      },
+      {
+        title: "Complementary Dinner",
+        startTime: "7:00PM",
+        endTime: "",
+        isWorkshop: false
+      },
+    ]
+  },
+  {
+    day: "Friday",
+    date: "Apri 22",
+    events: [
+      {
+        title: "Workshop 5: Optiver Auto-Trader Bot",
+        startTime: "2:30PM",
+        endTime: "3:30PM",
+        isWorkshop: true
+      },
+      {
+        title: "Social Activity - Team Formation",
+        startTime: "5:00PM",
+        endTime: "6:00PM",
+        isWorkshop: false
+      },
+      {
+        title: "Opening Ceremony & Registration Closes",
+        startTime: "6:00PM",
+        endTime: "7:00PM",
+        isWorkshop: false
+      },
+      {
+        title: "Complementary Dinner",
+        startTime: "7:00PM",
+        endTime: "",
+        isWorkshop: false
+      },
+    ]
+  },
+  {
+    day: "Saturday",
+    date: "Apri 23",
+    events: [
+      {
+        title: "Mentor Session 1",
+        startTime: "9:00AM",
+        endTime: "12:00PM",
+        isWorkshop: false
+      },
+      {
+        title: "Light Refreshments",
+        startTime: "1:30PM",
+        endTime: "",
+        isWorkshop: false
+      },
+      {
+        title: "Mentor Session 2",
+        startTime: "2:00PM",
+        endTime: "6:00PM",
+        isWorkshop: false
+      },
+    ]
+  },
+  {
+    day: "Sunday",
+    date: "Apri 24",
+    events: [
+      {
+        title: "Project Submission Deadline",
+        startTime: "12:00PM",
+        endTime: "",
+        isWorkshop: false
+      },
+      {
+        title: "Social Event - Trivia Competition",
+        startTime: "4:00PM",
+        endTime: "5:00PM",
+        isWorkshop: false
+      },
+      {
+        title: "Closing & Award Ceremony",
+        startTime: "5:30PM",
+        endTime: "7:30PM",
+        isWorkshop: false
+      },
+    ]
+  },
+]
+
 const FridayBeforeSchedule = (
   <>
     <tr>

@@ -6,6 +6,7 @@ import Prizes from "./pages/Prizes";
 import Navbar from "./components/Navbar";
 import { Sponsor } from "./pages/Sponsors";
 import Footer from "./components/Footer";
+import Invite from "./components/Invite";
 
 function App() {
   // getting the total page height is effectful, this is needed for Scroll
@@ -42,6 +43,7 @@ function App() {
           </Route>
         </Switch>
         {/* </Background> */}
+        <Invite />
         <Footer />
       </div>
     </Router>

@@ -88,12 +88,14 @@ const schedule = [
         startTime: "2:30PM",
         endTime: "3:30PM",
         isWorkshop: true
+,        zoomLink: ""
       },
       {
         title: "Workshop 2: HTML & CSS",
         startTime: "4:00PM",
         endTime: "5:00PM",
         isWorkshop: true
+,        zoomLink: ""
       }
     ]
   },
@@ -106,12 +108,14 @@ const schedule = [
         startTime: "2:30PM",
         endTime: "3:30PM",
         isWorkshop: true
+,        zoomLink: ""
       },
       {
         title: "Workshop 4: ML/AI",
         startTime: "5:00PM",
         endTime: "6:00PM",
         isWorkshop: true
+,        zoomLink: ""
       }
     ]
   },
@@ -124,24 +128,28 @@ const schedule = [
         startTime: "2:30PM",
         endTime: "3:30PM",
         isWorkshop: true
+,        zoomLink: ""
       },
       {
         title: "Social Activity - Team Formation",
         startTime: "5:00PM",
         endTime: "6:00PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Opening Ceremony & Registration Closes",
         startTime: "6:00PM",
         endTime: "7:00PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Complementary Dinner",
         startTime: "7:00PM",
         endTime: "",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
     ]
   },
@@ -154,24 +162,28 @@ const schedule = [
         startTime: "2:30PM",
         endTime: "3:30PM",
         isWorkshop: true
+,        zoomLink: ""
       },
       {
         title: "Social Activity - Team Formation",
         startTime: "5:00PM",
         endTime: "6:00PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Opening Ceremony & Registration Closes",
         startTime: "6:00PM",
         endTime: "7:00PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Complementary Dinner",
         startTime: "7:00PM",
         endTime: "",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
     ]
   },
@@ -183,19 +195,22 @@ const schedule = [
         title: "Mentor Session 1",
         startTime: "9:00AM",
         endTime: "12:00PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Light Refreshments",
         startTime: "1:30PM",
         endTime: "",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Mentor Session 2",
         startTime: "2:00PM",
         endTime: "6:00PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
     ]
   },
@@ -207,19 +222,22 @@ const schedule = [
         title: "Project Submission Deadline",
         startTime: "12:00PM",
         endTime: "",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Social Event - Trivia Competition",
         startTime: "4:00PM",
         endTime: "5:00PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
       {
         title: "Closing & Award Ceremony",
         startTime: "5:30PM",
         endTime: "7:30PM",
-        isWorkshop: false
+        isWorkshop: false,
+        zoomLink: ""
       },
     ]
   },

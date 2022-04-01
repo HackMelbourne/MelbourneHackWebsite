@@ -2,7 +2,7 @@ import styles from "./Sponsors.module.scss";
 
 const Sponsors = () => {
     return(<div className={styles.sponsors}>
-        <h2>Sponsors_</h2>
+        <h2>Sponsors<span className={styles.blinking}>_</span></h2>
         <div className = {styles.sponsorNames}>
             <div>
                 <h3>Diamond</h3>

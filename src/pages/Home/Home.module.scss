@@ -123,16 +123,6 @@ body{
   }
 }
 
-.blinking {
-  animation: blink 0.5s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
 .longBar {
   position: absolute;
   overflow: hidden;

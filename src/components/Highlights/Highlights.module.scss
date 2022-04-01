@@ -27,10 +27,6 @@
   }
 }
 
-.blinking {
-  animation: blink 0.5s infinite;
-}
-
 .logo {
   display: none;
   @include desktop {

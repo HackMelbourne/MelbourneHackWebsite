@@ -9,12 +9,11 @@ import Scroll from "../../components/Scroll";
 import Schedule from "../../components/Schedule";
 import {Col, Row} from "react-bootstrap";
 import {InfoButton} from "../../components/Navbar/components-styled";
-import {Streams} from "../../components/Streams/streams";
 import Sponsors from "../Sponsors";
 import Prizes from "../Prizes";
 import Theme from "../Theme";
 import RulesAndFaqAccordian from "../../components/RulesAndFaqAccordian";
-import {Box, Hidden} from "@material-ui/core";
+import {Box} from "@material-ui/core";
 
 const Home = ({ pageHeight }) => {
   return (
@@ -50,7 +49,6 @@ const Home = ({ pageHeight }) => {
         <Box maxWidth='100vw' overflow={'hidden'}>
       <div className={styles.spacer}/></Box>
       <About/>
-      <Streams/>
       <Theme />
       <Prizes/>
       <Sponsors />

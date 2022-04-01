@@ -3,7 +3,7 @@ const Theme = () => {
   return (
     <div className={styles.Theme}>
       <div className={styles.Content}>
-        <h2>The Theme_</h2>
+        <h2>The Theme<span className={styles.blinking}>_</span></h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

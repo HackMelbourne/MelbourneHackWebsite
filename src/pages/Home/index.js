@@ -2,18 +2,19 @@ import styles from "./Home.module.scss";
 import hackmelb_logo from "../../components/assets/hm_dark_logo 2.svg";
 import lightbulb from "../../components/assets/home/2022-lightbulb.svg";
 import FadeIn from "react-fade-in";
-import { About } from "../../components/About/about";
+import {About} from "../../components/About/about";
 import Highlights from "../../components/Highlights";
 import Resources from "../../components/Resources/Resources";
 import Scroll from "../../components/Scroll";
 import Schedule from "../../components/Schedule";
-import { Col, Row } from "react-bootstrap";
-import { InfoButton } from "../../components/Navbar/components-styled";
+import {Col, Row} from "react-bootstrap";
+import {InfoButton} from "../../components/Navbar/components-styled";
 import {Streams} from "../../components/Streams/streams";
+import Sponsors from "../Sponsors";
 import Prizes from "../Prizes";
+import Theme from "../Theme";
 import RulesAndFaqAccordian from "../../components/RulesAndFaqAccordian";
-import {Hidden} from "@material-ui/core";
-import {FaExternalLinkAlt} from "react-icons/fa";
+import {Box, Hidden} from "@material-ui/core";
 
 const Home = ({ pageHeight }) => {
   return (
@@ -46,11 +47,13 @@ const Home = ({ pageHeight }) => {
           </Col>
         </Row>
       </div>
-        <Hidden xsDown>
-      <div className={styles.spacer}/></Hidden>
+        <Box maxWidth='100vw' overflow={'hidden'}>
+      <div className={styles.spacer}/></Box>
       <About/>
       <Streams/>
+      <Theme />
       <Prizes/>
+      <Sponsors />
       <Highlights/>
       <Schedule/>
       <RulesAndFaqAccordian />

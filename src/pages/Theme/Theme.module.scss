@@ -1,0 +1,58 @@
+@import "../../styles/styles.scss";
+
+.Theme{
+    background-image:  url("../../components/assets/Theme-Background.svg");
+    height: 600px;
+    width: 100%vw;
+    
+}
+.Content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    h2 {
+        font-family: "Source Code Pro";
+        font-size: $font-size-5;
+        color: $primary-white;
+        @include tall-screen{
+          font-size: $font-size-7;
+        }
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        //right: 2%;
+
+      }
+    p{
+        font-size: $font-size-2;
+        font-family: "Space Mono";
+        text-align:center;
+        color: $primary-white;
+        position: absolute;
+        left: 30%;
+        top: 40%;
+        width:40%;
+    }
+    .Circle1{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: absolute;
+        left: 5%;
+        bottom: 17%;
+        background-color: $tree-color;
+    }
+    .Circle2{
+        transform: translate(-50%, -50%);
+        height: 100px;
+        width:180px;
+        border-radius: 150px 150px 0 0;
+        background-color: $tree-color;
+        position: absolute;
+        left: 11%;
+        bottom: 2%;
+        
+    }
+}
+

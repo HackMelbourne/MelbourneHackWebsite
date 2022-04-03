@@ -67,19 +67,26 @@
 
 .links {
   flex: 1;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 1rem;
 }
 
 .desktopNav {
-  display: none;
+  // display: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
 
   @include desktop {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    // flex: 1;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-end;
+    // flex-direction: row;
   }
 }
 

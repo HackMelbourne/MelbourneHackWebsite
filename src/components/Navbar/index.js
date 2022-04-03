@@ -33,7 +33,6 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={styles.logo}>
-        {/* <img alt="HackMelb Logo Bulb!" src={navbar_logo} /> */}
         <div className={styles.logoText}>
           <h2>Melbourne Hack</h2>
           <h3>by HackMelbourne</h3>
@@ -41,15 +40,6 @@ const Navbar = () => {
       </Link>
       <div className={styles.links}>
         <div className={styles.desktopNav}>
-          {/* <NavBarButton href="/">About</NavBarButton>
-          <NavBarButton href="/">Timeline</NavBarButton>
-          <NavBarButton href="/">Resources</NavBarButton>
-          <NavBarButton href="/">Prizes</NavBarButton>
-          <NavBarButton href="/">Highlights</NavBarButton>
-          <NavBarButton href="/">Schedule</NavBarButton>
-          <NavBarButton href="/">Streams</NavBarButton>
-          <NavBarButton href="/">FAQs</NavBarButton>
-          <NavBarButton><HackDropDown>Hack</HackDropDown></NavBarButton> */}
           <Link to="/Sponsors" className={styles.navbarButton}>Sponsors</Link>
           {/* <NavBarButton href="/Sponsors">Sponsors</NavBarButton> */}
           <SignUpButton to="/Registration">

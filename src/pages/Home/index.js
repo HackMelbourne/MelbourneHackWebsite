@@ -34,7 +34,7 @@ const Home = ({ pageHeight }) => {
           </Col>
           <Col lg={6} className={styles.title}>
             <FadeIn delay={290}>
-              <h2 className={styles.date}>August 20-22nd, 2021</h2>
+              <h2 className={styles.date}>April 22nd-24th, 2022</h2>
               <h1>
                 Melbourne Hack<span className={styles.blinking}>_</span>
               </h1>

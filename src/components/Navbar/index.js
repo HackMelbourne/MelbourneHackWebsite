@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={styles.logo}>
-        <img alt="HackMelb Logo Bulb!" src={navbar_logo} />
+        {/* <img alt="HackMelb Logo Bulb!" src={navbar_logo} /> */}
         <div className={styles.logoText}>
           <h2>Melbourne Hack</h2>
           <h3>by HackMelbourne</h3>
@@ -57,10 +57,10 @@ const Navbar = () => {
             <span>REGISTER</span>
           </SignUpButton>
         </div>
-        <div className={styles.mobileNav} ref={ref}>
+        {/* <div className={styles.mobileNav} ref={ref}>
           <Burger open={open} setOpen={setOpen} />
           <Menu open={open} />
-        </div>
+        </div> */}
       </div>
     </nav>
   );

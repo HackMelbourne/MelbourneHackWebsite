@@ -1,7 +1,7 @@
 @import "../../styles/styles.scss";
 
 .background {
-  background-image: url("../../components/assets/communication/yellow_bg.svg");
+  background-color: $background-cream;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 7rem;
@@ -17,10 +17,14 @@
   // background-position: 0% 100%;
 }
 
-.resources {}
+.resources {
+}
 
 .description {
   font-size: $font-size-2;
+  color: $primary-darker;
+  font-family: $font-main;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -39,7 +43,8 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #090531;
+    color: $primary-dark;
+    font-family: $font-main;
     margin: 5%;
 
     >img {
@@ -51,7 +56,7 @@
       }
 
       &:hover~div {
-        background-color: #FEEFA8;
+        background-color: $light-blue;
         -webkit-transition: background-color 0.3s;
       }
 
@@ -68,7 +73,7 @@
 
       &:hover {
         cursor: pointer;
-        background-color: #FEEFA8;
+        background-color: $light-blue;
         -webkit-transition: background-color 0.3s;
       }
     }

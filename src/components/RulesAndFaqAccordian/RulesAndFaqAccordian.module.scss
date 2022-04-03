@@ -2,7 +2,7 @@
 @import "../../pages/Home/Home.module.scss";
 
 .gradientBackground {
-  background: #4F8545; // TODO colour constant
+  background: $green-dark; 
 }
 
 .rules {
@@ -21,34 +21,35 @@
 }
 
 .faqsTitle {
-  font-family: "Source Code Pro";
+  font-family: $font-main;
   font-size: $font-size-5;
   @include tall-screen {
     font-size: $font-size-7;
   }
   text-align: center;
-  font-weight: bold;
-  color: #FFFFFF; // TODO colour constant
+  font-weight: 600;
+  color: $primary-white;
 }
 
 .faqsSubTitle {
-  font-family: "Source Code Pro";
+  font-family: $font-main;
   font-size: $font-size-3;
   @include tall-screen {
     font-size: $font-size-3;
   }
   text-align: center;
-  font-weight: bold;
-  color: #FFFFFF; // TODO colour constant
+  font-weight: 400;
+  color: $primary-white;
 }
 
 h5 {
-  color: #FFFFFF; // TODO colour constant
-  // TODO font
+  color: $primary-white; 
+  font-weight: 400;
+  font-family: $font-main;
 }
 
 .faqItem {
-  border-bottom: 1px solid #FFFFFF; // TODO colour constant
+  border-bottom: 1px solid $primary-white; 
   padding: 1.5rem 1rem;
 }
 
@@ -65,7 +66,7 @@ h5 {
 .icon {
   transition: transform 0.2s ease;
   svg {
-    color: #FFFFFF;
+    color: $primary-white;
   }
 }
 
@@ -74,14 +75,17 @@ h5 {
 }
 
 .question {
-  color: #FFFFFF; // TODO colour constant
-  // TODO font
+  color: $primary-white; 
+  font-weight: 400;
+  font-family: $font-main;
+  font-size: $font-size-2;
 }
 
 .answer {
   margin-top: 1rem;
-  color: #FFFFFF; // TODO colour constant
-  // TODO font
+  color: $primary-white; 
+  font-family: $font-main;
+  font-weight: 400;
 }
 
 a {
@@ -104,7 +108,9 @@ a {
 
 .scrollTextSlow {
   white-space: nowrap;
-  color: #09350E; // TODO colour constant
+  color: $green-dark; 
+  font-family: $font-main;
+  font-weight: 600;
   
   -moz-animation: scroll-left 200s linear infinite;
   -webkit-animation: scroll-left 200s linear infinite;
@@ -112,7 +118,9 @@ a {
 }
 .scrollTextFast {
   white-space: nowrap;
-  color: #09350E; // TODO colour constant
+  color: $green-dark;
+  font-family: $font-main;
+  font-weight: 600;
   
   -moz-animation: scroll-right 100s linear infinite;
   -webkit-animation: scroll-right 100s linear infinite;
@@ -163,7 +171,7 @@ a {
 }
 
 .contributeWhite {
-  background-color: #F1EEE7;
+  background-color: $primary-white;
   margin-left: -5vw;
   width: 110vw;
   transform: rotate(-5deg);
@@ -172,7 +180,7 @@ a {
 }
 
 .contributeGreen {
-  background-color: #9EC670;
+  background-color: $green-light;
   margin-left: -5vw;
   width: 110vw;
   transform: rotate(7deg);

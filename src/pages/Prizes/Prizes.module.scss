@@ -5,14 +5,26 @@
   flex-direction: column;
   background-color: $new-color-theme;
   color: $primary-white;
+  padding-bottom: 5rem;
   @include desktop {
     padding: 2rem;
   }
 
   h1 {
     font-size: $font-size-6;
+    font-family: $font-main;
     color: $stream-blue;
     margin-bottom: 3rem;
+  }
+
+  h4 {
+    font-family: $font-main;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-family: $font-main;
+    font-weight: 400;
   }
 }
 
@@ -101,6 +113,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
   .circle{
     height: 156px;
     width: 156px;

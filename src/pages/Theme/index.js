@@ -4,11 +4,9 @@ const Theme = () => {
     <div className={styles.Theme}>
 
         <h2>The Theme<span className={styles.blinking}>_</span></h2>
+        <img alt='educationtech' src = "theme-edtech.svg"/>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          The theme of this hackathon is to help students learn more efficiently, especially during a period of online learning.
         </p>
     </div>
   );

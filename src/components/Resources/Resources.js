@@ -14,7 +14,7 @@ const Resources = () => {
           </h2>
         </div>
         <div className={styles.description}>
-          Don't be shy! Come join the Melbourne Hack 2021 community✨
+          Don't be shy! Come join the Melbourne Hack 2021 community! ✨
         </div>
 
         <div className={styles.container}>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Burger from "./Burger";
 import Menu from "./Menu";
 import navbar_logo from "../assets/logo.png";
+import {Hidden} from "@material-ui/core";
 
 // React Ref magic to detect raw events to trigger a function
 const useOnClickOutside = (ref, handler) => {
@@ -35,7 +36,7 @@ const Navbar = () => {
       <Link to="/" className={styles.logo}>
         <div className={styles.logoText}>
           <h2>Melbourne Hack</h2>
-          <h3>by HackMelbourne</h3>
+          <Hidden xsDown><h3>by HackMelbourne</h3></Hidden>
         </div>
       </Link>
       <div className={styles.links}>

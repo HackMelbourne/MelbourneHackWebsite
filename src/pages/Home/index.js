@@ -29,7 +29,7 @@ const Home = ({ pageHeight }) => {
           </a>
         </div>
         <Row style={{ width: "80vw" }}>
-          <Col lg={6}>
+          <Col lg={6} style={{display:'flex', justifyContent:"center"}}>
             <img className={styles.lightbulb} src={lightbulb} alt={"Light Bulb"} />
           </Col>
           <Col lg={6} className={styles.title}>

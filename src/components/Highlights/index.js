@@ -14,24 +14,24 @@ const Highlights = () => {
       <Grid container spacing = {6} style = {{marginTop: "4%"}} alignItems={"center"} justifyContent={"center"}>
         <Grid item>
           <div className = {styles.content}>
-            <img src = {image1} alt = "" style = {{backgroundColor: "white"}}/>
+            <img src = {image1} alt = "" style = {{backgroundColor: "#fcfaec"}}/>
             <h3>Workshops</h3>
           </div></Grid>
           <Grid item>
 
           <div className = {styles.content}>
-            <img src = {image5} alt = "" style = {{backgroundColor: "white"}}/>
+            <img src = {image5} alt = "" style = {{backgroundColor: "#fcfaec"}}/>
             <h3>Mentors</h3>
           </div>
         </Grid>
         <Grid item>
           <div className = {styles.content}>
-            <img src = {image3} alt = "" style = {{backgroundColor: "white"}}/>
+            <img src = {image3} alt = "" style = {{backgroundColor: "#fcfaec"}}/>
             <h3>Networking Night</h3>
           </div></Grid>
         <Grid item>
           <div className = {styles.content}>
-            <img src = {image6} alt = "" style = {{backgroundColor: "white"}}/>
+            <img src = {image6} alt = "" style = {{backgroundColor: "#fcfaec"}}/>
             <h3>Social Night</h3>
           </div>
         </Grid>

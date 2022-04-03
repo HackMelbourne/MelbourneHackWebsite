@@ -1,8 +1,8 @@
 @import "../../styles/styles.scss";
 
 .navbar {
-  position: fixed;
   display: flex;
+  position: absolute;
   align-items: center;
   left: 0;
   right: 0;

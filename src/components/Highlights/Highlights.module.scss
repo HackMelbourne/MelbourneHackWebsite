@@ -4,16 +4,15 @@
   @include section;
   margin-top: 1rem;
   margin-bottom: 5rem;
-  margin-left: 9%;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   h2 {
-    margin-left: 25%;
     width: 40%;
     text-align: center;
     font-weight: bolder;
@@ -39,8 +38,7 @@
 
 .content {
   //border: solid black;
-  width: 20%;
-  margin-left: 11%;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;

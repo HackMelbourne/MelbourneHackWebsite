@@ -90,13 +90,17 @@
   h2 {
     text-align: center;
     color: black;
+    @include phone{
+      font-size: $font-size-4;
 
+    }
     @include desktop {
       text-align: center;
       font-weight: bolder;
       font-family: $font-title;
       font-size: $font-size-6;
     }
+
 
   }
 }

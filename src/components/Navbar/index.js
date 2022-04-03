@@ -1,13 +1,10 @@
 import styles from "./Navbar.module.scss";
-import { useState, useRef, useEffect } from "react";
-import { SignUpButton } from "./components-styled";
-import { Link } from "react-router-dom";
-import Burger from "./Burger";
-import Menu from "./Menu";
-import navbar_logo from "../assets/logo.png";
+import {SignUpButton} from "./components-styled";
+import {Link} from "react-router-dom";
 import {Hidden} from "@material-ui/core";
 
 // React Ref magic to detect raw events to trigger a function
+/*
 const useOnClickOutside = (ref, handler) => {
   useEffect(() => {
     const listener = (event) => {
@@ -22,14 +19,15 @@ const useOnClickOutside = (ref, handler) => {
     };
   }, [ref, handler]);
 };
+*/
 
 const Navbar = () => {
   // this is for the menu on mobile
-  const [open, setOpen] = useState(false);
+ // const [open, setOpen] = useState(false);
 
   // when the user clicks/taps outside the open Menu, it closes.
-  const ref = useRef(null);
-  useOnClickOutside(ref, () => setOpen(false));
+ // const ref = useRef(null);
+ // useOnClickOutside(ref, () => setOpen(false));
 
   return (
     <nav className={styles.navbar}>

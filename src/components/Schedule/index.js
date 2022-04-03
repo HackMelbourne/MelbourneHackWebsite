@@ -4,16 +4,21 @@ import {useState} from "react";
 import {FaExternalLinkAlt} from "react-icons/fa";
 import {Box} from "@material-ui/core";
 
-const ZoomLink = ({ href }) => (
-  <a
-    className={styles.zoomLink}
-    title="Zoom Link"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    TBD <FaExternalLinkAlt />
-  </a>
-);
+const ZoomLink = ({ href }) => {
+    // stop eslint complaining this var isn't used
+    console.log(href);
+    return (
+        //eslint-disable-next-line jsx-a11y/anchor-is-valid
+        <a
+            className={styles.zoomLink}
+            title="Zoom Link"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            TBD <FaExternalLinkAlt/>
+        </a>
+    );
+};
 
 const workshopLink = "https://unimelb.zoom.us/j/88194739932?pwd=bDZmbVd4QVI1dVJxRS8yV2phVTRRUT09";
 

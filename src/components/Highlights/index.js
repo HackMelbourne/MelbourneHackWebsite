@@ -11,28 +11,31 @@ const Highlights = () => {
       <div className = {styles.heading}>
         <h2>Highlights<span className={styles.blinking}>_</span></h2>  
       </div>
-      <Grid container spacing = {6} style = {{marginTop: "4%"}}>
-        <Grid className = {styles.grid} container item xs = {11} spacing = {2}>
+      <Grid container spacing = {6} style = {{marginTop: "4%"}} alignItems={"center"} justifyContent={"center"}>
+        <Grid item>
           <div className = {styles.content}>
             <img src = {image1} alt = "" style = {{backgroundColor: "white"}}/>
             <h3>Workshops</h3>
-          </div>
+          </div></Grid>
+          <Grid item>
+
           <div className = {styles.content}>
             <img src = {image5} alt = "" style = {{backgroundColor: "white"}}/>
             <h3>Mentors</h3>
           </div>
         </Grid>
-        <Grid className = {styles.grid} container item xs = {11} spacing = {2}>
+        <Grid item>
           <div className = {styles.content}>
             <img src = {image3} alt = "" style = {{backgroundColor: "white"}}/>
             <h3>Networking Night</h3>
-          </div>
+          </div></Grid>
+        <Grid item>
           <div className = {styles.content}>
             <img src = {image6} alt = "" style = {{backgroundColor: "white"}}/>
             <h3>Social Night</h3>
           </div>
         </Grid>
-        
+
       </Grid>
     </section>
   );

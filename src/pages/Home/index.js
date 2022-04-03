@@ -29,11 +29,12 @@ const Home = ({ pageHeight }) => {
           </a>
         </div>
         <Row style={{ width: "80vw" }}>
-          <Col lg={6}>
+          <Col lg={6} style={{display:'flex', justifyContent:"center"}}>
             <img className={styles.lightbulb} src={lightbulb} alt={"Light Bulb"} />
           </Col>
           <Col lg={6} className={styles.title}>
             <FadeIn delay={290}>
+              <h2 className={styles.date}>April 22nd-24th, 2022</h2>
               <h1>
                 Melbourne Hack<span className={styles.blinking}>_</span>
               </h1>

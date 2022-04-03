@@ -24,6 +24,7 @@
 
   button {
     margin-right: 2%;
+    font-family: $font-main;
   }
 }
 
@@ -49,7 +50,7 @@
       font-size: $font-size-2;
       font-weight: 1000;
       font-family: $font-main;
-      color: black;
+      color: $primary-dark;
       margin: 0;
     }
 
@@ -101,24 +102,23 @@
 
 
 .navbarButton {
-  font-family: "Lato";
-  font-size: $font-size-1;
+  font-family: $font-main;
+  font-size: $font-size-2;
   font-weight: 600;
-  color: black;
+  color: $primary-dark;
   background-color: transparent;
   padding: 0.7% 2%;
   margin: 0 0.5em;
   transition: 0.1s ease-in;
-  letter-spacing: 0.08em;
 
   &:hover {
     transform: scale(1.1);
-    color: $hackmelb-blue;
+    color: $light-blue;
   }
 }
 
 .signUpButton {
-  font-size: $font-size-1;
+  font-size: $font-size-2;
   font-weight: 1000;
   color: black;
   background-color: transparent;
@@ -126,11 +126,11 @@
   margin: 0 0.8em;
   transition: 0.2s ease-in;
   border-width: 0.2em;
-  border-color: $hackmelb-blue;
+  border-color: $light-blue;
   border-radius: 0;
 
   &:hover {
-    background-color: $hackmelb-blue;
+    background-color: $light-blue;
     color: white;
   }
 }

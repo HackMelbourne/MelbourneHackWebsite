@@ -11,7 +11,7 @@ const Menu = ({ open }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        REGISTER
+        Register
       </a>
     </nav>
   );

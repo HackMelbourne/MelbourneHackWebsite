@@ -21,8 +21,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 7rem;
- 
-  
+
+
   @include desktop{
     padding-bottom: 3%;
   }
@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
+
 
 }
 
@@ -43,11 +43,11 @@
   justify-content: center;
   margin-top: 6rem;
   margin-bottom: 2rem;
-  font-family: "Source Code Pro";
+  font-family: $font-title;
   font-weight: bold;
 
   h2 {
-    font-family: "Source Code Pro";
+    font-family: $font-title;
     font-size: $font-size-5;
     color: $primary-white;
     @include tall-screen{
@@ -57,9 +57,6 @@
     text-align: center;
     position: relative;
     left: 20px;
-  }
-  .blinking {
-    animation: blink 0.5s infinite;
   }
 }
 
@@ -100,14 +97,6 @@
 }
 
 
-
-.prize_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
 .prize_circle{
   display: flex;
   flex-direction: column;

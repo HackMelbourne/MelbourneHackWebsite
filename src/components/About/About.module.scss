@@ -4,16 +4,19 @@
 
 .about {
   @include section;
-  margin-left: 9%;
+  padding-left: 9%;
+  background-color: $green-medium;
+  color: $primary-white;
 }
 
 .aboutTitle {
+
   display: flex;
   flex-direction: column;
   h2{
     padding-top: 5%;
     margin-bottom: 2%;
-    font-family: "Source Code Pro";
+    font-family: "Clash Display";
     font-size: $font-size-5;
     @include tall-screen{
       font-size: $font-size-7;
@@ -34,6 +37,8 @@
 }
 
 .aboutTitle h2 {
+  color: white;
+
   font-weight: bolder;
   float: left;
 }
@@ -78,15 +83,12 @@
 .description {
   margin-bottom: 200px;
   p {
-    font-family: Lato, sans-serif;
-    font-weight: 700;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
     font-size: $font-size-2;
    
     @include tall-screen{
       font-size: $font-size-3;
     }
   }
-}
-.blinking {
-  animation: blink 0.5s infinite;
 }

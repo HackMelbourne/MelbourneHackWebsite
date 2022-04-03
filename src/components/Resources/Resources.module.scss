@@ -7,18 +7,17 @@
   padding-bottom: 7rem;
   padding-top: 6rem;
 
-  @include desktop{
+  @include desktop {
     background-image: url("../../components/assets/communication/yellow_bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 3%;
   }
+
   // background-position: 0% 100%;
 }
 
-.resources {
-
-}
+.resources {}
 
 .description {
   font-size: $font-size-2;
@@ -43,7 +42,7 @@
     color: #090531;
     margin: 5%;
 
-    > img {
+    >img {
       height: 12rem;
       padding-bottom: 8%;
 
@@ -51,21 +50,22 @@
         cursor: pointer;
       }
 
-      &:hover ~ div {
+      &:hover~div {
         background-color: #FEEFA8;
         -webkit-transition: background-color 0.3s;
       }
 
     }
 
-    > div {
-      font-size:$font-size-3;
+    >div {
+      font-size: $font-size-3;
       text-align: center;
       border-radius: 200px;
       padding: 4% 10%;
       width: 90%;
       -webkit-transition: background-color 0.3s;
-      background-color: rgba(0,0,0,0);
+      background-color: rgba(0, 0, 0, 0);
+
       &:hover {
         cursor: pointer;
         background-color: #FEEFA8;
@@ -89,14 +89,20 @@
 
   h2 {
     text-align: center;
-    @include desktop{
+    color: black;
+    @include phone{
+      font-size: $font-size-4;
+
+    }
+    @include desktop {
       text-align: center;
       font-weight: bolder;
       font-family: $font-title;
       font-size: $font-size-6;
     }
 
-  } 
+
+  }
 }
 
 .content {
@@ -110,7 +116,7 @@
     padding-left: 10%;
     padding-bottom: 15%;
 
-    @include desktop{
+    @include desktop {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -133,10 +139,6 @@
   }
 }
 
-.blinking {
-  animation: blink 0.5s infinite
-}
-
 .textbox {
   margin: 2rem;
   padding: 1rem;
@@ -157,5 +159,3 @@
 .text {
   margin-bottom: 2rem;
 }
-
-

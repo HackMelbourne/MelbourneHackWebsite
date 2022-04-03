@@ -1,3 +1,13 @@
 @import "./colours.scss";
 @import "./fonts.scss";
 @import "./breakpoints.scss";
+
+.blinking {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

@@ -4,21 +4,19 @@
   @include section;
   margin-top: 1rem;
   margin-bottom: 5rem;
-  margin-left: 9%;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   h2 {
-    margin-left: 25%;
     width: 40%;
     text-align: center;
     font-weight: bolder;
     font-family: $font-title;
-    font-family: "Source Code Pro";
     font-size: $font-size-5;
     @include tall-screen{
       font-size: $font-size-7;
@@ -26,10 +24,6 @@
     text-align: center;
     font-weight: bold;
   }
-}
-
-.blinking {
-  animation: blink 0.5s infinite;
 }
 
 .logo {
@@ -44,8 +38,7 @@
 
 .content {
   //border: solid black;
-  width: 20%;
-  margin-left: 11%;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,8 +46,8 @@
 
   h3 {
     margin-top: 10% !important;
-    font-family: "Source Code Pro", sans-serif;
-    font-weight: bolder;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 500;
     font-size: $font-size-2;
   }
 

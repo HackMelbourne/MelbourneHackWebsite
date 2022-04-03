@@ -1,59 +1,43 @@
 @import "../../styles/styles.scss";
 
-.Theme{
-    background-image:  url("../../components/assets/Theme-Background.png");
-    height: 600px;
-    width: 100%vw;
-    
-}
-.Content{
-    position: relative;
+.Theme {
+  background-image: url("../../components/assets/Theme-Background.svg");
+  background-color: #508545;
+  background-repeat: repeat-x;
+  width: 100%;
+  margin-top: -100px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-family: "Source Code Pro";
+    font-size: $font-size-5;
+    color: $primary-white;
+    @include tall-screen {
+      font-size: $font-size-7;
+    }
+    font-weight: bold;
+    text-align: center;
     width: 100%;
-    height: 100%;
-    padding-top: 100px;
-    h2 {
-        font-family: "Source Code Pro";
-        font-size: $font-size-5;
-        color: $primary-white;
-        @include tall-screen{
-          font-size: $font-size-7;
-        }
-        font-weight: bold;
-        text-align: center;
-        position: relative;
-        //right: 2%;
-        left:2%;
-       
-      }
-    p{
-        font-size: $font-size-2;
-        font-family: "Space Mono";
-        text-align:center;
-        color: $primary-white;
-        position: absolute;
-        left: 30%;
-        top: 40%;
-        width:40%;
+
+  }
+
+  p {
+    font-size: $font-size-2;
+    font-family: "Space Mono";
+    text-align: center;
+    color: $primary-white;
+    margin: 0;
+    @include phone {
+      padding: 50px;
     }
-    .Circle1{
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        position: absolute;
-        left: 5%;
-        bottom: 17%;
-        background-color: $tree-color;
+    @include desktop {
+      padding: 50px 200px;
     }
-    .Circle2{
-        transform: translate(-50%, -50%);
-        height: 100px;
-        width:180px;
-        border-radius: 150px 150px 0 0;
-        background-color: $tree-color;
-        position: absolute;
-        left: 11%;
-        bottom: 2%;
-        
-    }
+
+  }
 }
 

@@ -1,22 +1,22 @@
 @import "../../styles/styles.scss";
+
+
+body{
+  background-color: #8EC570;
+}
 @mixin section {
   // reduce padding on mobile, min-height bit is not needed
   // since scroll component is not used
   padding: 2rem;
 
-  @include desktop {
-    // margin-left: 9%;
-    height: 100vh;
-  }
-
   h2 {
-    color: $primary-dark;
+    color: white;
     font-size: $font-size-5;
   }
 
   h3,
   h1 {
-    color: $primary-dark;
+    color: white;
   }
 }
 
@@ -29,14 +29,14 @@
 }
 
 .container {
-  min-height: 100vh;
-  margin-bottom: 0rem;
+  z-index: 0;
+  position: relative;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../components/assets/home/background_top.svg");
+  background: linear-gradient(180deg, #FFF6E9 -1.49%, #FFC165 34.92%, #8EC570 89.3%);
   background-size: cover;
-  background-position: 100% 30%;
 
   .pic_text {
     // border: 1px solid red;
@@ -60,21 +60,30 @@
 }
 
 .lightbulb {
-  display: none;
+  width: 100px;
+  margin-top: 100px;
   @include desktop {
-  display: unset;
-  width: 75%;
-  max-height: 500px;
-  margin-bottom: 50px;
+    margin-top: -50px;
+    display: unset;
+    width: 75%;
+    max-height: 500px;
+  }
+}
+
+.date {
+  right:0;
+  color: white;
+  @include desktop{
+    text-align: left;
   }
 }
 
 .title {
   line-height: 1.1em;
-  padding: 80px 30px 5px !important;
+  padding: 20px 30px 5px !important;
 
   h1 {
-    font-family: Source Code Pro;
+    font-family: $font-main;
     font-weight: bold;
     @include phone {
       font-size: 2.3em;
@@ -82,13 +91,12 @@
     @include tablet {
       font-size: 4.8em;
     }
-    color: $hackmelb-blue;
+    color: $primary-white;
   }
 
   h2 {
     font-family: $font-main;
     font-weight: bolder;
-    letter-spacing: 0.09em;
 
     @include phone {
       font-size: 1.8em;
@@ -96,6 +104,7 @@
     @include tablet {
       font-size: 2.2em;
     }
+    color: $primary-white;
   }
 
   h3 {
@@ -109,18 +118,8 @@
     padding: 1rem;
   }
 
-  a{
+  a {
     text-decoration: none;
-  }
-}
-
-.blinking {
-  animation: blink 0.5s infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
   }
 }
 
@@ -130,10 +129,10 @@
   top: 85vh;
   left: 0;
   width: 100%;
-  @include tablet{
+  @include tablet {
     display: none;
   }
-  @include desktop{
+  @include desktop {
     display: block;
   }
 }
@@ -157,10 +156,20 @@
   background-color: transparent;
   color: $primary-dark;
   text-align: center;
-  
+
   &:hover,
   &:focus {
     background-color: $hackmelb-blue;
     color: $primary-white;
   }
+}
+
+.spacer {
+  aspect-ratio: 960/200;
+  width: max(1000px,100%);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url('../../components/assets/stacked-waves.svg');
+  overflow-x: hidden;
 }

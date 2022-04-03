@@ -1,102 +1,67 @@
 import styles from "./Schedule.module.scss";
 
-import { useState } from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import {useState} from "react";
+import {FaExternalLinkAlt} from "react-icons/fa";
+import {Box} from "@material-ui/core";
 
-const ZoomLink = ({ href }) => (
-  <a
-    className={styles.zoomLink}
-    href={href}
-    title="Zoom Link"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Zoom <FaExternalLinkAlt />
-  </a>
-);
+const ZoomLink = ({ href }) => {
+    // stop eslint complaining this var isn't used
+    console.log(href);
+    return (
+        //eslint-disable-next-line jsx-a11y/anchor-is-valid
+        <a
+            className={styles.zoomLink}
+            title="Zoom Link"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            TBD <FaExternalLinkAlt/>
+        </a>
+    );
+};
 
 const workshopLink = "https://unimelb.zoom.us/j/88194739932?pwd=bDZmbVd4QVI1dVJxRS8yV2phVTRRUT09";
 
 const WorkshopsSchedule = (
   <>
     <tr>
-      <td>Aug 16</td>
-      <td>2:00PM - 4:00PM</td>
-      <td>Workshop #1: React</td>
+      <td>Apr 20</td>
+      <td>2:30PM - 3:30PM</td>
+      <td>Workshop #1: JS & APIs</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
-      <td>Aug 17</td>
-      <td>2:00PM - 3:00PM</td>
-      <td>Workshop #2: CSS Framework</td>
+      <td>Apr 20</td>
+      <td>4:00PM - 5:00PM</td>
+      <td>Workshop #2: HTML & CSS</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
-      <td>Aug 17</td>
-      <td>4:00PM - 6:00PM</td>
-      <td>Workshop #3: Computer Vision</td>
+      <td>Apr 21</td>
+      <td>2:30PM - 3:30PM</td>
+      <td>Workshop #3: GitHub</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
-      <td>Aug 19</td>
-      <td>2:00PM - 3:00PM</td>
-      <td>Workshop #4: APIs</td>
+      <td>Apr 21</td>
+      <td>5:00PM - 6:00PM</td>
+      <td>Workshop #4: ML/AI</td>
       <td>
         <ZoomLink href={workshopLink} />
       </td>
     </tr>
     <tr>
-      <td>Aug 19</td>
-      <td>4:00PM - 6:00PM</td>
-      <td>Workshop #5: Mobile Development</td>
+      <td>Apr 22</td>
+      <td>2:30PM - 3:30PM</td>
+      <td>Workshop #5: Optiver - Building an Auto-Trader</td>
       <td>
         <ZoomLink href={workshopLink} />
-      </td>
-    </tr>
-    <tr>
-      <td>Aug 20</td>
-      <td>2:00PM - 3:30PM</td>
-      <td>Workshop #6: Git and Hosting</td>
-      <td>
-        <ZoomLink href={workshopLink} />
-      </td>
-    </tr>
-    <tr>
-      <td>Aug 21</td>
-      <td>4:00PM - 5:30PM</td>
-      <td>Workshop #7: How to Pitch</td>
-      <td>
-        <ZoomLink href={workshopLink} />
-      </td>
-    </tr>
-  </>
-);
-
-const FridayBeforeSchedule = (
-  <>
-    <tr>
-      <td>4:00PM - 6:30PM</td>
-      <td>Women's Networking Night with WIT</td>
-      <td>
-        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
-      </td>
-    </tr>
-  </>
-);
-
-const ThursdaySchedule = (
-  <>
-    <tr>
-      <td>7:00PM - 9:00PM</td>
-      <td>Streams Panel Event</td>
-      <td>
-        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
       </td>
     </tr>
   </>
@@ -105,29 +70,26 @@ const ThursdaySchedule = (
 const FridaySchedule = (
   <>
     <tr>
+      <td>2:30PM - 3:30PM</td>
+      <td>Workshop #5: Optiver - Building an Auto-Trader</td>
+    </tr>
+    <tr>
+      <td>5:00PM - 6:00PM</td>
+      <td>Social Activity - Team Formation</td>
+      <td>
+        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
+      </td>
+    </tr>
+    <tr>
       <td>6:00PM - 7:00PM</td>
-      <td>Opening Ceremony</td>
+      <td>Opening Ceremony & Registration Closes</td>
       <td>
         {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
       </td>
     </tr>
     <tr>
-      <td>7:30PM - 9:30PM</td>
-      <td>Team Formation Socials</td>
-      <td>
-        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
-      </td>
-    </tr>
-    <tr>
-      <td>8:00PM - 9:00PM</td>
-      <td>Mentor Window #1</td>
-      <td>
-        {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
-      </td>
-    </tr>
-    <tr>
-      <td>9:00PM</td>
-      <td>Movie Night</td>
+      <td>7:00PM</td>
+      <td>Complementary Dinner</td>
       <td>
         {/* <ZoomLink href="https://unimelb.zoom.us/j/88443841469?pwd=dGJ2dDZ5TFBjdUNscUozZE9VNkNrZz09" /> */}
       </td>
@@ -138,46 +100,18 @@ const FridaySchedule = (
 const SaturdaySchedule = (
   <>
     <tr>
-      <td>9:00AM</td>
-      <td>Coffee Gathering</td>
+      <td>9:00AM - 12:00PM</td>
+      <td>Mentor Session 1</td>
       <td>
       </td>
     </tr>
     <tr>
-      <td>10:00AM - 2:00PM</td>
-      <td>Mentor Window #2</td>
-      <td>
-      </td>
+      <td>1:30PM</td>
+      <td>Light Refreshments</td>
     </tr>
     <tr>
-      <td>11:00AM - 12:00PM</td>
-      <td>The Start-up Space w/ Startmate</td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>3:00PM - 7:00PM</td>
-      <td>Mentor Window #3</td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>6:00PM - 8:00PM</td>
-      <td>Sponsor Networking Night</td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>8:30PM - 11:59PM</td>
-      <td>Valorant Party Night</td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>8:30PM - 11:00PM</td>
-      <td>Board Games Night</td>
-      <td>
-      </td>
+      <td>2:00PM - 6:00PM</td>
+      <td>Mentor Session 2</td>
     </tr>
   </>
 );
@@ -185,28 +119,16 @@ const SaturdaySchedule = (
 const SundaySchedule = (
   <>
     <tr>
-      <td>9:30AM - 1:00PM</td>
-      <td>Mentor Window #4</td>
-      <td>
-      </td>
+      <td>12:00PM</td>
+      <td>Project Submission Deadline</td>
     </tr>
     <tr>
-      <td>1:00PM</td>
-      <td>Submission Deadline</td>
-      <td>
-      </td>
-    </tr>
-    <tr>
-      <td>1:00PM - 3:00PM</td>
-      <td>Scavenger Hunt</td>
-      <td>
-      </td>
+      <td>4:00PM - 5:00PM</td>
+      <td>Social Event - Trivia Competition</td>
     </tr>
     <tr>
       <td>5:30PM - 7:30PM</td>
-      <td>Closing Ceremony</td>
-      <td>
-      </td>
+      <td>Closing & Award Ceremony</td>
     </tr>
   </>
 );
@@ -215,8 +137,6 @@ const Schedule = () => {
   const [selected, setSelected] = useState("Workshops");
   const schedules = {
     Workshops: WorkshopsSchedule,
-    FridayBefore: FridayBeforeSchedule,
-    Thursday: ThursdaySchedule,
     Friday: FridaySchedule,
     Saturday: SaturdaySchedule,
     Sunday: SundaySchedule
@@ -238,23 +158,7 @@ const Schedule = () => {
                   selected === "Workshops" ? styles.selected : ""
                 }`}
               >
-                WORKSHOPS
-              </button>
-              <button
-                onClick={() => setSelected("FridayBefore")}
-                className={`${styles.button} ${
-                  selected === "FridayBefore" ? styles.selected : ""
-                }`}
-              >
-                FRI 13th
-              </button>
-              <button
-                onClick={() => setSelected("Thursday")}
-                className={`${styles.button} ${
-                  selected === "Thursday" ? styles.selected : ""
-                }`}
-              >
-                THURS 19th
+                Workshops
               </button>
               <button
                 onClick={() => setSelected("Friday")}
@@ -262,7 +166,7 @@ const Schedule = () => {
                   selected === "Friday" ? styles.selected : ""
                 }`}
               >
-                FRI 20th
+                Fri, Apr 22
               </button>
               <button
                 onClick={() => setSelected("Saturday")}
@@ -270,7 +174,7 @@ const Schedule = () => {
                   selected === "Saturday" ? styles.selected : ""
                 }`}
               >
-                SAT 21st
+                Sat, Apr 23
               </button>
               <button
                 onClick={() => setSelected("Sunday")}
@@ -278,14 +182,15 @@ const Schedule = () => {
                   selected === "Sunday" ? styles.selected : ""
                 }`}
               >
-                SUN 22nd
+                Sat, Apr 24
               </button>
             </div>
+              <Box overflow='auto' whiteSpace='no-wrap'>
             <table>
               <tbody>
                 {schedules[selected]}
               </tbody>
-            </table>
+            </table></Box>
           </div>
         </div>
       </section>

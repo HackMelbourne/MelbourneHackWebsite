@@ -6,7 +6,7 @@
   background-repeat: repeat-x;
   width: 100%;
   margin-top: -100px;
-  padding-top: 100px;
+  padding: 8rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +25,13 @@
 
   }
 
+  h3{
+    font-size: $font-size-4;
+    font-weight: 600;
+    color: $primary-white;
+    padding-top: 3rem;
+  }
+
   p {
     font-size: $font-size-2;
     font-family: 'Clash Display';
@@ -33,10 +40,10 @@
     color: $primary-white;
     margin: 0;
     @include phone {
-      padding: 50px;
+      padding: 1rem;
     }
     @include desktop {
-      padding: 50px 200px;
+      padding: 0.5rem 200px;
     }
 
   }

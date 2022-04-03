@@ -4,20 +4,16 @@
   background-color: $background-cream;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 7rem;
-  padding-top: 6rem;
+  padding: 4rem 0;
 
   @include desktop {
-    background-image: url("../../components/assets/communication/yellow_bg.svg");
+    background-color: $background-cream;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 3%;
   }
 
   // background-position: 0% 100%;
-}
-
-.resources {
 }
 
 .description {
@@ -89,12 +85,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
 
   h2 {
     text-align: center;
-    color: black;
+    color: $primary-dark;
     @include phone{
       font-size: $font-size-4;
 
@@ -103,7 +97,7 @@
       text-align: center;
       font-weight: bolder;
       font-family: $font-title;
-      font-size: $font-size-6;
+      font-size: $font-size-5;
     }
 
 

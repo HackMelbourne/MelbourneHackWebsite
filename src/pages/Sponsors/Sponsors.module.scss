@@ -5,8 +5,7 @@
     color: $primary-dark;
 
     width: 100%;
-    height: 839px;
-    padding-top: 50px;
+    padding: 4rem 0;
 }
 
 h2 {
@@ -24,6 +23,7 @@ h3 {
     font-family: $font-main;
     font-size: $font-size-3;
     font-weight: 400;
+    padding: 1rem 0;
 }
 .sponsorNames{
     div{
@@ -42,7 +42,6 @@ h2{
 
 .Optiver, .Bain{
     margin-top: 80px;
+    height: 3rem;
     margin-bottom: 50px;
 }
-
-

@@ -6,7 +6,8 @@
   background-repeat: no-repeat;
   padding-bottom: 7rem;
   padding-top: 6rem;
-
+  position:relative;
+  bottom: 60px;
   @include desktop {
     background-image: url("../../components/assets/communication/yellow_bg.svg");
     background-size: cover;

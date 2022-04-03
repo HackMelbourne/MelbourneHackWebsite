@@ -7,12 +7,15 @@
   padding-left: 9%;
   background-color: $green-medium;
   color: $primary-white;
+
+
 }
 
 .aboutTitle {
 
   display: flex;
   flex-direction: column;
+ 
   h2{
     padding-top: 5%;
     margin-bottom: 2%;
@@ -43,10 +46,11 @@
   float: left;
 }
 
-.aboutTitle .image {
+.aboutTitle img {
   position: absolute;
   left: 19%;
-  top: 118%;
+  top: 200%;
+
 }
 
 .background {
@@ -66,7 +70,7 @@
 
     display: unset;
     position: absolute;
-    top: 130%;
+    top: 170%;
     left: 70%;
     width: 20%;
   }

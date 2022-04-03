@@ -21,17 +21,12 @@ h2 {
     right: 50px;
   }
 .sponsorNames{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 60%;
-    padding-top: 50px;
     div{
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
-    
+
     }
 }
 h2{
@@ -39,19 +34,9 @@ h2{
     text-align: center;
 }
 
-.Gold{
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    padding-left: 10%;
-    padding-right: 10%;
+.Optiver, .Bain{
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
-.Optiver{
-    position: absolute;
-    bottom: 0;
-}
-.Bain{
-    position: relative;
-    top: 30px;
-}
 

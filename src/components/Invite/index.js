@@ -8,7 +8,7 @@ const Invite = () => {
                 <span className={styles.firstLine}>Get involved and</span><span className={styles.secondLine}>register now!</span>
             </div>
             <div className={styles.buttonDIV}>
-                <a href={"https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"} className={styles.button}>
+                <a href={"https://www.eventbrite.com.au/e/melbourne-hack-2022-tickets-303665410417"} className={styles.button}>
                     <span>Register</span><img className={styles.footerLogo} src={arrow} alt={"Logo"} />
                 </a>
             </div>

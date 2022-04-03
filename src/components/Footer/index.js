@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           <span className={styles.contact}>Contact</span>
           <span className={styles.email}>Got questions? Email us at <a href="hackmelb.team@gmail.com">hackmelb.team@gmail.com</a></span>
-          <a href={"https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"} className={styles.footerButton}>
+          <a href={"https://www.eventbrite.com.au/e/melbourne-hack-2022-tickets-303665410417"} className={styles.footerButton}>
             Sign up for MelbourneHack <img className={styles.footerLogo} src={arrow} alt={"Logo"} />
           </a>
         </div>

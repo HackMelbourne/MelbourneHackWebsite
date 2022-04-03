@@ -15,10 +15,10 @@
       margin: 0;
     }
 
-    color: black;
+    color: $primary-darker;
     &:hover,
     &:focus {
-      color: $hackmelb-blue;
+      color: $primary-white;
     }
   }
 }

@@ -34,7 +34,7 @@ function App() {
             <Sponsor />
           </Route>
           <Route path='/Registration' component={() => {
-            window.location.replace("https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723");
+            window.location.replace("https://www.eventbrite.com.au/e/melbourne-hack-2022-tickets-303665410417");
             return null;
           }} />
           <Route>

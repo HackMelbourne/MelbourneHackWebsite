@@ -14,7 +14,7 @@ export const About = () => {
       <Row>
         <Col lg={6} md={12} sm={12} xs={12}>
           <div className={style.description}>
-            <p>Bring your creative ideas to life~</p>
+            <p>Bring your creative ideas to life!</p>
             <p>
               Melbourne Hack is the flagship hackathon run by HackMelbourne, an
               intercollegiate organisation aimed at making technology more accessible
@@ -29,7 +29,6 @@ export const About = () => {
               world! Get hacking individually or in a team to create a product
               over a weekend!
             </p>
-            <p>Find out more for what's in store in the highlights below. </p>
           </div>
         </Col>
       </Row>

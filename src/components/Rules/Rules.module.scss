@@ -17,7 +17,7 @@
 }
 
 .faqsTitle {
-  font-family: "Source Code Pro";
+  font-family: $font-main;
   font-size: $font-size-5;
   @include tall-screen {
     font-size: $font-size-7;

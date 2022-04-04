@@ -38,9 +38,9 @@ const Home = ({ pageHeight }) => {
               <h1>
                 Melbourne Hack<span className={styles.blinking}>_</span>
               </h1>
-              <h3>Melbourne's Premier Hackathon Hosted by HackMelbourne</h3>
+              <h3>Melbourne's premier hackathon hosted by HackMelbourne</h3>
               <a href = 'https://coherent-tartan-183.notion.site/Participants-Handbook-dc64e20afd2d415bab3f31d2d4c3e3cd' target="_blank" rel="noopener noreferrer">
-                <InfoButton>Register Now!</InfoButton>
+                <InfoButton>Register now!</InfoButton>
               </a>
             </FadeIn>
           </Col>

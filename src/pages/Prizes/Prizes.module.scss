@@ -3,16 +3,31 @@
 .prizes {
   display: flex;
   flex-direction: column;
-  background-color: $new-color-theme;
+  background-color: $green-medium;
   color: $primary-white;
+  padding-bottom: 5rem;
   @include desktop {
     padding: 2rem;
   }
 
   h1 {
     font-size: $font-size-6;
+    font-family: $font-main;
     color: $stream-blue;
     margin-bottom: 3rem;
+  }
+
+  h4 {
+    padding-top: 3rem;
+    font-family: $font-main;
+    font-size: $font-size-4;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: $font-size-3;
   }
 }
 
@@ -31,17 +46,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
-
 }
 
-
+.PrizeMedal {
+  height: 11.5rem;
+}
 
 .heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   font-family: $font-title;
   font-weight: bold;
@@ -57,6 +72,10 @@
     text-align: center;
     position: relative;
     left: 20px;
+  }
+
+  h3 {
+    text-align: center;
   }
 }
 
@@ -101,6 +120,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
   .circle{
     height: 156px;
     width: 156px;
@@ -118,6 +138,7 @@
 }
 .prize_container_2{
   margin-top: 2rem;
+  margin-bottom: 4rem;
   display:flex;
   flex-direction: row;
   align-items: center;

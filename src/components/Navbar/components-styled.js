@@ -47,9 +47,9 @@ export const SignUpButton = styled(Link)({
 export const InfoButton = styled(Button)({
   marginTop: "2%",
   fontSize: "100%",
-  fontFamily: "Consolas, Menlo",
-  fontWeight: "bold",
-  color: "black",
+  fontFamily: "Clash Display",
+  fontWeight: 400,
+  color: "$primary-dark",
   transition: "0.5s ease-in-out",
 
   "&:hover":{

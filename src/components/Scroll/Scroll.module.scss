@@ -1,9 +1,10 @@
 @import "../../styles/styles.scss";
 
 .links {
-  border-right: 4px solid black;
+  border-right: 3px solid $primary-dark;
   text-align: right;
   font-size: $font-size-1;
+  font-family: $font-main;
   a {
     // make each anchor "start on a new line"
     display: block;
@@ -14,10 +15,10 @@
       margin: 0;
     }
 
-    color: black;
+    color: $primary-darker;
     &:hover,
     &:focus {
-      color: $hackmelb-blue;
+      color: $primary-white;
     }
   }
 }

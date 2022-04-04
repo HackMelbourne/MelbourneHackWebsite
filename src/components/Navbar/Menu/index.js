@@ -7,11 +7,11 @@ const Menu = ({ open }) => {
     <nav className={open ? `${styles.menu} ${styles.open}` : styles.menu}>
       <Link to="/Sponsors">Sponsors</Link>
       <a
-        href="https://www.eventbrite.com.au/e/melbourne-hack-2021-tickets-162202392723"
+        href="https://www.eventbrite.com.au/e/melbourne-hack-2022-tickets-303665410417"
         target="_blank"
         rel="noopener noreferrer"
       >
-        REGISTER
+        Register
       </a>
     </nav>
   );

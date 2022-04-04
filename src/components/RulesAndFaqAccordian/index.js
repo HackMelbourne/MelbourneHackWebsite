@@ -24,7 +24,7 @@ export default function RulesAndFaqAccordian() {
   return (
     <div className={styles.gradientBackground}>
       <section id="rules" className={styles.rules}>
-      <div style={{height: '1.5rem'}}></div>
+      <div style={{height: '4rem'}}></div>
         <div className={styles.faqsTitle}>
           Rules &amp; FAQ
           <span className={styles.blinking}>_</span>

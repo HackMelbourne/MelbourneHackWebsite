@@ -46,7 +46,7 @@ const Prizes = () => {
               <div className={styles.circle}></div>
               <div className={styles.circle_text}>
                <h4>Other Swag and Goodies</h4>
-               <h5>Giftcards to be revealed soon!</h5>
+               <h5>Giftcards to be released soon!</h5>
               </div>
             </div>
       

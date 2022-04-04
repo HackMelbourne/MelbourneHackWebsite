@@ -53,7 +53,7 @@ const Home = ({ pageHeight }) => {
       <Sponsors />
       <Highlights/>
       <Schedule/>
-    
+      <RulesAndFaqAccordian />
       {/* <Rules /> */}
       <Resources/>
     </div>
@@ -61,4 +61,3 @@ const Home = ({ pageHeight }) => {
 };
 
 export default Home;
-  /*<RulesAndFaqAccordian />*/

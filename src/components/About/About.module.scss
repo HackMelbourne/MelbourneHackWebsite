@@ -7,8 +7,6 @@
   padding-left: 9%;
   background-color: $green-medium;
   color: $primary-white;
-
-
 }
 
 .aboutTitle {
@@ -47,11 +45,10 @@
   float: left;
 }
 
-.aboutTitle img {
+.aboutTitle .image {
   position: absolute;
   left: 19%;
-  top: 200%;
-
+  top: 118%;
 }
 
 .background {
@@ -71,7 +68,7 @@
 
     display: unset;
     position: absolute;
-    top: 170%;
+    top: 130%;
     left: 70%;
     width: 20%;
   }

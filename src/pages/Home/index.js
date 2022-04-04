@@ -12,7 +12,6 @@ import {InfoButton} from "../../components/Navbar/components-styled";
 import Sponsors from "../Sponsors";
 import Prizes from "../Prizes";
 import Theme from "../Theme";
-import RulesAndFaqAccordian from "../../components/RulesAndFaqAccordian";
 import {Box} from "@material-ui/core";
 
 const Home = ({ pageHeight }) => {

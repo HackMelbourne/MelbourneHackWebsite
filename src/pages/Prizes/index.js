@@ -18,7 +18,7 @@ const Prizes = () => {
               
                 <img alt='1st' className = {styles.PrizeMedal} src = "1st.svg"/>
                 <h4>1st place</h4>
-                <h5>$1200</h5>
+                <h5>$1500</h5>
               
             </Grid>
             <Grid xs={12} md={4} className={styles.prize_circle}>
@@ -43,10 +43,10 @@ const Prizes = () => {
            
             
             <div className={styles.prize_circle}>
-              <div className={styles.circle}></div>
+              <div className={styles.circle}/>
               <div className={styles.circle_text}>
                <h4>Other Swag and Goodies</h4>
-               <h5>Giftcards to be released soon!</h5>
+               <h5>from participation in Trivia and Raffles!</h5>
               </div>
             </div>
       

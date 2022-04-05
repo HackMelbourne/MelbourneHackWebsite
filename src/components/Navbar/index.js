@@ -33,8 +33,8 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <Link to="/" className={styles.logo}>
         <div className={styles.logoText}>
-          <h2>Melbourne Hack</h2>
-          <Hidden xsDown><h3>by HackMelbourne</h3></Hidden>
+          <Hidden xsDown>          <h2>Melbourne Hack</h2>
+              <h3>by HackMelbourne</h3></Hidden>
         </div>
       </Link>
       <div className={styles.links}>

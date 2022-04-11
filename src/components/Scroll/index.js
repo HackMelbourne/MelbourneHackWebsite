@@ -56,7 +56,7 @@ const Scroll = ({ pageHeight }) => {
       <div className={styles.links} ref={ref}>
         <Link to="/#"><img className={styles.lightbulb} src={lightbulb} height="40px" alt="rocket" /></Link>
         <Link to="/#about" >ABOUT</Link>
-        <Link to="/#streams" >STREAMS</Link>
+        <Link to="/#theme" >THEME</Link>
         <Link to="/#prizes">PRIZES</Link>
         <Link to="/#highlights">HIGHLIGHTS</Link>
         <Link to="/#schedule">SCHEDULE</Link>

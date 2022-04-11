@@ -125,7 +125,8 @@
     height: 156px;
     width: 156px;
     border-radius: 50%;
-    background-color:white;
+    position: relative;
+    overflow: hidden;
   }
   .circle_text{
     height: 60px;

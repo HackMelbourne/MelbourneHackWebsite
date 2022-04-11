@@ -2,7 +2,7 @@ import styles from "./Theme.module.scss";
 const Theme = () => {
   return (
     <div className={styles.Theme}>
-
+      <section id="theme">
         <h2>The Theme<span className={styles.blinking}>_</span></h2>
         <img alt='educationtech' src = "edutech.png" height="300"/>
         <h3>EduTech</h3>
@@ -13,6 +13,7 @@ const Theme = () => {
           to formulate innovative, forward-thinking solutions that can make a positive impact 
           on the lives of students, teachers and other stakeholders!
         </p>
+      </section>
     </div>
   );
 };

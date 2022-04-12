@@ -1,8 +1,7 @@
 import styles from "./Theme.module.scss";
 const Theme = () => {
   return (
-    <div className={styles.Theme}>
-
+    <div className={styles.Theme} id='theme'>
         <h2>The Theme<span className={styles.blinking}>_</span></h2>
         <img alt='educationtech' src = "edutech.png" height="300"/>
         <h3>EduTech</h3>

@@ -43,7 +43,9 @@ const Prizes = () => {
            
             
             <div className={styles.prize_circle}>
-              <div className={styles.circle}/>
+              <div class={styles.circle}>
+                <img alt='person holding packages containing swag and goodies' className = {styles.PrizeMedal} src = "dogs.jpg"/>
+              </div>
               <div className={styles.circle_text}>
                <h4>Other Swag and Goodies</h4>
                <h5>from participation in Trivia and Raffles!</h5>

@@ -30,7 +30,7 @@ const Rules = () => {
             </td>
           </tr>
           <tr>
-            <td>Is there a theme for Melbourne Hack 2021?</td>
+            <td>Is there a theme for Melbourne Hack 2022?</td>
             <td>Yes but also no... This year, we don't have a fixed overarching theme. Instead, participants can create a project under 1 of the 5 streams: Finance, Medical Technology (MedTech), Sustainability and Education (and our just-for-fun stream: Memes).
             </td>
           </tr>

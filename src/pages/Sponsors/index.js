@@ -23,6 +23,11 @@ const Sponsors = () => {
                 <img alt='star' src = "Star 2.png"/>
                 <img alt='logo' className = {styles.Optiver} src = "Bain And Company.png"/>
             </div></Grid>
+            <Grid item xs={12} md={4}><div>
+                <h3>Gold</h3>
+                <img alt='star' src = "Star 2.png"/>
+                <img alt='logo' className = {styles.Optiver} src = "Bain And Company.png"/>
+            </div></Grid>
         </Grid>
     </div>)
 }

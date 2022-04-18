@@ -50,7 +50,7 @@ const WorkshopsSchedule = (
     </tr>
     <tr>
       <td>Apr 21</td>
-      <td>5:00PM - 6:00PM</td>
+      <td>4:00PM - 5:00PM</td>
       <td>Workshop #4: ML/AI</td>
       <td>
         <ZoomLink href={workshopLink} />
@@ -110,7 +110,7 @@ const SaturdaySchedule = (
       <td>Light Refreshments</td>
     </tr>
     <tr>
-      <td>2:00PM - 6:00PM</td>
+      <td>2:00PM - 5:00PM</td>
       <td>Mentor Session 2</td>
     </tr>
   </>
@@ -127,7 +127,7 @@ const SundaySchedule = (
       <td>Social Event - Trivia Competition</td>
     </tr>
     <tr>
-      <td>5:30PM - 7:30PM</td>
+      <td>5:30PM - 7:00PM</td>
       <td>Closing & Award Ceremony</td>
     </tr>
   </>
@@ -182,7 +182,7 @@ const Schedule = () => {
                   selected === "Sunday" ? styles.selected : ""
                 }`}
               >
-                Sat, Apr 24
+                Sun, Apr 24
               </button>
             </div>
               <Box overflow='auto' whiteSpace='no-wrap'>

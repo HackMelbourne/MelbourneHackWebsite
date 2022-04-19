@@ -26,7 +26,7 @@ const Resources = () => {
             <img src={notion} alt={"Notion symbol"} />
             <div>Participants Handbook</div>
           </a>
-          <a className={styles.button} href={"https://fb.me/e/2rwPGMIlG"} rel="noopener noreferrer" target="_blank">
+          <a className={styles.button} href={"https://www.facebook.com/events/660256458571001"} rel="noopener noreferrer" target="_blank">
             <img src={facebook} alt={"Facebook symbol"} />
             <div>Facebook event</div>
           </a>

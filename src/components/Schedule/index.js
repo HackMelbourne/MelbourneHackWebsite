@@ -14,8 +14,9 @@ const ZoomLink = ({ href }) => {
             title="Zoom Link"
             target="_blank"
             rel="noopener noreferrer"
+            href={'https://coherent-tartan-183.notion.site/Workshops-a1bbfc3a6b1440f1ab8bdc5d48483df9'}
         >
-            TBD <FaExternalLinkAlt/>
+            More Info<FaExternalLinkAlt/>
         </a>
     );
 };

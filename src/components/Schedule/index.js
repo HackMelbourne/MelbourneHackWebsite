@@ -124,11 +124,11 @@ const SundaySchedule = (
       <td>Project Submission Deadline</td>
     </tr>
     <tr>
-      <td>4:00PM - 5:00PM</td>
+      <td>3:00PM - 4:00PM</td>
       <td>Social Event - Trivia Competition</td>
     </tr>
     <tr>
-      <td>5:30PM - 7:00PM</td>
+      <td>4:00PM - 5:00PM</td>
       <td>Closing & Award Ceremony</td>
     </tr>
   </>
